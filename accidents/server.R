@@ -19,7 +19,7 @@ server <- function(input, output, session) {
   observe({
     updateSelectInput(
       session, "UJAHR",
-      choices = c("Alle", sort(unique(accidentData$UJAHR[accidentData$UJAHR != 2025]), decreasing = TRUE))
+      choices = c("Alle", sort(unique(accidentData$UJAHR[!(accidentData$UJAHR %in% c(2025,2026))]), decreasing = TRUE))
     )
     updateSelectInput(
       session, "UKATEGORIE",

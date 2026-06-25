@@ -1,6 +1,6 @@
 library(shiny)
 library(shinydashboard)
-library(shinycssloaders)   # <-- NEW: withSpinner()
+library(shinycssloaders)   # withSpinner()
 library(leaflet)
 library(readr)
 library(dplyr)
@@ -287,103 +287,142 @@ fetch_last_job_run_log <- function() {
   })
 }
 
-# ── Load bike counter data (live Databricks with RDS fallback) ─
-# CLEAR STARTUP MESSAGE: tells the operator exactly what stage we're in
-message("──────────────────────────────────────────────")
-message("⏳ App startet — verbinde mit Databricks und lade Zählstellendaten …")
-message("   (Bei kalter Warehouse kann der erste Lauf bis zu ",
-        POLL_DEADLINE_S, "s dauern. Bei Fehler greift der RDS-Fallback.)")
-message("──────────────────────────────────────────────")
-
-bike_counter <- tryCatch({
-
-  result <- run_sql("
-    SELECT
-      f.date,
-      f.total        AS counter,
-      s.counter_name AS Standort,
-      s.latitude,
-      s.longitude
-    FROM bike_counter_mobidatabw.eco_counter.eco_counter_mannheim f
-    JOIN bike_counter_mobidatabw.eco_counter.eco_counter_stations s
-      ON f.counter_id = s.counter_id
-  ")
-  statement_id <- result$statement_id
-  total_chunks <- result$manifest$total_chunk_count
-  cols         <- sapply(result$manifest$schema$columns, `[[`, "name")
-
-  message("Total chunks: ", total_chunks)
-  message("Total rows expected: ", result$manifest$total_row_count)
-
-  all_rows      <- list()
-  all_rows[[1]] <- result$result$data_array
-
-  if (total_chunks > 1) {
-    for (chunk_index in 1:(total_chunks - 1)) {
-      message("Fetching chunk ", chunk_index, " ...")
-      chunk_res <- GET(
-        url = paste0("https://", host, "/api/2.0/sql/statements/",
-                     statement_id, "/result/chunks/", chunk_index),
-        add_headers(Authorization = paste("Bearer", token)),
-        httr::timeout(30)
-      )
-      all_rows[[chunk_index + 1]] <- content(chunk_res, as = "parsed")$data_array
-    }
-  }
-
-  data <- do.call(c, all_rows)
-  rows <- lapply(data, function(row) {
-    vapply(row, function(v) if (is.null(v)) NA_character_ else as.character(v), character(1))
-  })
-
-  df           <- as.data.frame(do.call(rbind, rows), stringsAsFactors = FALSE)
-  colnames(df) <- cols
-  df$date      <- as.Date(df$date)
-  df$counter   <- as.numeric(df$counter)
-  df$latitude  <- as.numeric(df$latitude)
-  df$longitude <- as.numeric(df$longitude)
-
-  message("✓ Live-Daten geladen. Zeilen: ", nrow(df))
-  df
-
-}, error = function(e) {
-  message("✗ Live-Laden fehlgeschlagen: ", conditionMessage(e))
-  message("↪ Nutze RDS-Fallback (data/bike_counter_data.rds) …")
-  rds <- readRDS("data/bike_counter_data.rds")
-  rds$date <- as.Date(as.character(rds$date))
-  message("✓ Fallback-Daten geladen. Zeilen: ", nrow(rds))
-  rds
-})
-
 # ══════════════════════════════════════════════════════════════
-# 1. ARCHITECTURE & PERFORMANCE
-# Pre-compute derived date columns ONCE (data is static after load),
-# instead of recomputing year()/month()/yday()/as.POSIXct() in every
-# render across every tab.
+# DEFERRED DATA LOAD
+# ──────────────────────────────────────────────────────────────
+# The heavy Databricks query is NO LONGER run at startup. Running it
+# here would block before the UI is ever sent to the browser, so a
+# "please wait" modal could never appear during the warehouse cold
+# start. Instead it is wrapped in load_app_data(), which the server
+# calls AFTER the session connects (and after the modal is visible).
+#
+# load_app_data() is cached: the first visitor pays the cost and
+# publishes the results to these globals; later visitors return
+# instantly. All existing outputs keep referencing the same global
+# names (bike_counter, bike_by_standort, sites_unique, …) unchanged.
 # ══════════════════════════════════════════════════════════════
-bike_counter$date        <- as.Date(bike_counter$date)
-bike_counter$year        <- lubridate::year(bike_counter$date)
-bike_counter$month       <- lubridate::month(bike_counter$date)
-bike_counter$day_of_year <- lubridate::yday(bike_counter$date)
 
-# Pre-split by Standort so each tab reuses an O(1) lookup instead of
-# scanning the full frame with subset() on every render.
-bike_by_standort <- split(bike_counter, bike_counter$Standort)
+# Globals are declared up front so they always exist (NULL until loaded).
+app_data_loaded  <- FALSE
+bike_counter     <- NULL
+bike_by_standort <- NULL
+sites_unique     <- NULL
+STANDORT_CHOICES <- NULL
+ym_choices       <- NULL
+
+# Pre-split lookup helper (unchanged behaviour; just reads the global).
 get_standort <- function(name) {
   df <- bike_by_standort[[name]]
   if (is.null(df) || nrow(df) == 0) bike_counter[0, ] else df
 }
 
-message(">>> bike_counter rows: ", nrow(bike_counter))
-message(">>> bike_counter Standorte: ",
-        paste(unique(bike_counter$Standort), collapse = ", "))
-message("✓ App bereit.")
+load_app_data <- function() {
+  # Already loaded by an earlier session — nothing to do.
+  if (isTRUE(app_data_loaded)) return(invisible(TRUE))
 
-# ── Site metadata comes from the query itself (lat/lon via JOIN) ─
-sites_unique <- bike_counter %>%
-  select(Standort, latitude, longitude) %>%
-  distinct() %>%
-  rename(name = Standort)
+  message("──────────────────────────────────────────────")
+  message("⏳ Verbinde mit Databricks und lade Zählstellendaten …")
+  message("   (Bei kalter Warehouse kann der erste Lauf bis zu ",
+          POLL_DEADLINE_S, "s dauern. Bei Fehler greift der RDS-Fallback.)")
+  message("──────────────────────────────────────────────")
 
-# Sorted, validated default list reused by every selectInput
-STANDORT_CHOICES <- sort(unique(bike_counter$Standort))
+  df_loaded <- tryCatch({
+
+    result <- run_sql("
+      SELECT
+        f.date,
+        f.total        AS counter,
+        s.counter_name AS Standort,
+        s.latitude,
+        s.longitude
+      FROM bike_counter_mobidatabw.eco_counter.eco_counter_mannheim f
+      JOIN bike_counter_mobidatabw.eco_counter.eco_counter_stations s
+        ON f.counter_id = s.counter_id
+    ")
+    statement_id <- result$statement_id
+    total_chunks <- result$manifest$total_chunk_count
+    cols         <- sapply(result$manifest$schema$columns, `[[`, "name")
+
+    message("Total chunks: ", total_chunks)
+    message("Total rows expected: ", result$manifest$total_row_count)
+
+    all_rows      <- list()
+    all_rows[[1]] <- result$result$data_array
+
+    if (total_chunks > 1) {
+      for (chunk_index in 1:(total_chunks - 1)) {
+        message("Fetching chunk ", chunk_index, " ...")
+        chunk_res <- GET(
+          url = paste0("https://", host, "/api/2.0/sql/statements/",
+                       statement_id, "/result/chunks/", chunk_index),
+          add_headers(Authorization = paste("Bearer", token)),
+          httr::timeout(30)
+        )
+        all_rows[[chunk_index + 1]] <- content(chunk_res, as = "parsed")$data_array
+      }
+    }
+
+    data <- do.call(c, all_rows)
+    rows <- lapply(data, function(row) {
+      vapply(row, function(v) if (is.null(v)) NA_character_ else as.character(v), character(1))
+    })
+
+    df           <- as.data.frame(do.call(rbind, rows), stringsAsFactors = FALSE)
+    colnames(df) <- cols
+    df$date      <- as.Date(df$date)
+    df$counter   <- as.numeric(df$counter)
+    df$latitude  <- as.numeric(df$latitude)
+    df$longitude <- as.numeric(df$longitude)
+
+    message("✓ Live-Daten geladen. Zeilen: ", nrow(df))
+    df
+
+  }, error = function(e) {
+    message("✗ Live-Laden fehlgeschlagen: ", conditionMessage(e))
+    message("↪ Nutze RDS-Fallback (data/bike_counter_data.rds) …")
+    rds <- readRDS("data/bike_counter_data.rds")
+    rds$date <- as.Date(as.character(rds$date))
+    message("✓ Fallback-Daten geladen. Zeilen: ", nrow(rds))
+    rds
+  })
+
+  # ══════════════════════════════════════════════════════════════
+  # 1. ARCHITECTURE & PERFORMANCE
+  # Pre-compute derived date columns ONCE (data is static after load),
+  # instead of recomputing year()/month()/yday() in every render.
+  # ══════════════════════════════════════════════════════════════
+  df_loaded$date        <- as.Date(df_loaded$date)
+  df_loaded$year        <- lubridate::year(df_loaded$date)
+  df_loaded$month       <- lubridate::month(df_loaded$date)
+  df_loaded$day_of_year <- lubridate::yday(df_loaded$date)
+
+  # ── Publish to globals (so every existing output works unchanged) ──
+  bike_counter     <<- df_loaded
+  # Pre-split by Standort so each tab reuses an O(1) lookup instead of
+  # scanning the full frame with subset() on every render.
+  bike_by_standort <<- split(df_loaded, df_loaded$Standort)
+
+  # ── Site metadata comes from the query itself (lat/lon via JOIN) ─
+  sites_unique <<- df_loaded %>%
+    select(Standort, latitude, longitude) %>%
+    distinct() %>%
+    rename(name = Standort)
+
+  # Sorted, validated default list reused by every selectInput
+  STANDORT_CHOICES <<- sort(unique(df_loaded$Standort))
+
+  # Year-month choices (own default — NOT a Standort name)
+  ym_choices <<- sort(
+    unique(sprintf("%04d-%02d", df_loaded$year, df_loaded$month)),
+    decreasing = TRUE
+  )
+
+  app_data_loaded <<- TRUE
+
+  message(">>> bike_counter rows: ", nrow(bike_counter))
+  message(">>> bike_counter Standorte: ",
+          paste(unique(bike_counter$Standort), collapse = ", "))
+  message("✓ App bereit.")
+
+  invisible(TRUE)
+}

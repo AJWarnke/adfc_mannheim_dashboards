@@ -14,6 +14,9 @@ ui <- dashboardPage(
     )
   ),
   dashboardBody(
+    tags$head(
+      tags$link(rel = "shortcut icon", href = "favicon.png")
+    ),
     tabItems(
 
       # ---- Übersicht ----

@@ -1,38 +1,40 @@
 server <- function(input, output, session) {
+  data_ready <- reactiveVal(FALSE)
+
+  showModal(modalDialog(
+    title = "Verbinde mit Databricks …",
+    "Der SQL-Warehouse startet gerade. Beim ersten Aufruf kann das bis zu ~1 Minute dauern. Bitte warten …",
+    footer = NULL, easyClose = FALSE
+  ))
+
+  session$onFlushed(function() {
+    load_app_data()                 # blocking, but the modal is already visible
+    sel <- pick_default(STANDORT_CHOICES)
+    for (id in standort_dropdowns)
+      updateSelectInput(session, id, choices = STANDORT_CHOICES, selected = sel)
+    updateSelectInput(session, "monthly_standort_compare_ym",
+                      choices = ym_choices, selected = ym_choices[1])
+    data_ready(TRUE)
+    removeModal()
+  }, once = TRUE)
 
   # ════════════════════════════════════════════════════════════
-  # 1. ARCHITECTURE — populate every Standort dropdown ONCE.
-  # Previously each tab had its own observe() with a hard-coded
-  # selected = "Renzstraße". Several of those were applied to
-  # year-month dropdowns where that value does not exist (bug).
+  # 1. ARCHITECTURE — list of Standort dropdowns. They are now
+  # populated in the onFlushed() callback above, AFTER load_app_data()
+  # has run. The previous observe()/local ym_choices were removed:
+  # they executed before the data existed, and the local ym_choices
+  # shadowed the global one set by load_app_data(), which left the
+  # year-month dropdown empty.
   # ════════════════════════════════════════════════════════════
   standort_dropdowns <- c(
     "analysis_standort", "last14_station",
     "cumulative_standort", "cumulative_partial_standort",
     "cumulative_bar_standort", "raw_standort", "monthly_bar_standort"
   )
-  observe({
-    sel <- pick_default(STANDORT_CHOICES)        # validated default
-    for (id in standort_dropdowns) {
-      updateSelectInput(session, id, choices = STANDORT_CHOICES, selected = sel)
-    }
-  })
-
-  # Year-month choices (own default — NOT a Standort name) -------
-  ym_choices <- sort(
-    unique(sprintf("%04d-%02d", bike_counter$year, bike_counter$month)),
-    decreasing = TRUE
-  )
-  observe({
-    updateSelectInput(
-      session, "monthly_standort_compare_ym",
-      choices = ym_choices,
-      selected = pick_default(ym_choices, ym_choices[1])   # 2. BUGFIX
-    )
-  })
 
   # ---- Übersicht ----
   output$overview_n_standorte <- renderValueBox({
+    req(data_ready())
     valueBox(
       value = length(unique(bike_counter$Standort)),
       subtitle = "Anzahl Standorte",
@@ -41,6 +43,7 @@ server <- function(input, output, session) {
   })
 
   output$overview_latest_obs <- renderValueBox({
+    req(data_ready())
     latest <- max(bike_counter$date, na.rm = TRUE)
     valueBox(
       value = format(latest, "%d.%m.%Y"),
@@ -50,6 +53,7 @@ server <- function(input, output, session) {
   })
 
   output$overview_total_obs <- renderValueBox({
+    req(data_ready())
     valueBox(
       value = format(nrow(bike_counter), big.mark = ".", decimal.mark = ","),
       subtitle = "Gesamte Datensätze",
@@ -58,6 +62,7 @@ server <- function(input, output, session) {
   })
 
   output$overview_standort_table <- renderDT({
+    req(data_ready())
     df_summary <- bike_counter %>%
       group_by(Standort) %>%
       summarise(
@@ -83,6 +88,7 @@ server <- function(input, output, session) {
 
   # ---- Karte ----
   output$site_map <- renderLeaflet({
+	req(data_ready())
     leaflet(data = sites_unique) %>%
       addTiles() %>%
       addMarkers(~longitude, ~latitude, label = ~name,
@@ -136,16 +142,19 @@ server <- function(input, output, session) {
 
   # ---- Standort Analysis ----
   output$analysis_barplot <- renderPlot({
+    req(data_ready())
     req(input$analysis_standort)
     plot_yearly_bars(get_standort(input$analysis_standort),
                      paste("Anzahl Radfahrende -", input$analysis_standort))
   })
   output$analysis_quarter_ts <- renderPlot({
+    req(data_ready())
     req(input$analysis_standort)
     plot_quarter_ts(get_standort(input$analysis_standort),
                     paste("Quartalsverlauf -", input$analysis_standort))
   })
   output$analysis_month_ts <- renderPlot({
+    req(data_ready())
     req(input$analysis_standort)
     plot_month_ts(get_standort(input$analysis_standort),
                   paste("Monatsverlauf -", input$analysis_standort))
@@ -193,6 +202,7 @@ server <- function(input, output, session) {
   }
 
   output$cumulative_plot <- renderPlotly({
+    req(data_ready())
     req(input$cumulative_standort)
     render_cumulative_lines(
       get_standort(input$cumulative_standort),
@@ -201,6 +211,7 @@ server <- function(input, output, session) {
   })
 
   output$cumulative_partial_plot <- renderPlotly({
+    req(data_ready())
     req(input$cumulative_partial_standort)
     df <- get_standort(input$cumulative_partial_standort)
     if (nrow(df) == 0) return(NULL)
@@ -217,6 +228,7 @@ server <- function(input, output, session) {
   })
 
   output$cumulative_bar_plot <- renderPlotly({
+    req(data_ready())
     req(input$cumulative_bar_standort)
     df <- get_standort(input$cumulative_bar_standort)
     df <- df[!is.na(df$counter), ]
@@ -252,6 +264,7 @@ server <- function(input, output, session) {
 
   # ---- Raw Data Explorer ----
   observeEvent(input$raw_standort, {
+    req(data_ready())
     df <- get_standort(input$raw_standort)
     if (nrow(df) > 0) {
       min_date <- min(df$date, na.rm = TRUE)
@@ -263,6 +276,7 @@ server <- function(input, output, session) {
   })
 
   output$raw_timeseries <- renderPlot({
+    req(data_ready())
     req(input$raw_standort, input$raw_daterange)
     df <- get_standort(input$raw_standort)
     df <- df[df$date >= input$raw_daterange[1] & df$date <= input$raw_daterange[2], ]
@@ -289,7 +303,7 @@ server <- function(input, output, session) {
   # and reuse it for both the DT output and the CSV download, so
   # they can never disagree.
   # ════════════════════════════════════════════════════════════
-  monthly_wide <- reactive({ build_monthly_wide(bike_counter, 24) })
+  monthly_wide <- reactive({ req(data_ready()); build_monthly_wide(bike_counter, 24) })
 
   output$monthlyStationTable <- renderDT({
     wide_table <- monthly_wide()
@@ -321,6 +335,7 @@ server <- function(input, output, session) {
 
   # ---- Monthly Barchart (Monatsbalken) ----
   output$monthly_bar_plot <- renderPlotly({
+    req(data_ready())
     req(input$monthly_bar_standort, input$monthly_bar_month)
 
     selected_month <- as.integer(input$monthly_bar_month)
@@ -372,6 +387,7 @@ server <- function(input, output, session) {
 
   # ---- Standortvergleich Monat ----
   monthly_compare_df <- reactive({
+    req(data_ready())
     req(input$monthly_standort_compare_ym)
     bike_counter %>%
       mutate(year_month = sprintf("%04d-%02d", year, month)) %>%
@@ -414,6 +430,7 @@ server <- function(input, output, session) {
 
   # ---- Last 14 Days ----
   output$last14_plot <- renderPlot({
+    req(data_ready())
     req(input$last14_station)
     df_station <- get_standort(input$last14_station)
     if (nrow(df_station) == 0) return(NULL)
@@ -509,6 +526,7 @@ server <- function(input, output, session) {
 
   # ---- Stationsvergleich ----
   output$station_compare_plot <- renderPlotly({
+    req(data_ready())
     req(input$compare_daterange)
     df <- bike_counter[bike_counter$date >= input$compare_daterange[1] &
                          bike_counter$date <= input$compare_daterange[2], ]

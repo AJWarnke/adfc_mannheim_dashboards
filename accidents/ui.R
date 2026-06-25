@@ -1,5 +1,18 @@
+library(bslib)
+
+adfc_theme <- bs_theme(
+  version = 5,
+  bg = "#ffffff",             # Weißer Hintergrund
+  fg = "#004B7C",             # Dunkelblaue Schrift
+  primary = "#EE7400",        # ADFC-Orange (für Buttons, Tabs und aktive Felder)
+  secondary = "#7FC600",      # ADFC-Blau
+  base_font = font_google("Roboto") # Moderne Google-Schriftart
+)
+
 ui <- fluidPage(
+  theme = adfc_theme,
   tags$head(
+    tags$link(rel = "shortcut icon", href = "favicon.png"),
     tags$style(HTML("
       #accidentMap, #heatMap {
         height: calc(100vh - 120px) !important;
@@ -20,10 +33,13 @@ ui <- fluidPage(
     )
   ),
   
-  titlePanel("Unfälle mit beteiligten Radfahrern in Mannheim (jetzt inkl. 2024)"),
+  titlePanel("Unfälle mit Radfahrern und Fußgängern in Mannheim"),
   
   sidebarLayout(
     sidebarPanel(
+      selectInput("zielgruppe", "Betroffene Verkehrsteilnehmer", 
+                  choices = c("Alle", "Rad", "Fuß"), 
+                  selected = "Alle"),
       selectInput("UJAHR", "Jahr", choices = NULL, selected = "Alle"),
       selectInput("UKATEGORIE", "Unfallschwere", choices = NULL, selected = "Alle"),
       selectInput("UTYP1", "Unfalltyp", choices = NULL, selected = "Alle"),
@@ -55,20 +71,20 @@ ui <- fluidPage(
             fluidRow(
               column(
                 width = 6,
-                h3("Robert Hofmann"),
-                p("Sprecher ADFC Mannheim"),
-                p("Email: Robert.Hofmann [at] adfc-bw.de")
+                h3("Dr. Arne Warnke"),
+                p("ADFC Mannheim (Daten & Digitalisierung)"),
+                p("Email: arne.warnke [at] adfc-bw.de")
               ),
               column(
                 width = 6,
-                h3("Arne Warnke"),
-                p("ADFC Mannheim"),
-                p("Email: arne.warnke [at] adfc-bw.de")
+                h3("Robert Hofmann"),
+                p("ADFC Mannheim (Sprecher)"),
+                p("Email: robert.hofmann [at] adfc-bw.de")
               )
             ),
             hr(),
             h3("Über dieses Projekt"),
-            p("Diese interaktive Karte zeigt Unfalldaten mit Radfahrerbeteiligung in Mannheim."),
+            p("Diese interaktive Karte zeigt Unfalldaten mit Fußgänger- und Radfahrerbeteiligung in Mannheim."),
             p("Ziel ist es, mit Hilfe von offenen Daten die Transparenz zu fördern, städtische Planungen zu unterstützen und zur Verkehrssicherheit im Sinne von Vision Zero beizutragen."),
             p("Die Anwendung wurde vom ADFC Mannheim entwickelt – auf ehrenamtlicher Basis."),
             p("Quelle ist die Unfallstatistik des Statistischen Bundesamtes."),

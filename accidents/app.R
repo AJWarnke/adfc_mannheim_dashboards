@@ -4,6 +4,8 @@ library(leaflet)
 library(leaflet.extras)
 library(tidyverse)
 library(DT)
+library(bslib)
+
 
 # Source UI and Server
 # local = TRUE ensures environment inheritance

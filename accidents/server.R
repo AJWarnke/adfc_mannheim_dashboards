@@ -1,7 +1,7 @@
 server <- function(input, output, session) {
   
   # Load the data
-  accidentData <- read.csv("Unfaelle.csv")
+  accidentData <- read.csv("Unfaelle_mit_Fuss.csv")
   
   # Codierung für UTYP1 gemäß PDF - nur Text ohne Nummern
   utyp1_labels <- c(
@@ -40,7 +40,8 @@ server <- function(input, output, session) {
     updateSelectInput(
       session,
       "involved",
-      choices = sort(unique(accidentData$involved))
+      choices = sort(unique(accidentData$involved)),
+      selected = character(0) # <--- HIER: Verhindert die automatische Vorauswahl
     )
     
     
@@ -55,6 +56,17 @@ server <- function(input, output, session) {
   # Reactive expression to filter data based on input
   getMapData <- reactive({
     filteredData <- accidentData
+    
+    # NEU: Filter für die Zielgruppe
+    if (input$zielgruppe == "Rad") {
+      filteredData <- dplyr::filter(filteredData, IstRad == 1)
+    } else if (input$zielgruppe == "Fuß") {
+      filteredData <- dplyr::filter(filteredData, IstFuss == 1)
+    }
+    
+    if (input$UJAHR != "Alle") {
+      filteredData <- dplyr::filter(filteredData, UJAHR == input$UJAHR)
+    }
     
     if (input$UJAHR != "Alle") {
       filteredData <- dplyr::filter(filteredData, UJAHR == input$UJAHR)
@@ -166,7 +178,7 @@ server <- function(input, output, session) {
   
   deadlyAccidents <- reactive({
     data <- accidentData
-    data <- dplyr::filter(data, trimws(UKATEGORIE) == "Unfall mit Getöteten")
+    data <- dplyr::filter(data, trimws(UKATEGORIE) == "Unfall mit Getöteten" & IstRad == 1)
     data <- dplyr::mutate(
       data,
       Datum = paste0(sprintf("%02d", UMONAT), ".", UJAHR),

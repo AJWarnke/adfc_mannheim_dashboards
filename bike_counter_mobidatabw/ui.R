@@ -6,7 +6,7 @@ ui <- dashboardPage(
       menuItem("Standort-Analyse", tabName = "standort_analysis", icon = icon("chart-column")),
       menuItem("Letzte 14 Tage", tabName = "last14days", icon = icon("calendar-day")),
       menuItem("Jahresvergleich Kumulativ", tabName = "cumulative", icon = icon("line-chart")),
-      menuItem("Rohdaten Explorer", tabName = "raw_data", icon = icon("line-chart")),
+      menuItem("Rohdaten Explorer", tabName = "raw_data", icon = icon("magnifying-glass-chart")),
       menuItem("Monats\u00fcbersicht", tabName = "monthly_table", icon = icon("table")),
       menuItem("Stationsvergleich", tabName = "station_compare", icon = icon("chart-bar")),
       menuItem("\u00dcbersicht", tabName = "overview", icon = icon("info-circle")),
@@ -15,7 +15,7 @@ ui <- dashboardPage(
   ),
   dashboardBody(
     tabItems(
-      
+
       # ---- Übersicht ----
       tabItem(
         tabName = "overview",
@@ -28,29 +28,24 @@ ui <- dashboardPage(
           column(
             width = 12,
             h3("Standorte im Datensatz"),
-            DTOutput("overview_standort_table")
+            withSpinner(DTOutput("overview_standort_table"))
           )
         )
       ),
-      
+
       # Karte
       tabItem(
         tabName = "map",
-        leafletOutput("site_map", height = 700)
+        withSpinner(leafletOutput("site_map", height = 700))
       ),
-      
+
       # Standort Analysis
       tabItem(
         tabName = "standort_analysis",
         fluidRow(
           column(
             width = 4,
-            selectInput(
-              "analysis_standort",
-              "Standort ausw\u00e4hlen:",
-              choices = NULL,
-              selected = NULL
-            )
+            selectInput("analysis_standort", "Standort ausw\u00e4hlen:", choices = NULL)
           )
         ),
         fluidRow(
@@ -59,42 +54,37 @@ ui <- dashboardPage(
             tabsetPanel(
               tabPanel(
                 "Jahreswerte",
-                plotOutput("analysis_barplot", height = 500)
+                withSpinner(plotOutput("analysis_barplot", height = 500))
               ),
               tabPanel(
                 "Quartalsverlauf",
-                plotOutput("analysis_quarter_ts", height = 500)
+                withSpinner(plotOutput("analysis_quarter_ts", height = 500))
               ),
               tabPanel(
                 "Monatsverlauf",
-                plotOutput("analysis_month_ts", height = 500)
+                withSpinner(plotOutput("analysis_month_ts", height = 500))
               )
             )
           )
         )
       ),
-      
+
       tabItem(
         tabName = "last14days",
         fluidRow(
           column(
             width = 4,
-            selectInput(
-              "last14_station",
-              "Standort ausw\u00e4hlen",
-              choices = NULL,
-              selected = NULL
-            )
+            selectInput("last14_station", "Standort ausw\u00e4hlen", choices = NULL)
           )
         ),
         fluidRow(
           column(
             width = 12,
-            plotOutput("last14_plot", height = 600)
+            withSpinner(plotOutput("last14_plot", height = 600))
           )
         )
       ),
-      
+
       # Cumulative Comparison
       tabItem(
         tabName = "cumulative",
@@ -104,18 +94,13 @@ ui <- dashboardPage(
             fluidRow(
               column(
                 width = 4,
-                selectInput(
-                  "cumulative_standort",
-                  "Standort ausw\u00e4hlen:",
-                  choices = NULL,
-                  selected = NULL
-                )
+                selectInput("cumulative_standort", "Standort ausw\u00e4hlen:", choices = NULL)
               )
             ),
             fluidRow(
               column(
                 width = 12,
-                plotlyOutput("cumulative_plot", height = 700)
+                withSpinner(plotlyOutput("cumulative_plot", height = 700))
               )
             )
           ),
@@ -124,18 +109,13 @@ ui <- dashboardPage(
             fluidRow(
               column(
                 width = 4,
-                selectInput(
-                  "cumulative_partial_standort",
-                  "Standort ausw\u00e4hlen:",
-                  choices = NULL,
-                  selected = NULL
-                )
+                selectInput("cumulative_partial_standort", "Standort ausw\u00e4hlen:", choices = NULL)
               )
             ),
             fluidRow(
               column(
                 width = 12,
-                plotlyOutput("cumulative_partial_plot", height = 700)
+                withSpinner(plotlyOutput("cumulative_partial_plot", height = 700))
               )
             )
           ),
@@ -144,36 +124,26 @@ ui <- dashboardPage(
             fluidRow(
               column(
                 width = 4,
-                selectInput(
-                  "cumulative_bar_standort",
-                  "Standort ausw\u00e4hlen:",
-                  choices = NULL,
-                  selected = NULL
-                )
+                selectInput("cumulative_bar_standort", "Standort ausw\u00e4hlen:", choices = NULL)
               )
             ),
             fluidRow(
               column(
                 width = 12,
-                plotlyOutput("cumulative_bar_plot", height = 700)
+                withSpinner(plotlyOutput("cumulative_bar_plot", height = 700))
               )
             )
           )
         )
       ),
-      
+
       # Raw Data Explorer
       tabItem(
         tabName = "raw_data",
         fluidRow(
           column(
             width = 4,
-            selectInput(
-              "raw_standort",
-              "Standort ausw\u00e4hlen:",
-              choices = NULL,
-              selected = NULL
-            )
+            selectInput("raw_standort", "Standort ausw\u00e4hlen:", choices = NULL)
           ),
           column(
             width = 4,
@@ -190,11 +160,11 @@ ui <- dashboardPage(
         fluidRow(
           column(
             width = 12,
-            plotOutput("raw_timeseries", height = 600)
+            withSpinner(plotOutput("raw_timeseries", height = 600))
           )
         )
       ),
-      
+
       # Stationsvergleich
       tabItem(
         tabName = "station_compare",
@@ -226,10 +196,10 @@ ui <- dashboardPage(
           )
         ),
         fluidRow(
-          column(width = 12, plotlyOutput("station_compare_plot", height = 620))
+          column(width = 12, withSpinner(plotlyOutput("station_compare_plot", height = 620)))
         )
       ),
-      
+
       # Monthly Overview Table + Barchart
       tabItem(
         tabName = "monthly_table",
@@ -242,7 +212,7 @@ ui <- dashboardPage(
                 h3("Summe der Radfahrenden nach Standort und Monat (letzte 24 Monate)"),
                 downloadButton("downloadMonthlyTable", "Download als CSV"),
                 br(), br(),
-                DTOutput("monthlyStationTable")
+                withSpinner(DTOutput("monthlyStationTable"))
               )
             )
           ),
@@ -251,12 +221,7 @@ ui <- dashboardPage(
             fluidRow(
               column(
                 width = 4,
-                selectInput(
-                  "monthly_bar_standort",
-                  "Standort ausw\u00e4hlen:",
-                  choices = NULL,
-                  selected = NULL
-                )
+                selectInput("monthly_bar_standort", "Standort ausw\u00e4hlen:", choices = NULL)
               ),
               column(
                 width = 4,
@@ -284,7 +249,7 @@ ui <- dashboardPage(
             fluidRow(
               column(
                 width = 12,
-                plotlyOutput("monthly_bar_plot", height = 600)
+                withSpinner(plotlyOutput("monthly_bar_plot", height = 600))
               )
             )
           ),
@@ -293,32 +258,27 @@ ui <- dashboardPage(
             fluidRow(
               column(
                 width = 4,
-                selectInput(
-                  inputId = "monthly_standort_compare_ym",
-                  label = "Jahr-Monat ausw\u00e4hlen:",
-                  choices = NULL,
-                  selected = NULL
-                )
+                selectInput(inputId = "monthly_standort_compare_ym", label = "Jahr-Monat ausw\u00e4hlen:", choices = NULL)
               )
             ),
             fluidRow(
               column(
                 width = 12,
-                plotlyOutput("monthly_standort_compare_plot", height = 500)
+                withSpinner(plotlyOutput("monthly_standort_compare_plot", height = 500))
               )
             ),
             fluidRow(
               column(
                 width = 12,
                 br(),
-                DTOutput("monthly_standort_compare_table")
+                withSpinner(DTOutput("monthly_standort_compare_table"))
               )
             )
           )
         )
       ),
-      
-      # Or as a standalone tab:
+
+      # Job Status
       tabItem(
         tabName = "job_status",
         fluidRow(
@@ -327,7 +287,7 @@ ui <- dashboardPage(
             width = 6,
             solidHeader = TRUE,
             status = "primary",
-            uiOutput("job_status_table")
+            withSpinner(uiOutput("job_status_table"))
           )
         )
       )

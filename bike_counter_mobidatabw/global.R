@@ -1,5 +1,6 @@
 library(shiny)
 library(shinydashboard)
+library(shinycssloaders)   # <-- NEW: withSpinner()
 library(leaflet)
 library(readr)
 library(dplyr)
@@ -9,6 +10,76 @@ library(DT)
 library(plotly)
 library(httr)
 library(jsonlite)
+
+# ══════════════════════════════════════════════════════════════
+# 5. MAINTAINABILITY — central constants (one place to edit)
+# ══════════════════════════════════════════════════════════════
+DEFAULT_STANDORT <- "Renzstraße"
+
+COL_PRIMARY   <- "steelblue"
+COL_HIGHLIGHT <- "#e07b00"
+COL_PLOT_BG   <- "#f5f5f5"
+COL_PAPER_BG  <- "white"
+
+MONTH_STARTS  <- c(1, 32, 60, 91, 121, 152, 182, 213, 244, 274, 305, 335)
+MONTH_ABBR_DE <- c("Jan", "Feb", "Mär", "Apr", "Mai", "Jun",
+                   "Jul", "Aug", "Sep", "Okt", "Nov", "Dez")
+MONTH_FULL_DE <- c("Januar", "Februar", "März", "April", "Mai", "Juni",
+                   "Juli", "August", "September", "Oktober", "November", "Dezember")
+
+POLL_INTERVAL_S <- 5     # seconds between SQL status polls
+POLL_DEADLINE_S <- 300   # hard deadline before giving up
+
+# ── Helper: choose first valid choice, falling back to default ──
+pick_default <- function(choices, preferred = DEFAULT_STANDORT) {
+  if (length(choices) == 0) return(NULL)
+  if (preferred %in% choices) preferred else choices[[1]]
+}
+
+# ── Helper: consistent plotly theme (5. Maintainability) ───────
+style_plot <- function(fig) {
+  fig %>%
+    plotly::layout(plot_bgcolor = COL_PLOT_BG, paper_bgcolor = COL_PAPER_BG) %>%
+    plotly::config(
+      displayModeBar         = TRUE,
+      modeBarButtonsToRemove = c("lasso2d", "select2d", "autoScale2d"),
+      displaylogo            = FALSE
+    )
+}
+
+# ── Helper: build cumulative-by-day-of-year frame (1. Architecture)
+# Shared by all three cumulative tabs — single source of truth.
+compute_cumulative <- function(df, max_doy = Inf) {
+  df <- df[!is.na(df$counter), , drop = FALSE]
+  if (nrow(df) == 0) return(NULL)
+  df <- df[df$day_of_year <= max_doy, , drop = FALSE]
+  if (nrow(df) == 0) return(NULL)
+
+  daily <- aggregate(counter ~ year + day_of_year, data = df, FUN = sum, na.rm = TRUE)
+  daily <- daily[order(daily$year, daily$day_of_year), ]
+  # vectorised per-year cumulative sum (replaces the for-loop)
+  daily$cumulative <- ave(daily$counter, daily$year, FUN = cumsum)
+  daily
+}
+
+# ── Helper: build the 24-month wide monthly table (1. Architecture)
+# Used by BOTH the DT output and the CSV download — no duplication.
+build_monthly_wide <- function(df, months_back = 24) {
+  cutoff_date <- Sys.Date() %m-% months(months_back)
+
+  monthly_summary <- df %>%
+    filter(date >= cutoff_date) %>%
+    mutate(year_month = sprintf("%04d-%02d", year, month)) %>%
+    group_by(Standort, year_month) %>%
+    summarise(total = round(sum(counter, na.rm = TRUE), -3), .groups = "drop")
+
+  wide_table <- monthly_summary %>%
+    pivot_wider(names_from = year_month, values_from = total, values_fill = 0)
+
+  month_cols        <- setdiff(names(wide_table), "Standort")
+  month_cols_sorted <- sort(month_cols, decreasing = TRUE)
+  wide_table %>% select(Standort, all_of(month_cols_sorted))
+}
 
 # ── Load .Renviron ────────────────────────────────────────────
 if (file.exists(".Renviron")) {
@@ -39,42 +110,42 @@ fetch_job_status <- function() {
     if (nchar(job_id) == 0) {
       return(list(error = "DATABRICKS_JOB_ID fehlt/leer."))
     }
-    
+
     res <- httr::GET(
       url   = paste0("https://", host, "/api/2.1/jobs/runs/list"),
       httr::add_headers(Authorization = paste("Bearer", token)),
       query = list(job_id = job_id, limit = 1, expand_tasks = "false")
     )
-    
+
     if (httr::status_code(res) != 200) {
       body_txt <- tryCatch(rawToChar(httr::content(res, as = "raw")), error = function(e) "")
       return(list(error = paste0("HTTP ", httr::status_code(res), " – ", body_txt)))
     }
-    
+
     parsed <- httr::content(res, as = "parsed")
     if (is.null(parsed$runs) || length(parsed$runs) == 0) {
       return(list(error = "Keine runs zurückgegeben. Prüfe Job-ID & Berechtigungen."))
     }
-    
+
     run <- parsed$runs[[1]]
-    
+
     start_ms   <- run$start_time
     end_ms     <- run$end_time
     state      <- run$state$result_state
     life_state <- run$state$life_cycle_state
-    
+
     start_dt <- as.POSIXct(as.numeric(start_ms) / 1000, origin = "1970-01-01", tz = "Europe/Berlin")
     end_dt <- if (!is.null(end_ms) && !is.na(end_ms) && as.numeric(end_ms) > 0)
       as.POSIXct(as.numeric(end_ms) / 1000, origin = "1970-01-01", tz = "Europe/Berlin")
     else NULL
-    
+
     duration_str <- if (!is.null(end_dt)) {
       duration_s <- as.numeric(difftime(end_dt, start_dt, units = "secs"))
       sprintf("%d min %d s", floor(duration_s/60), round(duration_s %% 60))
     } else "läuft…"
-    
+
     display_state <- if (!is.null(state)) state else life_state
-    
+
     list(
       error      = NULL,
       status     = display_state,
@@ -110,9 +181,9 @@ fetch_max_timestamp <- function() {
   }, error = function(e) NA_character_)
 }
 
-# ── Helper: submit SQL and poll until done ────────────────────
-run_sql <- function(sql) {
-  
+# ── Helper: submit SQL and poll until done (WITH DEADLINE) ─────
+run_sql <- function(sql, deadline_s = POLL_DEADLINE_S) {
+
   # 1. Submit (returns immediately with statement_id)
   res <- POST(
     url    = paste0("https://", host, "/api/2.0/sql/statements"),
@@ -126,19 +197,34 @@ run_sql <- function(sql) {
     ), auto_unbox = TRUE),
     httr::timeout(30)
   )
-  
+
   if (status_code(res) != 200) {
     stop("Submit failed (HTTP ", status_code(res), "): ",
          rawToChar(content(res, as = "raw")))
   }
-  
-  result      <- content(res, as = "parsed")
-  stmt_id     <- result$statement_id
+
+  result  <- content(res, as = "parsed")
+  stmt_id <- result$statement_id
   message("Statement submitted: ", stmt_id)
-  
-  # 2. Poll until SUCCEEDED / FAILED / CANCELED
+
+  # 2. Poll until SUCCEEDED / FAILED / CANCELED — OR until deadline
+  deadline <- Sys.time() + deadline_s
   repeat {
-    Sys.sleep(5)
+    if (Sys.time() > deadline) {
+      # Best-effort cancel so we don't leak a running query
+      tryCatch(
+        POST(
+          url = paste0("https://", host, "/api/2.0/sql/statements/", stmt_id, "/cancel"),
+          add_headers(Authorization = paste("Bearer", token)),
+          httr::timeout(15)
+        ),
+        error = function(e) NULL
+      )
+      stop("Query timed out after ", deadline_s,
+           "s (statement ", stmt_id, " cancelled).")
+    }
+
+    Sys.sleep(POLL_INTERVAL_S)
     poll <- GET(
       url = paste0("https://", host, "/api/2.0/sql/statements/", stmt_id),
       add_headers(Authorization = paste("Bearer", token)),
@@ -149,11 +235,11 @@ run_sql <- function(sql) {
     message("  state: ", state)
     if (state %in% c("SUCCEEDED", "FAILED", "CANCELED")) break
   }
-  
+
   if (state != "SUCCEEDED") {
     stop("Query ", state, ": ", result$status$error$message)
   }
-  
+
   result   # return full result for chunk extraction
 }
 
@@ -168,19 +254,18 @@ fetch_last_job_run_log <- function() {
       ORDER BY written_at DESC
       LIMIT 1
     ")
-    
+
     cols <- sapply(res$manifest$schema$columns, `[[`, "name")
     row  <- res$result$data_array[[1]]
-    
     if (is.null(row)) return(list(error = "job_run_log: keine Zeilen gefunden."))
-    
+
     names(row) <- cols
-    
+
     fmt_berlin <- function(ts) {
       if (is.null(ts) || is.na(ts) || ts == "" || ts == "NA") return("—")
       format(as.POSIXct(ts, tz = "UTC"), tz = "Europe/Berlin", "%d.%m.%Y %H:%M:%S")
     }
-    
+
     list(
       error        = NULL,
       run_id       = row[["run_id"]],
@@ -203,9 +288,15 @@ fetch_last_job_run_log <- function() {
 }
 
 # ── Load bike counter data (live Databricks with RDS fallback) ─
-# Now queries the denormalised Mannheim VIEW which joins fact + station dimension
+# CLEAR STARTUP MESSAGE: tells the operator exactly what stage we're in
+message("──────────────────────────────────────────────")
+message("⏳ App startet — verbinde mit Databricks und lade Zählstellendaten …")
+message("   (Bei kalter Warehouse kann der erste Lauf bis zu ",
+        POLL_DEADLINE_S, "s dauern. Bei Fehler greift der RDS-Fallback.)")
+message("──────────────────────────────────────────────")
+
 bike_counter <- tryCatch({
-  
+
   result <- run_sql("
     SELECT
       f.date,
@@ -213,7 +304,6 @@ bike_counter <- tryCatch({
       s.counter_name AS Standort,
       s.latitude,
       s.longitude
-    --FROM bike_counter_mobidatabw.eco_counter.eco_counter_csv_backfill_staging f   
     FROM bike_counter_mobidatabw.eco_counter.eco_counter_mannheim f
     JOIN bike_counter_mobidatabw.eco_counter.eco_counter_stations s
       ON f.counter_id = s.counter_id
@@ -221,13 +311,13 @@ bike_counter <- tryCatch({
   statement_id <- result$statement_id
   total_chunks <- result$manifest$total_chunk_count
   cols         <- sapply(result$manifest$schema$columns, `[[`, "name")
-  
+
   message("Total chunks: ", total_chunks)
   message("Total rows expected: ", result$manifest$total_row_count)
-  
+
   all_rows      <- list()
   all_rows[[1]] <- result$result$data_array
-  
+
   if (total_chunks > 1) {
     for (chunk_index in 1:(total_chunks - 1)) {
       message("Fetching chunk ", chunk_index, " ...")
@@ -240,35 +330,60 @@ bike_counter <- tryCatch({
       all_rows[[chunk_index + 1]] <- content(chunk_res, as = "parsed")$data_array
     }
   }
-  
+
   data <- do.call(c, all_rows)
   rows <- lapply(data, function(row) {
     vapply(row, function(v) if (is.null(v)) NA_character_ else as.character(v), character(1))
   })
-  
+
   df           <- as.data.frame(do.call(rbind, rows), stringsAsFactors = FALSE)
   colnames(df) <- cols
   df$date      <- as.Date(df$date)
   df$counter   <- as.numeric(df$counter)
   df$latitude  <- as.numeric(df$latitude)
   df$longitude <- as.numeric(df$longitude)
-  
-  message("✓ Live data loaded. Rows: ", nrow(df))
+
+  message("✓ Live-Daten geladen. Zeilen: ", nrow(df))
   df
-  
+
 }, error = function(e) {
-  message("FULL ERROR: ", conditionMessage(e))
+  message("✗ Live-Laden fehlgeschlagen: ", conditionMessage(e))
+  message("↪ Nutze RDS-Fallback (data/bike_counter_data.rds) …")
   rds <- readRDS("data/bike_counter_data.rds")
   rds$date <- as.Date(as.character(rds$date))
+  message("✓ Fallback-Daten geladen. Zeilen: ", nrow(rds))
   rds
 })
 
-message(">>> bike_counter rows: ", nrow(bike_counter))
-message(">>> bike_counter Standorte: ", paste(unique(bike_counter$Standort), collapse = ", "))
+# ══════════════════════════════════════════════════════════════
+# 1. ARCHITECTURE & PERFORMANCE
+# Pre-compute derived date columns ONCE (data is static after load),
+# instead of recomputing year()/month()/yday()/as.POSIXct() in every
+# render across every tab.
+# ══════════════════════════════════════════════════════════════
+bike_counter$date        <- as.Date(bike_counter$date)
+bike_counter$year        <- lubridate::year(bike_counter$date)
+bike_counter$month       <- lubridate::month(bike_counter$date)
+bike_counter$day_of_year <- lubridate::yday(bike_counter$date)
 
-# ── Site metadata now comes from the query itself ─────────────
-# No more separate CSV — lat/lon are in bike_counter from the JOIN
+# Pre-split by Standort so each tab reuses an O(1) lookup instead of
+# scanning the full frame with subset() on every render.
+bike_by_standort <- split(bike_counter, bike_counter$Standort)
+get_standort <- function(name) {
+  df <- bike_by_standort[[name]]
+  if (is.null(df) || nrow(df) == 0) bike_counter[0, ] else df
+}
+
+message(">>> bike_counter rows: ", nrow(bike_counter))
+message(">>> bike_counter Standorte: ",
+        paste(unique(bike_counter$Standort), collapse = ", "))
+message("✓ App bereit.")
+
+# ── Site metadata comes from the query itself (lat/lon via JOIN) ─
 sites_unique <- bike_counter %>%
   select(Standort, latitude, longitude) %>%
   distinct() %>%
   rename(name = Standort)
+
+# Sorted, validated default list reused by every selectInput
+STANDORT_CHOICES <- sort(unique(bike_counter$Standort))

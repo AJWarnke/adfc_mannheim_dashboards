@@ -12,3 +12,4 @@ accidents/shiny-server.conf
 bike_counter_mobidatabw/.dockerignore
 bike_counter_mobidatabw/Dockerfile
 bike_counter_mobidatabw/shiny-server.conf
+SETUP.md

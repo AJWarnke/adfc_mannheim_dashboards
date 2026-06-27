@@ -1,5 +1,15 @@
 ui <- dashboardPage(
-  dashboardHeader(title = "BikeCounter Mannheim"),
+  dashboardHeader(
+    title = "BikeCounter Mannheim",
+    tags$li(
+      class = "dropdown",
+      tags$a(
+        href = "https://mannheim.adfc.de", target = "_blank",
+        tags$img(src = "ADFC-Logo_2009_1.svg", height = "70px",
+                 style = "padding: 5px 16px 5px 0;", alt = "ADFC Logo")
+      )
+    )
+  ),
   dashboardSidebar(
     sidebarMenu(
       menuItem("Radz\u00e4hlstellen", tabName = "map", icon = icon("bicycle")),
@@ -14,8 +24,51 @@ ui <- dashboardPage(
     )
   ),
   dashboardBody(
+    use_theme(bike_theme), 
     tags$head(
-      tags$link(rel = "shortcut icon", href = "favicon.png")
+      tags$link(rel = "shortcut icon", href = "favicon.png"),
+      tags$style(HTML("
+          /* Obere Leiste grau statt blau */
+          .skin-blue .main-header .logo {
+            background-color: #ECEFF3 !important;
+            color: #004B7C !important;
+            font-weight: 600;
+            border-bottom: 1px solid #D6DBE1;
+          }
+          .skin-blue .main-header .logo:hover {
+            background-color: #E2E7ED !important;
+          }
+          .skin-blue .main-header .navbar {
+            background-color: #ECEFF3 !important;
+            border-bottom: 1px solid #D6DBE1;
+          }
+          /* Hamburger-Icon + Hover sichtbar auf Grau */
+          .skin-blue .main-header .navbar .sidebar-toggle {
+            color: #004B7C !important;
+          }
+          .skin-blue .main-header .navbar .sidebar-toggle:hover {
+            background-color: #E2E7ED !important;
+            color: #004B7C !important;
+          }
+          /* Falls rechts Navbar-Links/Icons sitzen (z. B. neben dem Logo) */
+          .skin-blue .main-header .navbar .nav > li > a {
+            color: #004B7C !important;
+          /* Aktiver/Hover-Menüpunkt: dezent + Orange-Akzent links */
+          .skin-blue .sidebar-menu > li > a {
+            border-left: 4px solid transparent;   /* verhindert Springen */
+          }
+          .skin-blue .sidebar-menu > li.active > a,
+          .skin-blue .sidebar-menu > li:hover > a {
+            background-color: #16344F !important;
+            border-left: 4px solid #EE7400 !important;
+            color: #FFFFFF !important;
+          }
+          
+          /* Header: eine saubere Leiste mit etwas Tiefe */
+          .skin-blue .main-header { box-shadow: 0 2px 4px rgba(0,0,0,0.06); }
+          .skin-blue .main-header .logo { border-right: 1px solid #D6DBE1; }
+          }
+    "))
     ),
     tabItems(
 

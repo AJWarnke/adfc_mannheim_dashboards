@@ -10,16 +10,53 @@ library(DT)
 library(plotly)
 library(httr)
 library(jsonlite)
+library(fresh) 
 
 # ══════════════════════════════════════════════════════════════
 # 5. MAINTAINABILITY — central constants (one place to edit)
 # ══════════════════════════════════════════════════════════════
 DEFAULT_STANDORT <- "Renzstraße"
 
-COL_PRIMARY   <- "steelblue"
-COL_HIGHLIGHT <- "#e07b00"
-COL_PLOT_BG   <- "#f5f5f5"
-COL_PAPER_BG  <- "white"
+# ── ADFC-Markenfarben (eine Quelle der Wahrheit) ───────────────
+ADFC_BLUE   <- "#004B7C"   # Dunkelblau – Primär
+ADFC_ORANGE <- "#EE7400"   # Orange – Akzent / Highlight
+ADFC_GREEN  <- "#7FC600"   # Grün – Sekundär
+CANVAS      <- "#F4F6F9"   # App-Hintergrund
+PAPER       <- "#FFFFFF"
+
+# Plot-Farben leiten sich aus der Marke ab
+COL_PRIMARY   <- ADFC_BLUE
+COL_HIGHLIGHT <- ADFC_ORANGE
+COL_ACCENT    <- ADFC_GREEN
+COL_PLOT_BG   <- "#F5F7FA"
+COL_PAPER_BG  <- PAPER
+
+# ── Dashboard-Theme (fresh) ────────────────────────────────────
+bike_theme <- create_theme(
+  adminlte_sidebar(
+    width            = "240px",
+    dark_bg          = "#10243A",
+    dark_hover_bg    = "#16344F",   # vorher ADFC_ORANGE → jetzt dezent
+    dark_color       = "#CBD7E2",
+    dark_hover_color = "#FFFFFF",
+    dark_submenu_bg  = "#0B1B2D",
+    dark_submenu_color = "#9FB2C4"
+  ),
+  adminlte_sidebar(
+    width              = "240px",
+    dark_bg            = "#10243A",   # tiefes Marineblau statt neutralem Slate
+    dark_hover_bg      = ADFC_ORANGE, # Hover + aktiver Menüpunkt in Markenfarbe
+    dark_color         = "#CBD7E2",
+    dark_hover_color   = "#FFFFFF",
+    dark_submenu_bg    = "#0B1B2D",
+    dark_submenu_color = "#9FB2C4"
+  ),
+  adminlte_global(
+    content_bg  = CANVAS,
+    box_bg      = PAPER,
+    info_box_bg = PAPER
+  )
+)
 
 MONTH_STARTS  <- c(1, 32, 60, 91, 121, 152, 182, 213, 244, 274, 305, 335)
 MONTH_ABBR_DE <- c("Jan", "Feb", "Mär", "Apr", "Mai", "Jun",
@@ -29,6 +66,14 @@ MONTH_FULL_DE <- c("Januar", "Februar", "März", "April", "Mai", "Juni",
 
 POLL_INTERVAL_S <- 5     # seconds between SQL status polls
 POLL_DEADLINE_S <- 300   # hard deadline before giving up
+
+# ── GCS snapshot location ─────────────────────────────────────
+# The app reads its data from this object, which the daily refresh
+# job (refresh_data.R) regenerates from Databricks each morning.
+# GCS_BUCKET is provided as an env var on Cloud Run; the default is
+# only a convenience for local runs.
+GCS_BUCKET <- Sys.getenv("GCS_BUCKET", "adfc-483617-bike-counter")
+GCS_OBJECT <- Sys.getenv("GCS_OBJECT", "bike_counter_data.rds")
 
 # ── Helper: choose first valid choice, falling back to default ──
 pick_default <- function(choices, preferred = DEFAULT_STANDORT) {
@@ -99,7 +144,12 @@ message("HOST: '", host, "'")
 message("WAREHOUSE_ID: '", warehouse_id, "'")
 
 if (any(nchar(c(host, token, http_path)) == 0)) {
-  stop("Missing Databricks credentials. Check .Renviron for DATABRICKS_HOST, DATABRICKS_TOKEN, DATABRICKS_HTTP_PATH.")
+  # NOTE: the app's main data now comes from the GCS snapshot, not from
+  # Databricks. Credentials are only needed for (a) the live "Job-Status"
+  # tab and (b) the emergency Databricks fallback in load_app_data(). So a
+  # missing credential should warn, not kill the whole app at startup.
+  warning("Databricks-Credentials unvollständig (DATABRICKS_HOST/TOKEN/HTTP_PATH). ",
+          "Haupt-Daten kommen aus GCS; nur Job-Status-Tab und Notfall-Fallback betroffen.")
 }
 
 # ── Databricks Job Status ─────────────────────────────────────
@@ -288,18 +338,130 @@ fetch_last_job_run_log <- function() {
 }
 
 # ══════════════════════════════════════════════════════════════
-# DEFERRED DATA LOAD
+# GOOGLE CLOUD STORAGE HELPERS
 # ──────────────────────────────────────────────────────────────
-# The heavy Databricks query is NO LONGER run at startup. Running it
-# here would block before the UI is ever sent to the browser, so a
-# "please wait" modal could never appear during the warehouse cold
-# start. Instead it is wrapped in load_app_data(), which the server
-# calls AFTER the session connects (and after the modal is visible).
-#
-# load_app_data() is cached: the first visitor pays the cost and
-# publishes the results to these globals; later visitors return
-# instantly. All existing outputs keep referencing the same global
-# names (bike_counter, bike_by_standort, sites_unique, …) unchanged.
+# Auth uses the Cloud Run metadata server (Application Default
+# Credentials) — no key file. The service account that runs the
+# container needs read (app) or write (refresh job) on the bucket.
+# Only httr is required, so no extra package dependency.
+# ══════════════════════════════════════════════════════════════
+gcs_token <- function() {
+  res <- httr::GET(
+    "http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/default/token",
+    httr::add_headers(`Metadata-Flavor` = "Google"),
+    httr::timeout(10)
+  )
+  if (httr::status_code(res) != 200) {
+    stop("GCS-Token vom Metadata-Server fehlgeschlagen (HTTP ",
+         httr::status_code(res), "). Läuft der Code auf Cloud Run?")
+  }
+  httr::content(res, as = "parsed")$access_token
+}
+
+# Download an object to a local path. Returns the path.
+gcs_download <- function(dest, bucket = GCS_BUCKET, object = GCS_OBJECT) {
+  url <- sprintf("https://storage.googleapis.com/storage/v1/b/%s/o/%s?alt=media",
+                 bucket, utils::URLencode(object, reserved = TRUE))
+  res <- httr::GET(
+    url,
+    httr::add_headers(Authorization = paste("Bearer", gcs_token())),
+    httr::write_disk(dest, overwrite = TRUE),
+    httr::timeout(120)
+  )
+  if (httr::status_code(res) != 200) {
+    stop("GCS-Download fehlgeschlagen (HTTP ", httr::status_code(res),
+         ") für gs://", bucket, "/", object)
+  }
+  dest
+}
+
+# Upload a local file to an object (simple media upload).
+gcs_upload <- function(file, bucket = GCS_BUCKET, object = GCS_OBJECT) {
+  url <- sprintf("https://storage.googleapis.com/upload/storage/v1/b/%s/o?uploadType=media&name=%s",
+                 bucket, utils::URLencode(object, reserved = TRUE))
+  res <- httr::POST(
+    url,
+    httr::add_headers(Authorization = paste("Bearer", gcs_token()),
+                      `Content-Type` = "application/octet-stream"),
+    body = httr::upload_file(file),
+    httr::timeout(300)
+  )
+  if (!httr::status_code(res) %in% c(200L, 201L)) {
+    stop("GCS-Upload fehlgeschlagen (HTTP ", httr::status_code(res), "): ",
+         rawToChar(httr::content(res, as = "raw")))
+  }
+  invisible(TRUE)
+}
+
+# ══════════════════════════════════════════════════════════════
+# DATABRICKS FETCH
+# ──────────────────────────────────────────────────────────────
+# The full station query + chunk assembly, factored out so BOTH the
+# daily refresh job (refresh_data.R) and the emergency fallback below
+# share one definition and can't drift. Returns a clean data.frame
+# with columns: date (Date), counter, Standort, latitude, longitude.
+# The app no longer calls this on the hot path — it reads the GCS
+# snapshot instead — so the warehouse cold start can't freeze startup.
+# ══════════════════════════════════════════════════════════════
+fetch_bike_from_databricks <- function() {
+  result <- run_sql("
+    SELECT
+      f.date,
+      f.total        AS counter,
+      s.counter_name AS Standort,
+      s.latitude,
+      s.longitude
+    FROM bike_counter_mobidatabw.eco_counter.eco_counter_mannheim f
+    JOIN bike_counter_mobidatabw.eco_counter.eco_counter_stations s
+      ON f.counter_id = s.counter_id
+  ")
+  statement_id <- result$statement_id
+  total_chunks <- result$manifest$total_chunk_count
+  cols         <- sapply(result$manifest$schema$columns, `[[`, "name")
+
+  message("Total chunks: ", total_chunks)
+  message("Total rows expected: ", result$manifest$total_row_count)
+
+  all_rows      <- list()
+  all_rows[[1]] <- result$result$data_array
+
+  if (total_chunks > 1) {
+    for (chunk_index in 1:(total_chunks - 1)) {
+      message("Fetching chunk ", chunk_index, " ...")
+      chunk_res <- GET(
+        url = paste0("https://", host, "/api/2.0/sql/statements/",
+                     statement_id, "/result/chunks/", chunk_index),
+        add_headers(Authorization = paste("Bearer", token)),
+        httr::timeout(30)
+      )
+      all_rows[[chunk_index + 1]] <- content(chunk_res, as = "parsed")$data_array
+    }
+  }
+
+  data <- do.call(c, all_rows)
+  rows <- lapply(data, function(row) {
+    vapply(row, function(v) if (is.null(v)) NA_character_ else as.character(v), character(1))
+  })
+
+  df           <- as.data.frame(do.call(rbind, rows), stringsAsFactors = FALSE)
+  colnames(df) <- cols
+  df$date      <- as.Date(df$date)
+  df$counter   <- as.numeric(df$counter)
+  df$latitude  <- as.numeric(df$latitude)
+  df$longitude <- as.numeric(df$longitude)
+
+  message("✓ Databricks-Daten geladen. Zeilen: ", nrow(df))
+  df
+}
+
+# ══════════════════════════════════════════════════════════════
+# DATA LOAD — reads the precomputed GCS snapshot (fast, no warehouse)
+# ──────────────────────────────────────────────────────────────
+# load_app_data() is cached: the first visitor downloads the snapshot
+# and publishes these globals; later visitors return instantly. All
+# existing outputs keep referencing the same global names unchanged.
+# If GCS is unavailable, it falls back to a live Databricks query so
+# the app still works (slow, but flagged via data_source).
 # ══════════════════════════════════════════════════════════════
 
 # Globals are declared up front so they always exist (NULL until loaded).
@@ -310,6 +472,11 @@ sites_unique     <- NULL
 STANDORT_CHOICES <- NULL
 ym_choices       <- NULL
 
+# Provenance / freshness — surfaced in the UI so stale data is visible.
+data_source    <- NA_character_     # "gcs" | "databricks_fallback"
+data_max_date  <- as.Date(NA)       # most recent date present in the data
+data_loaded_at <- as.POSIXct(NA)    # when this process loaded it
+
 # Pre-split lookup helper (unchanged behaviour; just reads the global).
 get_standort <- function(name) {
   df <- bike_by_standort[[name]]
@@ -317,80 +484,26 @@ get_standort <- function(name) {
 }
 
 load_app_data <- function() {
-  # Already loaded by an earlier session — nothing to do.
   if (isTRUE(app_data_loaded)) return(invisible(TRUE))
-
-  message("──────────────────────────────────────────────")
-  message("⏳ Verbinde mit Databricks und lade Zählstellendaten …")
-  message("   (Bei kalter Warehouse kann der erste Lauf bis zu ",
-          POLL_DEADLINE_S, "s dauern. Bei Fehler greift der RDS-Fallback.)")
-  message("──────────────────────────────────────────────")
+  on_cloud_run <- nzchar(Sys.getenv("K_SERVICE"))   # Cloud Run sets this; empty locally
 
   df_loaded <- tryCatch({
-
-    result <- run_sql("
-      SELECT
-        f.date,
-        f.total        AS counter,
-        s.counter_name AS Standort,
-        s.latitude,
-        s.longitude
-      FROM bike_counter_mobidatabw.eco_counter.eco_counter_mannheim f
-      JOIN bike_counter_mobidatabw.eco_counter.eco_counter_stations s
-        ON f.counter_id = s.counter_id
-    ")
-    statement_id <- result$statement_id
-    total_chunks <- result$manifest$total_chunk_count
-    cols         <- sapply(result$manifest$schema$columns, `[[`, "name")
-
-    message("Total chunks: ", total_chunks)
-    message("Total rows expected: ", result$manifest$total_row_count)
-
-    all_rows      <- list()
-    all_rows[[1]] <- result$result$data_array
-
-    if (total_chunks > 1) {
-      for (chunk_index in 1:(total_chunks - 1)) {
-        message("Fetching chunk ", chunk_index, " ...")
-        chunk_res <- GET(
-          url = paste0("https://", host, "/api/2.0/sql/statements/",
-                       statement_id, "/result/chunks/", chunk_index),
-          add_headers(Authorization = paste("Bearer", token)),
-          httr::timeout(30)
-        )
-        all_rows[[chunk_index + 1]] <- content(chunk_res, as = "parsed")$data_array
-      }
-    }
-
-    data <- do.call(c, all_rows)
-    rows <- lapply(data, function(row) {
-      vapply(row, function(v) if (is.null(v)) NA_character_ else as.character(v), character(1))
-    })
-
-    df           <- as.data.frame(do.call(rbind, rows), stringsAsFactors = FALSE)
-    colnames(df) <- cols
-    df$date      <- as.Date(df$date)
-    df$counter   <- as.numeric(df$counter)
-    df$latitude  <- as.numeric(df$latitude)
-    df$longitude <- as.numeric(df$longitude)
-
-    message("✓ Live-Daten geladen. Zeilen: ", nrow(df))
-    df
-
+    if (!on_cloud_run) stop("lokal — GCS übersprungen")   # short-circuit, no 10s wait
+    tmp <- tempfile(fileext = ".rds"); gcs_download(tmp)
+    df <- readRDS(tmp); df$date <- as.Date(as.character(df$date))
+    data_source <<- "gcs"; df
   }, error = function(e) {
-    message("✗ Live-Laden fehlgeschlagen: ", conditionMessage(e))
-    message("↪ Nutze RDS-Fallback (data/bike_counter_data.rds) …")
-    rds <- readRDS("data/bike_counter_data.rds")
-    rds$date <- as.Date(as.character(rds$date))
-    message("✓ Fallback-Daten geladen. Zeilen: ", nrow(rds))
-    rds
+    local_rds <- "data/bike_counter_data.rds"
+    if (!on_cloud_run && file.exists(local_rds)) {        # fast local dev, no Databricks
+      df <- readRDS(local_rds); df$date <- as.Date(as.character(df$date))
+      data_source <<- "local_rds"; df
+    } else {
+      df <- fetch_bike_from_databricks()
+      data_source <<- "databricks_fallback"; df
+    }
   })
 
-  # ══════════════════════════════════════════════════════════════
-  # 1. ARCHITECTURE & PERFORMANCE
-  # Pre-compute derived date columns ONCE (data is static after load),
-  # instead of recomputing year()/month()/yday() in every render.
-  # ══════════════════════════════════════════════════════════════
+  # ── Pre-compute derived date columns ONCE (data is static after load) ──
   df_loaded$date        <- as.Date(df_loaded$date)
   df_loaded$year        <- lubridate::year(df_loaded$date)
   df_loaded$month       <- lubridate::month(df_loaded$date)
@@ -398,30 +511,24 @@ load_app_data <- function() {
 
   # ── Publish to globals (so every existing output works unchanged) ──
   bike_counter     <<- df_loaded
-  # Pre-split by Standort so each tab reuses an O(1) lookup instead of
-  # scanning the full frame with subset() on every render.
   bike_by_standort <<- split(df_loaded, df_loaded$Standort)
-
-  # ── Site metadata comes from the query itself (lat/lon via JOIN) ─
-  sites_unique <<- df_loaded %>%
+  sites_unique     <<- df_loaded %>%
     select(Standort, latitude, longitude) %>%
     distinct() %>%
     rename(name = Standort)
-
-  # Sorted, validated default list reused by every selectInput
   STANDORT_CHOICES <<- sort(unique(df_loaded$Standort))
-
-  # Year-month choices (own default — NOT a Standort name)
-  ym_choices <<- sort(
+  ym_choices       <<- sort(
     unique(sprintf("%04d-%02d", df_loaded$year, df_loaded$month)),
     decreasing = TRUE
   )
 
+  data_max_date  <<- suppressWarnings(max(df_loaded$date, na.rm = TRUE))
+  data_loaded_at <<- Sys.time()
   app_data_loaded <<- TRUE
 
-  message(">>> bike_counter rows: ", nrow(bike_counter))
-  message(">>> bike_counter Standorte: ",
-          paste(unique(bike_counter$Standort), collapse = ", "))
+  message(">>> Zeilen: ", nrow(bike_counter),
+          " | Quelle: ", data_source,
+          " | Datenstand: ", format(data_max_date, "%d.%m.%Y"))
   message("✓ App bereit.")
 
   invisible(TRUE)

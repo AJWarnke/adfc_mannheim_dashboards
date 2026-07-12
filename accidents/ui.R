@@ -33,7 +33,7 @@ ui <- fluidPage(
     )
   ),
   
-  titlePanel("Unfälle mit Radfahrern und Fußgängern in Mannheim"),
+  titlePanel("Unfälle mit Radfahrern und Fußgängern in Mannheim (jetzt inkl. 2025)"),
   
   sidebarLayout(
     sidebarPanel(

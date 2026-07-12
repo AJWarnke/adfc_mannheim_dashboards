@@ -13,4 +13,4 @@ source("ui.R", local = TRUE)
 source("server.R", local = TRUE)
 
 # Run the application
-shinyApp(ui = ui, server = server)
+shinyApp(ui = ui, server = server, options = list(host = "0.0.0.0", port = as.numeric(Sys.getenv("PORT", 8080))))

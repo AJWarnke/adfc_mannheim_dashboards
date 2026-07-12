@@ -178,7 +178,7 @@ server <- function(input, output, session) {
   
   deadlyAccidents <- reactive({
     data <- accidentData
-    data <- dplyr::filter(data, trimws(UKATEGORIE) == "Unfall mit Getöteten" & IstRad == 1)
+    data <- dplyr::filter(data, trimws(UKATEGORIE) == "Unfall mit Getöteten" & IstRadBetroffen == 1)
     data <- dplyr::mutate(
       data,
       Datum = paste0(sprintf("%02d", UMONAT), ".", UJAHR),

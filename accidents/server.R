@@ -171,6 +171,124 @@ server <- function(input, output, session) {
   output$heatmapSourceInfo <- renderText({
     "Quelle: ADFC Mannheim / Unfallstatistik Statistisches Bundesamt"
   })
+
+  # ---- Unfallschwerpunktanalyse (DBSCAN) ----
+# Cluster benachbarter Unfälle: jeder Schwerpunkt erscheint genau EINMAL,
+# egal wie viele Unfälle er enthält.
+
+hotspotData <- reactive({
+  data <- getMapData()
+  req(nrow(data) > 0)
+
+  # Lokale Umrechnung Grad -> Meter (für Mannheim völlig ausreichend genau)
+  lat0 <- mean(data$Latitude, na.rm = TRUE)
+  x <- data$Longitude * cos(lat0 * pi / 180) * 111320
+  y <- data$Latitude * 111320
+
+  cl <- dbscan::dbscan(cbind(x, y),
+                       eps = input$hotspot_radius,
+                       minPts = input$hotspot_minpts)
+  data$cluster <- cl$cluster   # 0 = kein Schwerpunkt
+  data
+})
+
+hotspotSummary <- reactive({
+  data <- dplyr::filter(hotspotData(), cluster > 0)
+  if (nrow(data) == 0) return(data.frame())
+
+  hs <- dplyr::group_by(data, cluster)
+  hs <- dplyr::summarise(
+    hs,
+    Unfaelle       = dplyr::n(),
+    Latitude       = mean(Latitude),
+    Longitude      = mean(Longitude),
+    Rad            = sum(IstRad == 1, na.rm = TRUE),
+    Fuss           = sum(IstFuss == 1, na.rm = TRUE),
+    Haeufigster_Typ = names(sort(table(typ), decreasing = TRUE))[1],
+    Jahre          = paste(sort(unique(UJAHR)), collapse = ", "),
+    .groups = "drop"
+  )
+  hs <- dplyr::arrange(hs, dplyr::desc(Unfaelle))
+  hs$Rang <- seq_len(nrow(hs))
+  hs
+})
+
+output$hotspotMap <- leaflet::renderLeaflet({
+  data <- hotspotData()
+  hs   <- hotspotSummary()
+
+  m <- leaflet::leaflet()
+  m <- leaflet::addTiles(m)
+
+  if (nrow(hs) == 0) {
+    m <- leaflet::setView(m, lng = 8.4660, lat = 49.4875, zoom = 12)
+    return(m)
+  }
+
+  # Einzelunfälle dezent grau im Hintergrund
+  noise <- dplyr::filter(data, cluster == 0)
+  if (nrow(noise) > 0) {
+    m <- leaflet::addCircleMarkers(
+      m, data = noise, lng = ~Longitude, lat = ~Latitude,
+      radius = 2, color = "#999999", stroke = FALSE, fillOpacity = 0.4
+    )
+  }
+
+  pal <- leaflet::colorNumeric("YlOrRd", domain = hs$Unfaelle)
+
+  m <- leaflet::addCircleMarkers(
+    m, data = hs, lng = ~Longitude, lat = ~Latitude,
+    radius = ~pmin(3 + Unfaelle * 0.6, 12),
+    color = "#333333", weight = 1,
+    fillColor = ~pal(Unfaelle), fillOpacity = 0.85,
+    label = ~lapply(seq_len(nrow(hs)), function(i) {
+      HTML(sprintf(
+        "<b>Schwerpunkt %d</b><br>%d Unfälle<br>davon Rad: %d, Fuß: %d<br>Häufigster Typ: %s<br>Jahre: %s",
+        hs$Rang[i], hs$Unfaelle[i], hs$Rad[i], hs$Fuss[i],
+        hs$Haeufigster_Typ[i], hs$Jahre[i]
+      ))
+    })
+  )
+
+  m <- leaflet::addLegend(
+    m, "bottomright", pal = pal, values = hs$Unfaelle,
+    title = "Unfälle pro<br>Schwerpunkt", opacity = 1
+  )
+  m
+})
+
+  output$hotspotTable <- DT::renderDT({
+    hs <- hotspotSummary()
+    if (nrow(hs) == 0) {
+      return(DT::datatable(
+        data.frame(Hinweis = "Keine Schwerpunkte mit den aktuellen Einstellungen gefunden."),
+        options = list(dom = "t"), rownames = FALSE
+      ))
+    }
+    hs$Ort <- sprintf(
+      '<a href="https://www.openstreetmap.org/?mlat=%f&mlon=%f#map=18/%f/%f" target="_blank">Karte</a>',
+      hs$Latitude, hs$Longitude, hs$Latitude, hs$Longitude
+    )
+    DT::datatable(
+      dplyr::select(hs, Rang, Unfaelle, Rad, Fuss, Haeufigster_Typ, Jahre, Ort),
+      escape = FALSE, rownames = FALSE,
+      options = list(pageLength = 10),
+      colnames = c("Rang", "Unfälle", "Rad", "Fuß", "Häufigster Typ", "Jahre", "Ort")
+    )
+  })
+
+  output$hotspotSourceInfo <- renderText({
+    "Schwerpunkte: Benachbarte Unfälle innerhalb des gewählten Radius werden zu genau einem Schwerpunkt zusammengefasst. Quelle: ADFC Mannheim / Unfallstatistik Statistisches Bundesamt"
+  })
+
+  output$downloadHotspots <- downloadHandler(
+    filename = function() {
+      paste0("Unfallschwerpunkte_Mannheim_", Sys.Date(), ".csv")
+    },
+    content = function(file) {
+      write.csv(hotspotSummary(), file, row.names = FALSE)
+    }
+  )
   
   output$deadlyAccidentsTable <- DT::renderDT({
     deadlyAccidents()

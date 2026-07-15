@@ -65,6 +65,34 @@ ui <- fluidPage(
           textOutput("gridMapSourceInfo")
         ),
         tabPanel(
+          "Unfallschwerpunktanalyse",
+          fluidPage(
+            br(),
+            fluidRow(
+              column(
+                width = 4,
+                sliderInput("hotspot_radius", "Radius (Meter)",
+                            min = 10, max = 100, value = 25, step = 5)
+              ),
+              column(
+                width = 4,
+                sliderInput("hotspot_minpts", "Mindestanzahl Unfälle pro Schwerpunkt",
+                            min = 2, max = 20, value = 3, step = 1)
+              ),
+              column(
+                width = 4,
+                br(),
+                downloadButton("downloadHotspots", "Schwerpunkte als CSV")
+              )
+            ),
+            leaflet::leafletOutput("hotspotMap", height = "55vh"),
+            textOutput("hotspotSourceInfo"),
+            hr(),
+            h4("Unfallschwerpunkte (sortiert nach Anzahl)"),
+            DT::DTOutput("hotspotTable")
+          )
+        ),
+        tabPanel(
           "Kontakt",
           fluidPage(
             titlePanel("Kontakt und Informationen"),

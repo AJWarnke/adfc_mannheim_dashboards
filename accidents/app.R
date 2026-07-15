@@ -5,6 +5,7 @@ library(leaflet.extras)
 library(tidyverse)
 library(DT)
 library(bslib)
+library(dbscan)
 
 
 # Source UI and Server

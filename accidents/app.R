@@ -6,6 +6,7 @@ library(tidyverse)
 library(DT)
 library(bslib)
 library(dbscan)
+library(sf)
 
 
 # Source UI and Server

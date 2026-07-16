@@ -2,6 +2,23 @@ server <- function(input, output, session) {
   
   # Load the data
   accidentData <- read.csv("Unfaelle_mit_Fuss.csv")
+
+  accidentData$unfall_id <- seq_len(nrow(accidentData))
+
+  strassenZuordnung <- read.csv("strassen_zuordnung.csv")
+  strassenInfo      <- read.csv("strassen_info.csv")
+
+  typ_labels <- c(
+    primary   = "Hauptverkehrsstraße (B-Straße)",
+    secondary = "Hauptverkehrsstraße",
+    tertiary  = "Sammelstraße"
+  )
+  strassenInfo$strassentyp <- dplyr::coalesce(
+    typ_labels[strassenInfo$strassentyp],
+    strassenInfo$strassentyp
+  )
+
+  strassenGeom      <- sf::st_read("strassen_geom.geojson", quiet = TRUE)
   
   # Codierung für UTYP1 gemäß PDF - nur Text ohne Nummern
   utyp1_labels <- c(
@@ -362,6 +379,58 @@ output$hotspotMap <- leaflet::renderLeaflet({
   output$gridMapSourceInfo <- renderText({
     "Quelle: ADFC Mannheim / Unfallstatistik Statistisches Bundesamt"
   })
+
+    MIN_UNFAELLE_TOPSTRASSEN <- 10  # fest statt Slider
+
+    topStrassen <- reactive({
+      getMapData() |>
+        dplyr::inner_join(strassenZuordnung, by = "unfall_id") |>
+        dplyr::count(strasse, name = "anzahl") |>
+        dplyr::inner_join(strassenInfo, by = "strasse") |>
+        dplyr::mutate(pro_km = round(anzahl / laenge_km, 1)) |>
+        dplyr::filter(anzahl >= MIN_UNFAELLE_TOPSTRASSEN) |>
+        dplyr::arrange(dplyr::desc(pro_km)) |>
+        head(input$topn_strassen)
+    })
+
+output$topStrassenMap <- leaflet::renderLeaflet({
+    df <- topStrassen()
+    req(nrow(df) > 0)
+    geom <- dplyr::inner_join(strassenGeom, df, by = c("name" = "strasse"))
+    pal <- leaflet::colorNumeric("YlOrRd", domain = geom$pro_km)
+
+    leaflet::leaflet(geom) |>
+      leaflet::addProviderTiles(leaflet::providers$CartoDB.Positron) |>
+      leaflet::addPolylines(
+        color = ~pal(pro_km), weight = 6, opacity = 0.9,
+        label = ~paste0(name, ": ", anzahl, " Unfälle (", pro_km, " pro km)"),
+        popup = ~paste0("<b>", name, "</b><br>",
+                        strassentyp, "<br>",
+                        "Stadtbezirke: ", stadtbezirke, "<br>",
+                        anzahl, " Unfälle auf ", laenge_km, " km<br>",
+                        "<b>", pro_km, " Unfälle pro km</b>")
+      ) |>
+      leaflet::addLegend(pal = pal, values = ~pro_km,
+                        title = "Unfälle pro km", position = "bottomright")
+  })
+
+  output$topStrassenTable <- DT::renderDT({
+    topStrassen() |>
+      dplyr::select(Straße = strasse, Typ = strassentyp,
+                    Stadtbezirke = stadtbezirke, Unfälle = anzahl,
+                    `Länge (km)` = laenge_km, `Unfälle pro km` = pro_km)
+  }, options = list(pageLength = 25), rownames = FALSE)
+
+  output$topStrassenInfo <- renderText({
+    paste0("Zuordnung: Unfälle im Umkreis von 10 m um Hauptverkehrs- und Sammelstraßen ",
+          "(OpenStreetMap). Unfälle abseits dieser Straßen sind nicht enthalten. ",
+          "Filter in der Seitenleiste wirken auch auf diese Auswertung.")
+  })
+
+  output$downloadTopStrassen <- downloadHandler(
+    filename = function() "top_unfallstrassen.csv",
+    content = function(file) write.csv(topStrassen(), file, row.names = FALSE)
+  )
   
   output$downloadDeadlyAccidents <- downloadHandler(
     filename = function() {

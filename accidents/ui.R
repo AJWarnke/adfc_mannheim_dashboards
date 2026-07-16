@@ -93,6 +93,29 @@ ui <- fluidPage(
           )
         ),
         tabPanel(
+          "Top-Unfallstraßen",
+          fluidPage(
+            br(),
+            fluidRow(
+              column(
+                width = 6,
+                sliderInput("topn_strassen", "Top N Straßen (nach Unfällen pro km)",
+                            min = 5, max = 50, value = 25, step = 5)
+              ),
+              column(
+                width = 6,
+                br(),
+                downloadButton("downloadTopStrassen", "Als CSV")
+              )
+            ),
+            leaflet::leafletOutput("topStrassenMap", height = "55vh"),
+            textOutput("topStrassenInfo"),
+            hr(),
+            h4("Straßen nach Unfällen pro Kilometer"),
+            DT::DTOutput("topStrassenTable")
+          )
+        ),
+        tabPanel(
           "Kontakt",
           fluidPage(
             titlePanel("Kontakt und Informationen"),

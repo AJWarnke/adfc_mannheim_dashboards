@@ -100,7 +100,12 @@ ui <- fluidPage(
               column(
                 width = 6,
                 sliderInput("topn_strassen", "Top N Straßen (nach Unfällen pro km)",
-                            min = 5, max = 50, value = 25, step = 5)
+                            min = 5, max = 50, value = 15, step = 5)
+              ),
+              column(
+                width = 3,
+                br(),
+                checkboxInput("nur_hauptnetz", "Nur Hauptverkehrs-/Sammelstraßen", value = TRUE)
               ),
               column(
                 width = 6,

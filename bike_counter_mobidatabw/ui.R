@@ -1,12 +1,24 @@
 ui <- dashboardPage(
   dashboardHeader(
     title = "BikeCounter Mannheim",
+    # Reihenfolge im Code = Reihenfolge von links nach rechts in der Navbar
+    tags$li(
+      class = "dropdown",
+      tags$a(
+        href = "https://mobidata-bw.de/dataset/eco-counter-fahrradzahler",
+        target = "_blank", rel = "noopener noreferrer",
+        title = "Datenquelle: MobiData BW",
+        tags$img(src = "Logo_MobiData-BW.png", class = "navbar-logo navbar-logo-mobidata",
+                 height = "70px", style = "padding: 5px 18px 5px 0;",
+                 alt = "MobiData BW Logo")
+      )
+    ),
     tags$li(
       class = "dropdown",
       tags$a(
         href = "https://mannheim.adfc.de", target = "_blank",
-        tags$img(src = "ADFC-Logo_2009_1.svg", height = "70px",
-                 style = "padding: 5px 16px 5px 0;", alt = "ADFC Logo")
+        tags$img(src = "ADFC-Logo_2009_1.svg", class = "navbar-logo navbar-logo-adfc",
+                 height = "70px", style = "padding: 5px 16px 5px 0;", alt = "ADFC Logo")
       )
     )
   ),
@@ -53,6 +65,11 @@ ui <- dashboardPage(
           /* Falls rechts Navbar-Links/Icons sitzen (z. B. neben dem Logo) */
           .skin-blue .main-header .navbar .nav > li > a {
             color: #004B7C !important;
+          }
+          /* Logos in der Navbar: kein Hover-Hintergrund */
+          .skin-blue .main-header .navbar .nav > li > a:hover {
+            background-color: transparent !important;
+          }
           /* Aktiver/Hover-Menüpunkt: dezent + Orange-Akzent links */
           .skin-blue .sidebar-menu > li > a {
             border-left: 4px solid transparent;   /* verhindert Springen */
@@ -67,6 +84,21 @@ ui <- dashboardPage(
           /* Header: eine saubere Leiste mit etwas Tiefe */
           .skin-blue .main-header { box-shadow: 0 2px 4px rgba(0,0,0,0.06); }
           .skin-blue .main-header .logo { border-right: 1px solid #D6DBE1; }
+
+          /* Logos auf schmalen Bildschirmen verkleinern, damit die
+             Kopfzeile nicht umbricht */
+          @media (max-width: 991px) {
+            .navbar-logo-mobidata {
+              height: 44px !important;
+              padding: 18px 10px 18px 0 !important;
+            }
+            .navbar-logo-adfc {
+              height: 44px !important;
+              padding: 18px 10px 18px 0 !important;
+            }
+          }
+          @media (max-width: 600px) {
+            .navbar-logo-mobidata { display: none; }
           }
     "))
     ),

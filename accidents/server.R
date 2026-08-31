@@ -20,6 +20,15 @@ server <- function(input, output, session) {
 
   strassenGeom      <- sf::st_read("strassen_geom.geojson", quiet = TRUE)
   
+  # API Key Carto
+  carto_key <- Sys.getenv("CARTO_KEY")
+
+  carto_url <- sprintf(
+    "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png?key=%s",
+    carto_key
+  )
+
+
   # Codierung für UTYP1 gemäß PDF - nur Text ohne Nummern
   utyp1_labels <- c(
     "Fahrunfall (F)",
@@ -387,6 +396,7 @@ output$hotspotMap <- leaflet::renderLeaflet({
         dplyr::inner_join(strassenZuordnung, by = "unfall_id") |>
         dplyr::count(strasse, name = "anzahl") |>
         dplyr::inner_join(strassenInfo, by = "strasse") |>
+        dplyr::filter(!input$nur_hauptnetz | anteil_hauptnetz >= 0.5) |>
         dplyr::mutate(pro_km = round(anzahl / laenge_km, 1)) |>
         dplyr::filter(anzahl >= MIN_UNFAELLE_TOPSTRASSEN) |>
         dplyr::arrange(dplyr::desc(pro_km)) |>
@@ -398,9 +408,12 @@ output$topStrassenMap <- leaflet::renderLeaflet({
     req(nrow(df) > 0)
     geom <- dplyr::inner_join(strassenGeom, df, by = c("name" = "strasse"))
     pal <- leaflet::colorNumeric("YlOrRd", domain = geom$pro_km)
-
     leaflet::leaflet(geom) |>
-      leaflet::addProviderTiles(leaflet::providers$CartoDB.Positron) |>
+      leaflet::addTiles(
+        urlTemplate = carto_url,
+        attribution = "&copy; OpenStreetMap contributors &copy; CARTO",
+        options = leaflet::tileOptions(subdomains = "abcd", maxZoom = 20)
+      ) |>
       leaflet::addPolylines(
         color = ~pal(pro_km), weight = 6, opacity = 0.9,
         label = ~paste0(name, ": ", anzahl, " Unfälle (", pro_km, " pro km)"),

@@ -1,135 +1,215 @@
 unfall_id,strasse
 1,Diffenéstraße
-3,Steubenstraße
+2,
+3,Feldbergstraße
+5,Kirchbergstraße
 6,Viehhofstraße
-7,Helmertstraße
+7,Innstraße
+8,Danziger Baumgang
 9,Neckarauer Straße
+10,Rheinvillenstraße
 11,Ludwig-Jolly-Straße
-12,Relaisstraße
+12,Waldseestraße
+13,Rottfeldstraße
+14,Geranienweg
 15,Seckenheimer Hauptstraße
 16,Carl-Benz-Straße
+17,Weiherstraße
 18,Birkenauer Straße
-19,Karlsplatz
-20,Relaisstraße
-21,Steubenstraße
+19,Rheinauer Ring
+20,Karlsruher Straße
+21,Feldbergstraße
+22,Birkenauer Straße
 23,Herzogenriedstraße
 24,Speckweg
 25,Käfertaler Straße
 26,Viernheimer Weg
+27,Akademiestraße
 28,Dudenstraße
 29,Augustaanlage
 30,Weinheimer Straße
 31,Theodor-Heuss-Anlage
-34,Friedrichsring
+32,Wingertstraße
+33,Fressgasse
+34,
 35,Sonderburger Straße
 36,Schönauer Straße
 37,Relaisstraße
-38,Diffenéstraße
-42,Auf dem Sand
+38,Gerwigstraße
+40,Gotenstraße
+41,Dürkheimer Straße
+42,Schwalbenstraße
+43,Weizenstraße
+44,Rottfeldstraße
+46,
 47,Augustaanlage
 48,Schwetzinger Straße
 49,Waldhofstraße
 50,Sandhofer Straße
 51,Rhenaniastraße
+52,Mittelstraße
 53,Morchfeldstraße
+54,Am Weingarten
 55,
-56,Steubenstraße
+56,Feldbergstraße
 57,Römerstraße
 58,Alte Frankfurter Straße
 59,Röntgenstraße
 60,Bismarckstraße
 61,Neckarauer Straße
+62,Schildkrötstraße
 63,Schafweide
 64,Kloppenheimer Straße
 65,Frankenthaler Straße
+66,
 67,Steubenstraße
-68,Floßwörthstraße
-69,Morchfeldstraße
+68,Franz-Grashof-Straße
+69,Schildkrötstraße
+70,
+71,Tannhäuserring
 72,Neckarauer Straße
 74,Rheingoldstraße
 75,Kurpfalzkreisel
 76,Steubenstraße
 77,Waldhofstraße
+78,Carl-Reuther-Straße
+79,Garnstraße
 80,Hafenbahnstraße
 81,Auf dem Sand
-82,Sonderburger Straße
+82,Boehringerstraße
 83,Luisenring
+84,
 85,
+86,Moselstraße
 88,Friedrichsring
-90,Landteilstraße
+89,Kunststraße
+90,Julius-Hatry-Straße
 93,Wingertsbuckel
-94,Speckweg
+94,Tannenstraße
+95,Lange Rötterstraße
+96,Kolpingstraße
+98,Neckarstraße
+99,Speckweg
 100,Renzstraße
+101,
 102,Neckarauer Straße
 103,Bismarckstraße
+104,Mittelstraße
 105,Neckarauer Straße
-106,Schwetzinger Landstraße
+106,Neumayerstraße
 107,Friedrichsring
+108,Langstraße
 109,Rollbühlstraße
 110,Friedrich-Ebert-Straße
 111,Friedrich-Ebert-Straße
 112,Rheingoldstraße
-114,Steubenstraße
+114,Hans-Sachs-Ring
+115,Schwalbenstraße
+116,
+117,Am Weingarten
+118,
 119,Landteilstraße
 120,Neckarauer Straße
 121,Neckarauer Straße
-126,Sonderburger Straße
+122,Elfenstraße
+125,Staudenweg
+126,Haderslebener Straße
 127,Morchfeldstraße
 128,Luisenring
+129,
 130,Edinger Riedweg
+131,
 136,Neckarauer Straße
+137,Bürgermeister-Fuchs-Straße
 138,Augustaanlage
 139,Industriestraße
+140,Rohrlachstraße
 141,Boveristraße
 142,Überlinger Straße
+142,Überlinger Straße
+143,Zum Herrenried
 145,Seckenheimer Landstraße
-146,Otto-Beck-Straße
-147,Seckenheimer Hauptstraße
-148,Steubenstraße
+146,Nietzschestraße
+147,Rastatter Straße
+148,Feldbergstraße
 150,Frankenthaler Straße
+151,
 153,Schanzenstraße
 156,Röntgenstraße
-157,Steubenstraße
+157,Feldbergstraße
 158,Röntgenstraße
 159,Waldstraße
 161,
 162,Neckarauer Straße
 163,Friedrichsring
 164,Kaiserring
-165,Offenburger Straße
+165,Zähringer Straße
 166,Überlinger Straße
+166,Überlinger Straße
+167,Zähringer Straße
+168,Stengelstraße
 169,Steubenstraße
+170,Ausgasse
 171,Friedrich-Ebert-Straße
+172,Wiesbadener Straße
+173,
 174,Seckenheimer Hauptstraße
+175,
+176,Graudenzer Linie
 177,Sandhofer Straße
 178,Theodor-Heuss-Anlage
 179,Karl-Feuerstein-Straße
+180,Riedfeldstraße
+181,
+182,Berliner Straße
+183,Assenheimer Straße
+184,Fressgasse
 185,Neckarauer Straße
+186,Wiesbadener Straße
 188,Seckenheimer Straße
 190,Theodor-Heuss-Anlage
 191,Steubenstraße
-194,Schwetzinger Straße
+192,
+193,
+194,Tattersallstraße
+195,
+196,Jakob-Trumpfheller-Straße
 198,Friedrich-Ebert-Straße
-200,Steubenstraße
+199,Weinbergstraße
+200,Feldbergstraße
 201,Waldhofstraße
-202,Friedrichsring
+202,
 203,Untermühlaustraße
 204,Mittelstraße
-205,Neustadter Straße
+205,Wachenheimer Straße
 206,Cochemer Straße
+208,Speckweg
 209,Braunschweiger Allee
 210,Rhenaniastraße
 211,Rhenaniastraße
+212,Speckweg
 213,Friedrich-Ebert-Straße
+214,Rheinpromenade
+215,Plankstadter Straße
 216,
+218,Mittelstraße
+219,Böckstraße
 220,Waldstraße
+221,
 222,Kaiserring
 223,Luzenbergstraße
+225,Memeler Straße
+226,
+227,Belfortstraße
 229,Kaiserring
+230,Schulstraße
+232,
 233,Kloppenheimer Straße
-234,Lilienthalstraße
+234,Parsevalstraße
+235,Tullastraße
 236,Hochuferstraße
 237,Lilienthalstraße
+238,
 239,Luisenring
 240,Waldhofstraße
 241,Landteilstraße
@@ -137,464 +217,790 @@ unfall_id,strasse
 243,Möhlstraße
 245,Friedrich-Ebert-Straße
 247,Luzenbergstraße
+248,Friedrichstraße
 249,Renzstraße
 250,Eisenstraße
 251,Boveristraße
 253,Bismarckstraße
 254,Koblenzer Straße
-255,Friedrichsplatz
+255,Roonstraße
+256,Donarstraße
 257,Friedrichsring
+258,Zeppelinstraße
+259,Max-Joseph-Straße
 260,Frankenthaler Straße
 261,Neckarauer Straße
 262,Sandhofer Straße
+263,Anemonenweg
 264,Möhlstraße
 265,Friedrichsring
 266,Frankenthaler Straße
+267,Johannes-Hoffart-Straße
 268,Käfertaler Straße
 269,Waldhofstraße
-270,Luisenring
+270,
 271,Käfertaler Straße
-272,Schwetzinger Straße
+272,Keplerstraße
 273,Friedrich-Ebert-Straße
+274,
 275,Dudenstraße
-276,Steubenstraße
+276,Feldbergstraße
 277,Frankenthaler Straße
 278,Friedrichsring
 279,Rhenaniastraße
 280,Neckarauer Straße
 281,Rhenaniastraße
+282,Im Büchsenschall
+283,Burgstraße
 284,Rhenaniastraße
+285,Gontardstraße
+287,Neckarvorlandstraße
 288,Untermühlaustraße
 289,Überlinger Straße
 290,Waldhofstraße
-291,Diffenéstraße
-291,Diffenéstraße
+291,Gerwigstraße
 292,Sandhofer Straße
-293,Friedrich-Ebert-Straße
-294,Friedrich-Ebert-Straße
+293,Lange Rötterstraße
+294,
 295,Kaiserring
-296,Karlsplatz
+296,Rheinauer Ring
 297,Rhenaniastraße
+298,Gottlieb-Daimler-Straße
+299,Richard-Wagner-Straße
+300,Richard-Wagner-Straße
 301,Neckarauer Straße
 302,Seckenheimer Straße
 303,Waldstraße
 305,Ulmenweg
-308,Friedrich-Ebert-Straße
+306,Talstraße
+307,Am Rebstock
+308,Lange Rötterstraße
+309,Berliner Straße
 310,Waldstraße
 311,Seckenheimer Hauptstraße
-312,Luzenbergstraße
+312,Spiegelstraße
 313,Friedrichstraße
+314,Tullastraße
 315,Käfertaler Straße
 316,Neckarauer Straße
+318,Kunststraße
 319,Renzstraße
 321,Friedrich-Ebert-Straße
+322,Memeler Straße
 323,Waldstraße
 324,Bismarckstraße
+325,
+326,Eichelsheimer Straße
 327,Friedrich-Ebert-Straße
+328,Weidenstraße
+329,
 330,Waldhofstraße
-331,Friedrich-Ebert-Straße
+331,Lange Rötterstraße
+332,
+333,Heinrich-Wittkamp-Straße
+336,Eichendorffstraße
 337,Diffenéstraße
-338,Hauptstraße
+338,Am Bogen
+339,Gontardstraße
 340,Heppenheimer Straße
 341,Waldhofstraße
-342,Magdeburger Straße
-343,Schwetzinger Landstraße
+342,Sachsenstraße
+343,Neumayerstraße
+345,Mönchwörthstraße
 346,Rhenaniastraße
-347,Steubenstraße
-348,Diffenéstraße
-348,Diffenéstraße
-349,Schwetzinger Straße
+347,Hans-Sachs-Ring
+348,Gerwigstraße
+349,Heinrich-Lanz-Straße
 350,Friedrichsring
-352,Steubenstraße
+351,Winterstraße
+352,Feldbergstraße
 353,Parkring
+354,Neckarvorlandstraße
 355,Friedrich-Ebert-Straße
-358,Steubenstraße
+358,Heiligenbergstraße
 359,Luisenring
 361,Hauptstraße
 363,Steubenstraße
 364,Auf dem Sand
 366,Luzenbergstraße
+367,
+368,
+369,Boehringerstraße
+370,Stephanienufer
+371,Am Brunnengarten
 372,Wormser Straße
-374,Oskar-von-Miller-Straße
+373,Germaniastraße
+374,Turbinenstraße
+375,
+376,Zeppelinstraße
+378,Innerer Heckweg
 379,Viehhofstraße
 380,Luisenring
 381,Neckarauer Straße
 382,Ludwig-Ratzel-Straße
 384,
+385,Danziger Baumgang
+386,
+387,Mutterstadter Straße
+388,
+389,
 390,Luisenring
 391,Theodor-Heuss-Anlage
+392,Lindenhofstraße
 393,Schwetzinger Straße
 394,Friedrich-Ebert-Straße
-396,Morchfeldstraße
+396,Schildkrötstraße
+397,Lameystraße
+398,
+399,Am Herrschaftswald
+400,August-Bebel-Straße
+401,Werderstraße
 402,Mannheimer Straße
 403,Schienenstraße
-404,Sonderburger Straße
-407,Neckarauer Straße
+404,Boehringerstraße
+405,
+406,Heinrich-Lanz-Straße
+407,Rheintalbahnstraße
 408,Lilienthalstraße
-412,Schienenstraße
-413,Speyerer Straße
+409,Viktoriastraße
+410,
+411,Speckweg
+412,Jakob-Faulhaber-Straße
+413,Im Lohr
 414,Luisenring
 415,Überlinger Straße
 416,Renzstraße
 417,Ludwigshafener Straße
+418,Meersburger Straße
 419,Meeräckerstraße
-423,Kaiserring
+420,
+421,Hafenstraße
+422,
+423,
+424,
+425,
+426,
+427,Kunststraße
 428,Steubenstraße
-430,Waldstraße
+430,Alter Postweg
+431,Rehpfad
 432,
 433,Kloppenheimer Straße
 434,Mosbacher Straße
-435,Morchfeldstraße
-436,Parkring
+435,Schildkrötstraße
+436,
+437,
 438,Kloppenheimer Straße
 439,Königsberger Allee
 440,Theodor-Heuss-Anlage
 441,Auf dem Sand
 442,Waldhofstraße
-443,Steubenstraße
+443,Feldbergstraße
 444,Käfertaler Straße
+445,
 446,Kurpfalzbrücke
 447,Feudenheimer Straße
+448,
 449,Neckarauer Straße
+450,
 451,Waldstraße
+452,Schlossgartenstraße
+452,Schlossgartenstraße
 453,Dammstraße
 454,Lilienthalstraße
 455,Waldstraße
+456,Emil-Heckel-Straße
+457,
+458,Rottfeldstraße
 459,Wachenburgstraße
 460,Kurpfalzbrücke
 462,Neckarauer Straße
 463,
 464,Rhenaniastraße
 465,Rollbühlstraße
-470,Ulmenweg
-470,Ulmenweg
+467,
+468,
+469,Akademiestraße
+470,Johann-Weiß-Straße
+471,Hafenstraße
 472,Waldstraße
 473,Ulmenweg
 475,Kurpfalzbrücke
 476,Kurpfalzbrücke
+477,
 478,Augustaanlage
+479,Kunststraße
+480,Lameystraße
 483,Schwetzinger Straße
+484,Mittelstraße
+485,
+486,Dürerstraße
+487,
+489,Lutherstraße
 490,Steubenstraße
 492,Essener Straße
+493,Friedrichstraße
 494,Mallaustraße
 495,Feudenheimer Straße
 496,Bismarckstraße
+497,Wilhelmstraße
 498,Lindenhofstraße
 499,Friesenheimer Straße
+500,
 501,Landteilstraße
+502,Akademiestraße
+505,Mecklenburger Straße
 506,Goethestraße
 507,Parkring
 508,Boveristraße
 509,Kaiserring
+510,Werderplatz
+511,Karl-Ludwig-Straße
 512,Sonderburger Straße
 513,Kaiserring
+514,Speckweg
+515,
 516,Kaiserring
+517,Dürkheimer Straße
+518,
+519,Wespinstraße
+520,
 521,Waldhofstraße
-525,Steubenstraße
+522,Xaver-Fuhr-Straße
+524,
+525,Feldbergstraße
+526,Pfalzstraße
+528,Karl-Ladenburg-Straße
 529,Untermühlaustraße
 530,Rhenaniastraße
 532,Seckenheimer Hauptstraße
+533,Zellstoffstraße
+534,Maybachstraße
+535,
 536,Kaiserring
 537,Parkring
+538,
+539,Fressgasse
 540,Luisenring
 541,Feudenheimer Straße
+542,Jungbuschstraße
 543,
 544,Rheingoldstraße
-547,Friedrich-Ebert-Straße
+546,Rheinaustraße
+547,
 548,Kaiserring
 550,Theodor-Heuss-Anlage
+551,Kolpingstraße
 553,Friedrichsring
 554,Friedrich-Ebert-Straße
 555,Seckenheimer Straße
 557,Schwetzinger Straße
 558,Waldhofstraße
 559,Bismarckstraße
+560,Talstraße
 561,Steubenstraße
 562,Sandhofer Straße
 563,Friedrich-Ebert-Straße
 564,Alte Frankfurter Straße
-565,Schwabenstraße
+565,Meersburger Straße
 566,Feudenheimer Straße
 567,Friedrich-Ebert-Straße
+568,Spelzenstraße
 569,Hauptstraße
+570,
+571,Am Stich
+572,Lameystraße
 573,Reichskanzler-Müller-Straße
 574,Waldhofstraße
 575,Zeughausplanken
+576,
+577,Freier Weg
+578,Heinrich-von-Stephan-Straße
+580,Valentin-Streuber-Straße
 581,Sandhofer Straße
 582,Neckarauer Übergang
+583,Ascherslebener Weg
+584,
 585,Ilvesheimer Straße
+586,Freier Weg
 587,Waldstraße
 588,
 589,Landteilstraße
 590,Schwetzinger Straße
-591,Käfertaler Straße
+591,Soironstraße
+592,Meistersingerstraße
 595,Industriestraße
 596,Bismarckstraße
-598,Meeräckerstraße
+597,Lange Rötterstraße
+598,Donnersbergstraße
+600,
+601,
+602,Lange Rötterstraße
 606,Birkenauer Straße
-607,Steubenstraße
-608,Carl-Benz-Straße
+607,Hans-Sachs-Ring
+608,Melchiorstraße
+609,
 610,Friedrich-Ebert-Straße
-612,Helmertstraße
-614,Friedrich-Ebert-Straße
-615,Friedrich-Ebert-Straße
+612,Innstraße
+614,Lange Rötterstraße
+615,Schafweide
+617,Kunststraße
 619,Kaiserring
+620,Ladenburger Straße
 621,Theodor-Heuss-Anlage
+622,Lange Rötterstraße
 623,Bismarckstraße
 624,Renzstraße
-626,Lilienthalstraße
+625,Tullastraße
+626,Parsevalstraße
+627,Sandhofer Straße
+628,
 629,Seckenheimer Hauptstraße
 630,Augustaanlage
 631,Bismarckstraße
+632,Jakob-Trumpfheller-Straße
+633,
+634,Durlacher Straße
 635,Friedrich-Ebert-Straße
+636,
 637,Dudenstraße
 639,Landteilstraße
-640,Neckarauer Straße
+640,Paul-Wittsack-Straße
+641,Landteilstraße
 642,Waldstraße
+643,Paul-Martin-Ufer
 644,Offenburger Straße
-644,Kapellenstraße
 645,Bismarckstraße
 646,Friedrich-Ebert-Straße
 647,Klingenberger Straße
+648,Karlsruher Straße
+649,Friedrichstraße
+650,Pappelallee
+652,Wiesbadener Straße
+653,Roonstraße
+655,Gottlieb-Daimler-Straße
 656,Mallaustraße
 657,Mannheimer Straße
 659,Waldhofstraße
-660,Sonderburger Straße
+660,Boehringerstraße
+661,
+662,Eberbacher Straße
 664,Untermühlaustraße
-665,Steubenstraße
+665,Heiligenbergstraße
 666,Relaisstraße
 667,Waldhofstraße
-670,Sonderburger Straße
+669,Memeler Straße
+670,Memeler Straße
+671,
+674,Alberichstraße
+675,Sennteichplatz
+677,Stolzeneckstraße
 678,Schienenstraße
 679,Wingertsbuckel
 680,Schienenstraße
 682,Luisenring
+683,Bruchsaler Straße
+684,Neckarvorlandstraße
+685,Fressgasse
 686,Friedrich-Ebert-Straße
 687,Steubenstraße
 688,Steubenstraße
+690,Rheinhäuser Straße
 691,Magdeburger Straße
+692,
+693,Spiegelfabrik
 694,Überlinger Straße
 695,Rollbühlstraße
 697,Neckarauer Straße
+698,Anemonenweg
 699,Kurpfalzbrücke
 700,Friedrich-Ebert-Straße
 702,Bismarckstraße
 703,Collinistraße
-705,Landteilstraße
+704,Xaver-Fuhr-Straße
+705,Heinz-Haber-Straße
+706,
 707,Friedrich-Ebert-Straße
+708,Pettenkoferstraße
 709,Augustaanlage
+710,Brandenburger Straße
 712,Waldpforte
 713,Steubenstraße
 714,Theodor-Heuss-Anlage
+715,Hafenstraße
 716,Friedrich-Ebert-Straße
+717,Speyerer Straße
 719,Friedrichsring
 720,Friedrich-Ebert-Straße
 721,Friedrichsring
 722,Sonderburger Straße
 723,Neckarauer Straße
+724,Paul-Wittsack-Straße
 725,Lilienthalstraße
 726,Waldhofstraße
 727,Lilienthalstraße
+728,Angelstraße
+729,Lauterburger Straße
+730,Untergasse
 731,Wachenburgstraße
+732,Fressgasse
 733,Akazienstraße
+735,Germaniastraße
 736,Untermühlaustraße
 737,Casterfeldstraße
+738,
+739,Rheinauer Ring
 741,Röntgenstraße
-742,Diffenéstraße
-742,Diffenéstraße
-744,Landteilstraße
+742,Gerwigstraße
+743,Neckarauer Waldweg
+744,Heinz-Haber-Straße
+745,
+746,Lange Rötterstraße
+747,
+748,Hafenstraße
 749,Rollbühlstraße
+750,Riedfeldstraße
+751,Meeräckerplatz
 752,Floßwörthstraße
+753,Sonderburger Straße
 753,Sonderburger Straße
 755,Wachenburgstraße
 756,Seckenheimer Straße
 757,
-761,Floßwörthstraße
-764,Friedrich-Ebert-Straße
+758,Dürerstraße
+759,Große Holzgasse
+760,Katharinenstraße
+761,Franz-Grashof-Straße
+762,Assenheimer Straße
+763,
+764,Eichendorffstraße
+765,Speckweg
 766,Friedrich-Ebert-Straße
 768,Waldstraße
-769,Parkring
+769,
+770,Alberichstraße
 771,Luzenbergstraße
+772,Marktstraße
+773,
 774,Lilienthalstraße
 775,Friedrich-Ebert-Straße
-777,Relaisstraße
+776,
+777,Waldseestraße
 778,Weinheimer Straße
+780,Fressgasse
+781,
 782,Friedrichsfelder Landstraße
 783,Seckenheimer Hauptstraße
 784,Luzenbergstraße
 785,Boveristraße
 786,Friedrich-Ebert-Straße
+787,Talstraße
 788,Feudenheimer Straße
+789,Kunststraße
 790,Weinheimer Straße
 791,Friedrichsplatz
 792,Floßwörthstraße
+793,Spelzenstraße
+794,Meerfeldstraße
+796,
+797,
 798,Kurpfalzbrücke
 800,Boveristraße
+801,Obere Clignetstraße
+802,George-Washington-Straße
+803,Berliner Straße
 804,Floßwörthstraße
+806,
 807,Waldstraße
 808,Kurpfalzkreisel
-809,Waldpforte
+809,Flensburger Ring
 810,Herzogenriedstraße
 811,Möhlstraße
+812,Rappoltsweilerstraße
+813,
 814,Akazienstraße
-817,Waldhofstraße
+815,Große Ausdauer
+816,Fressgasse
+817,Laurentiusstraße
 818,Bismarckstraße
-819,Kaiserring
-821,Alte Frankfurter Straße
+819,Moltkestraße
+820,Cannabichstraße
+821,Carl-Reuther-Straße
+822,Ladenburger Straße
 823,Neustadter Straße
 824,Sonderburger Straße
 825,Neckarauer Straße
-826,Helmertstraße
+826,Innstraße
+827,Werderstraße
 828,Friedrich-Ebert-Straße
+829,Heinrich-von-Stephan-Straße
 831,Schwetzinger Straße
 832,Mittelstraße
 834,Waldstraße
 836,Neckarauer Straße
 837,Bismarckplatz
-841,Carl-Benz-Straße
+839,
+841,Moselstraße
+842,Obere Clignetstraße
+843,Moselstraße
+844,
+845,Hafenstraße
 846,Waldhofstraße
 848,Schafweide
-849,Alter Frankfurter Weg
 849,Viernheimer Weg
+849,Alter Frankfurter Weg
 850,Neckarauer Straße
+851,Lange Rötterstraße
+853,Rohrlachstraße
+854,Meerfeldstraße
 855,Neckarauer Straße
 856,Möhlstraße
+857,
 858,Luisenring
+859,Moselstraße
+860,
 861,Wachenburgstraße
+863,Elisabeth-Altmann-Gottheiner-Straße
 864,Friedrichsring
 865,Collinistraße
 866,Mallaustraße
+867,Schlossgartenstraße
+868,
+869,Hafenstraße
 870,Möhlstraße
-871,Friedrich-Ebert-Straße
-872,Wingertsbuckel
+871,Eisenlohrstraße
+872,Wingertsau
+873,
 874,Kurpfalzkreisel
 875,Waldhofstraße
-876,Speyerer Straße
-879,Braunschweiger Allee
+876,Mönchwörthstraße
+877,Bassermannstraße
+878,Kunststraße
+879,Quedlinburger Weg
+880,Spessartstraße
 881,Waldhofstraße
+883,
 884,Käfertaler Straße
+885,Mittelstraße
 887,Friedrich-Ebert-Straße
 888,Waldhofstraße
 889,
 890,Waldstraße
+891,Waldhornstraße
 892,Suebenheimer Allee
-893,Steubenstraße
+893,Hans-Sachs-Ring
+894,Akazienstraße
 895,Sandhofer Straße
 896,Möhlstraße
 898,Karlsternstraße
 899,Friedrich-Ebert-Straße
 900,Seckenheimer Landstraße
+901,Hafenstraße
 902,Viehhofstraße
 904,Neckarauer Straße
+905,Akademiestraße
 906,Neckarauer Straße
+907,Radeberger Straße
+908,Schwarzwaldstraße
 909,Friedrich-Ebert-Straße
 910,Waldhofstraße
 911,Relaisstraße
 912,Käfertaler Straße
 913,Augustaanlage
+914,
+915,Mittelstraße
+917,Werderplatz
+918,Lindenhofstraße
 919,Wachenburgstraße
+922,Lindenhofstraße
 923,Meeräckerstraße
-924,Sonderburger Straße
+924,Graudenzer Linie
 925,Boveristraße
+926,
+927,Zur Waldau
+928,Lange Rötterstraße
+931,Speyerer Straße
+932,Bibienastraße
+933,Sennteichplatz
 935,Augustaanlage
 936,Neckarauer Straße
+937,Stengelstraße
+937,Stengelstraße
+938,Tullastraße
+939,Wallstadter Straße
+940,Neckarplatt
+941,August-Bebel-Straße
+942,Geibelstraße
+943,Freier Weg
 945,Ilvesheimer Straße
 946,Kaiserring
+947,Mittelstraße
+948,Wolframstraße
 949,Luisenring
-951,Steubenstraße
-954,Friedrich-Ebert-Straße
+950,Rottfeldstraße
+951,Feldbergstraße
+952,
+954,Eisenlohrstraße
 955,Wallstadter Straße
-958,Vogesenstraße
+957,Zellstoffstraße
+958,Neudorfstraße
+959,Rheinpromenade
 960,Scharhofer Straße
 961,Sandhofer Straße
 962,Seckenheimer Hauptstraße
 963,Heppenheimer Straße
+966,
+967,
 968,
 969,Seckenheimer Straße
 970,Speyerer Straße
+971,Rheintöchterstraße
 973,Reichskanzler-Müller-Straße
+974,Waldhornstraße
 975,Kaiserring
 976,Friedrichsring
 977,Friedrich-Ebert-Straße
-979,Neckarauer Straße
+979,Katharinenstraße
 980,Seckenheimer Hauptstraße
+981,Atzelhofstraße
 982,Kurpfalzkreisel
+983,Augartenstraße
+984,Mönchwörthstraße
+985,
 986,Relaisstraße
+987,Zähringer Straße
+988,Kunststraße
 989,Theodor-Storm-Straße
 990,Renzstraße
 991,Friedrichsring
-993,Schwetzinger Straße
+993,Tattersallstraße
+994,Gottlieb-Daimler-Straße
 995,Friedrichsring
-996,Sonderburger Straße
-1000,Auf dem Sand
+996,Boehringerstraße
+997,Hohensalzaer Straße
+1000,Galvanistraße
 1001,Friedrich-Ebert-Straße
-1005,Wachenburgstraße
+1002,Kattowitzer Zeile
+1003,Fressgasse
+1004,Rastenburger Straße
+1005,Kronenburgstraße
 1006,Reichskanzler-Müller-Straße
 1007,Seckenheimer Straße
 1008,Carl-Benz-Straße
 1009,Industriestraße
+1010,Gottlieb-Daimler-Straße
 1011,Augustaanlage
 1012,Neckarauer Straße
+1014,
+1015,Rohrlachstraße
+1016,Lindenhofstraße
 1018,Käfertaler Straße
 1019,Untermühlaustraße
-1020,Waldhofstraße
+1020,Maybachstraße
+1021,Dornheimer Ring
 1023,Schienenstraße
 1025,Friedrich-Ebert-Straße
+1026,Werderstraße
 1027,Käfertaler Straße
+1028,Melchiorstraße
+1030,Galvanistraße
 1031,Röntgenstraße
+1032,Pettenkoferstraße
+1033,Hans-Thoma-Straße
 1034,Friedrichsfelder Landstraße
-1035,Neckarauer Straße
+1035,Katharinenstraße
+1036,Lindenhofstraße
 1038,Friedrich-Ebert-Straße
 1039,Friedrichsring
+1040,Wiesbadener Straße
 1041,Untermühlaustraße
+1042,
+1043,Brandenburger Straße
 1044,Friedrich-Ebert-Straße
+1045,Freiheitsplatz
 1046,
 1048,Kaiserring
-1049,Friedrichsring
+1049,
+1050,Pillauer Straße
 1051,Herzogenriedstraße
-1052,Seckenheimer Straße
+1052,Joseph-Haydn-Straße
 1053,Duisburger Straße
 1054,Cochemer Straße
+1055,Rebenstraße
+1056,Fürstenwalder Weg
+1057,Dänischer Tisch
+1059,Spreewaldallee
 1060,Kurpfalzkreisel
+1061,Heustraße
+1062,Hessische Straße
+1063,Kunststraße
 1065,Möhlstraße
 1066,Casterfeldstraße
 1067,Waldstraße
 1068,
+1069,
+1070,Kunststraße
+1071,Lenaustraße
+1072,Fressgasse
 1073,Frankenthaler Straße
+1074,Speyerer Straße
+1075,Erlenstraße
 1076,
+1077,Fressgasse
 1078,Waldpforte
+1079,Weizenstraße
 1080,Meeräckerstraße
+1081,Lameystraße
+1082,Eisenacher Weg
+1083,Waldparkstraße
 1084,Neckarauer Straße
-1085,Augustaanlage
-1087,Friedrich-Ebert-Straße
+1085,Werderstraße
+1086,Wacholderstraße
+1087,Karl-Mathy-Straße
 1088,Luzenbergstraße
+1089,Theodor-Storm-Straße
 1090,Neckarauer Straße
+1091,
 1092,Waldstraße
 1093,Waldhofstraße
+1094,Hessische Straße
+1095,Birkenauer Straße
 1096,Inselstraße
 1097,Theodor-Heuss-Anlage
 1098,Neckarauer Straße
 1099,Altriper Straße
 1100,Friedrichsring
-1101,Neckarauer Straße
-1102,Karlsplatz
+1101,Paul-Wittsack-Straße
+1102,Rheinauer Ring
+1103,Speyerer Straße
 1104,Friedrichsring
+1105,
+1106,
+1107,Tannhäuserring
+1108,Tullastraße
 1109,Waldstraße
+1110,Im Lohr
+1111,
+1112,Ziethenstraße
 1113,Harrlachweg
 1113,Harrlachweg
+1114,Rollbühlstraße
 1115,Rhenaniastraße
+1116,Akademiestraße
 1117,Mannheimer Straße
+1118,
 1119,Neckarauer Straße
-1120,Steubenstraße
-1121,Kurpfalzkreisel
+1120,Hans-Sachs-Ring
+1121,
 1122,Morchfeldstraße
+1123,Chamissostraße
 1124,Voltastraße
 1125,Seckenheimer Hauptstraße
 1126,Friedrichsring
 1127,Theodor-Storm-Straße
-1128,Mannheimer Straße
+1128,Lindenstraße
 1130,Friedrich-Ebert-Straße
-1131,Morchfeldstraße
+1131,Schildkrötstraße
 1132,Seckenheimer Hauptstraße
 1133,Diffenéstraße
 1134,Theodor-Heuss-Anlage
@@ -606,289 +1012,458 @@ unfall_id,strasse
 1140,Neckarauer Straße
 1142,Renzstraße
 1143,
+1144,Krautgartenweg
 1145,Neckarauer Straße
 1146,Schwetzinger Straße
 1147,Käfertaler Straße
 1148,Mannheimer Straße
-1149,Auf dem Sand
-1151,Luzenbergstraße
+1149,Galvanistraße
+1150,
+1151,Spiegelstraße
 1152,Boveristraße
-1155,Relaisstraße
-1156,Steubenstraße
+1153,Traitteurstraße
+1155,Schifferstadter Straße
+1156,Hans-Sachs-Ring
 1157,Kurpfalzstraße
 1158,Seckenheimer Straße
 1159,Ulmenweg
 1160,Neckarauer Straße
-1163,Speyerer Straße
+1161,Mönchwörthstraße
+1162,Waldseestraße
+1163,Im Lohr
 1164,Waldhofstraße
-1165,Käfertaler Straße
+1165,Obere Clignetstraße
 1167,Dudenstraße
 1168,Schwetzinger Straße
 1169,Waldstraße
+1170,Kolpingstraße
 1171,Schafweide
-1174,Neckarauer Straße
+1172,Gartenstraße
+1174,Paul-Wittsack-Straße
+1175,
 1176,Möhlstraße
 1178,Waldstraße
+1179,
+1181,
 1182,Collinistraße
 1183,Diffenéstraße
 1184,
 1187,Auf dem Sand
 1188,Carl-Benz-Straße
 1189,Parkring
+1190,Holbeinstraße
+1191,Tattersallstraße
+1192,Mönchwörthstraße
 1193,Neckarauer Straße
 1194,Maria-Kirch-Straße
 1195,Neckarauer Straße
 1197,Friedrich-Ebert-Straße
-1198,Neckarauer Straße
+1198,Katharinenstraße
 1199,Waldstraße
-1200,Carl-Benz-Straße
+1200,Moselstraße
 1201,Rhenaniastraße
+1202,Am Stich
 1203,Seckenheimer Hauptstraße
-1204,Steubenstraße
+1204,Hans-Sachs-Ring
+1205,
+1206,Mittelstraße
 1207,Steubenstraße
-1208,Schwetzinger Straße
+1208,Traitteurstraße
+1209,Tattersallstraße
 1210,Waldstraße
 1211,Frankenthaler Straße
+1212,Zellstoffstraße
 1213,Friedrich-Ebert-Straße
+1214,Fressgasse
+1217,Alphornstraße
+1218,Speckweg
 1219,Bismarckstraße
-1222,Waldhofstraße
+1220,Berliner Straße
+1221,Sophienstraße
+1222,Laurentiusstraße
+1223,
+1224,Speckweg
 1225,Relaisstraße
+1226,Moselstraße
 1227,Luisenring
 1228,Viernheimer Weg
 1229,Luisenring
 1230,Wachenburgstraße
+1231,Schlossgartenstraße
+1231,Schlossgartenstraße
 1232,Sandhofer Straße
+1233,Maybachstraße
+1234,Düsseldorfer Straße
 1235,Straßenheimer Weg
 1236,Schwabenstraße
+1237,Maybachstraße
 1238,Friedrichsplatz
+1239,
 1240,Friedrichsring
-1241,Goethestraße
+1241,Berliner Straße
 1242,Waldstraße
+1244,Kunststraße
 1246,Kaiserring
+1247,Lange Rötterstraße
 1248,Augustaanlage
-1250,Friedrichsring
+1249,Waldpforte
+1250,Fressgasse
+1251,Mönchwörthstraße
 1252,Friedrich-Ebert-Straße
+1253,Marconistraße
 1254,Kurpfalzkreisel
-1256,Friedrich-Ebert-Straße
+1255,Maybachstraße
+1256,Lange Rötterstraße
 1258,Feudenheimer Straße
-1260,Kaiserring
+1260,
+1261,Am Oberen Luisenpark
+1262,Hochstättstraße
 1263,Ulmenweg
 1264,Schwetzinger Straße
+1265,
 1266,Neckarauer Straße
 1267,Josef-Braun-Ufer
 1268,Feudenheimer Straße
 1269,Waldhofstraße
+1271,Friedrich-Karl-Straße
 1272,Freherstraße
+1273,Seilerstraße
 1274,Seckenheimer Straße
 1277,Feudenheimer Straße
 1278,Neckarauer Straße
-1279,Waldpforte
+1279,Flensburger Ring
+1280,
 1281,Karl-Feuerstein-Straße
-1283,Neckarauer Straße
+1283,Niederfeldstraße
+1284,Humboldtstraße
 1285,Möhlstraße
+1286,Speckweg
+1287,
+1288,
 1289,Seilerstraße
-1290,Schwetzinger Straße
+1290,Heinrich-Lanz-Straße
+1291,
+1293,
+1294,
 1295,
 1296,Neckarauer Straße
 1297,Kurpfalzstraße
-1299,Bismarckplatz
+1298,Friedrich-Ebert-Straße
+1299,Tattersallstraße
 1300,Steubenstraße
+1302,Tarnowitzer Weg
+1303,Schwabenheimer Straße
 1304,Neckarauer Straße
 1305,Bismarckstraße
+1306,Kronenburgstraße
+1307,Hohensalzaer Straße
 1308,Morchfeldstraße
+1309,Lange Rötterstraße
+1310,Johannes-Hoffart-Straße
 1311,Rhenaniastraße
+1312,
+1313,Kunststraße
 1314,Casterfeldstraße
-1315,Steubenstraße
-1316,Diffenéstraße
-1316,Diffenéstraße
-1318,Neckarauer Straße
-1319,Friedrich-Ebert-Straße
+1315,Franz-Sigel-Straße
+1316,Gerwigstraße
+1318,Paul-Wittsack-Straße
+1319,Nebeniusstraße
 1320,Friedrich-Ebert-Straße
-1321,Steubenstraße
+1321,Heiligenbergstraße
 1323,Lindenhofstraße
 1324,Auf dem Sand
 1325,Zielstraße
 1326,Bismarckplatz
 1328,Collinistraße
 1329,Hinter dem Wolfsberg
-1331,Steubenstraße
+1330,Lange Rötterstraße
+1331,Feldbergstraße
 1332,Friedrich-Ebert-Straße
 1333,Waldhofstraße
+1334,Am Oberen Luisenpark
 1335,Luzenbergstraße
 1336,Renzstraße
 1337,Koblenzer Straße
 1338,Kurpfalzkreisel
-1342,Dammstraße
-1343,Friedrichsring
-1344,Schwetzinger Landstraße
+1339,Osteroder Weg
+1340,
+1341,Kalthorststraße
+1342,Lortzingstraße
+1343,
+1344,Neumayerstraße
+1345,
+1346,Maxstraße
+1347,Max-Joseph-Straße
+1348,Fressgasse
+1349,Kleinfeldstraße
+1350,
+1351,
+1352,Wachtstraße
+1353,Stamitzstraße
 1354,Schubertstraße
 1355,Alte Frankfurter Straße
+1356,Lange Rötterstraße
 1357,Kurpfalzbrücke
+1358,Berliner Straße
+1359,Schulstraße
 1360,Harrlachweg
+1361,
+1362,Germaniastraße
+1363,
 1364,Hochuferstraße
 1365,Wilhelm-Varnholt-Allee
-1367,Sonderburger Straße
+1366,Augartenstraße
+1367,Graudenzer Linie
 1368,Friedrichsplatz
+1369,Guter Fortschritt
+1370,Neues Leben
 1371,Kurpfalzbrücke
-1372,Friedrichsring
-1373,Schönauer Straße
+1372,Hebelstraße
+1373,Kriegerstraße
 1374,Oskar-von-Miller-Straße
 1375,Sandhofer Straße
 1376,Casterfeldstraße
-1377,Steubenstraße
+1377,Hans-Sachs-Ring
+1378,Mittelstraße
 1379,Rhenaniastraße
+1381,
 1382,Friedrich-Ebert-Straße
 1383,Feudenheimer Straße
 1385,Dammstraße
 1386,Am Aubuckel
 1387,Mittelstraße
+1388,Rheinaustraße
 1389,Neckarauer Straße
 1390,Neckarauer Straße
+1391,Dürkheimer Straße
+1392,Mönchwörthstraße
 1393,Waldstraße
 1394,Josef-Braun-Ufer
 1395,Lilienthalstraße
-1396,Steubenstraße
+1396,Franz-Sigel-Straße
+1397,Storchenstraße
+1398,Angelstraße
 1399,Neckarauer Straße
 1400,Bismarckplatz
 1402,Neckarauer Straße
 1403,Seckenheimer Straße
 1404,Wachenburgstraße
-1407,Luisenring
+1405,
+1406,Am Schulgarten
+1407,Neckarvorlandstraße
+1408,Angelstraße
 1409,Harrlachweg
 1410,Waldhofstraße
+1411,Hans-Thoma-Straße
+1412,Chemnitzer Straße
+1414,
 1415,Sonderburger Straße
+1416,Eichendorffstraße
 1417,Kurpfalzstraße
 1419,Hochuferstraße
+1421,
+1422,Rheinaustraße
 1423,Neckarauer Straße
 1425,Renzstraße
 1426,Morchfeldstraße
+1427,Eifelstraße
 1429,Wallstadter Straße
-1430,Waldhofstraße
+1430,Heinrich-Zille-Straße
+1431,Gartenfeldstraße
+1432,Andreas-Hofer-Straße
+1433,Weizenstraße
 1434,Koblenzer Straße
 1435,Neckarauer Straße
+1436,Morchfeldstraße
+1437,
 1438,Speckweg
+1439,Glücksburger Weg
+1440,Tattersallstraße
 1441,Waldpforte
 1442,Ulmenweg
+1443,Sandhofer Straße
 1444,Kaiserring
+1445,Am Oberen Luisenpark
+1446,Brunhildestraße
+1447,Akademiestraße
 1448,Möhlstraße
+1449,Geibelstraße
+1450,Deutsche Gasse
 1451,Friedrich-Ebert-Straße
-1453,Dammstraße
+1452,Wachtstraße
+1453,Laurentiusstraße
 1454,Friedrich-Ebert-Straße
 1455,Altriper Straße
 1456,Augustaanlage
 1457,Friedrichsplatz
 1458,Schwetzinger Straße
+1459,Fressgasse
 1460,Hochuferstraße
-1463,Friedrichsring
-1466,Viehhofstraße
-1468,Schwetzinger Straße
-1470,Hochuferstraße
+1461,Kalthorststraße
+1462,Karolingerweg
+1463,
+1464,
+1465,Lange Rötterstraße
+1466,Augartenstraße
+1467,Soironstraße
+1468,Kopernikusstraße
+1470,Jakob-Trumpfheller-Straße
+1472,Schramberger Winkel
+1473,Lange Rötterstraße
+1474,Otto-Beck-Straße
+1475,Ifflandstraße
 1476,Friedrich-Ebert-Straße
 1477,Friedrichsring
-1481,Waldstraße
-1482,Waldhofstraße
+1478,Rheinpromenade
+1479,Kunststraße
+1480,Luisenstraße
+1481,Alte Frankfurter Straße
+1482,Hohwiesenstraße
 1483,Schwetzinger Straße
 1484,Neckarauer Straße
 1485,Reichskanzler-Müller-Straße
+1486,
 1487,Kurpfalzstraße
 1488,Schwetzinger Straße
-1490,Sonderburger Straße
+1489,Erzbergerstraße
+1490,Graudenzer Linie
 1491,Friedrich-Ebert-Straße
 1492,Friedrichsring
 1493,Relaisstraße
 1495,Weinheimer Straße
+1496,
 1497,Neckarauer Straße
+1498,Hansastraße
 1499,
 1500,Viernheimer Weg
 1501,Parkring
 1502,Am Messplatz
 1503,Alte Frankfurter Straße
+1504,
 1505,Waldhofstraße
-1507,Käfertaler Straße
+1506,Xaver-Fuhr-Straße
+1507,Kußmaulstraße
 1508,Feudenheimer Straße
 1508,Feudenheimer Straße
+1509,Hafenstraße
 1510,Friedrich-Ebert-Straße
 1511,Friedrich-Ebert-Straße
 1513,Casterfeldstraße
+1514,Odenwaldstraße
 1515,Wachenburgstraße
+1516,
+1517,Waldfrieden
 1518,Neckarauer Straße
 1519,Augustaanlage
 1520,Friedrichsplatz
 1521,Mosbacher Straße
 1522,Waldhofstraße
 1523,Neustadter Straße
+1524,Belchenstraße
 1525,Waldstraße
 1526,Friedrich-Ebert-Straße
-1527,Seckenheimer Straße
+1527,Otto-Beck-Straße
+1528,Tattersallstraße
 1529,Karl-Feuerstein-Straße
 1530,Ulmenweg
+1531,
 1532,Käfertaler Straße
 1533,Sonderburger Straße
 1534,Lindenhofstraße
 1535,Am Aubuckel
+1536,Ziegelgasse
+1537,
 1538,Theodor-Heuss-Anlage
+1540,Lange Rötterstraße
 1541,Friedrichsplatz
-1542,Luisenring
-1542,Luisenring
-1543,Seckenheimer Straße
-1545,Steubenstraße
+1542,Kirchenstraße
+1543,Burgstraße
+1544,Angelstraße
+1545,Feldbergstraße
+1546,Bürgermeister-Fuchs-Straße
 1547,Augustaanlage
 1548,Renzstraße
 1549,Schwetzinger Straße
 1550,Kloppenheimer Straße
-1551,Friedrichsplatz
-1553,Landteilstraße
+1551,Stresemannstraße
+1552,Rheinpromenade
+1553,Heinz-Haber-Straße
 1555,Wormser Straße
 1556,Lampertheimer Straße
+1557,
 1558,Am Aubuckel
 1559,Magdeburger Straße
 1560,Zielstraße
+1562,Spreewaldallee
 1563,Ruhrorter Straße
-1564,Neckarauer Straße
+1564,Paul-Wittsack-Straße
 1565,Frankenthaler Straße
 1566,Waldpforte
+1567,Dänischer Tisch
 1568,Luisenring
 1569,Luzenbergstraße
 1570,Waldstraße
 1571,Viehhofstraße
 1572,Friedrichsring
+1573,Tilsiter Straße
 1574,Speckweg
-1576,Friedrichsring
+1575,Brandenburger Straße
+1576,Hebelstraße
+1578,Weberstraße
 1579,Neckarauer Straße
 1580,Alte Frankfurter Straße
+1581,Richard-Wagner-Straße
 1582,Augustaanlage
-1583,Waldhofstraße
+1583,Spelzenstraße
 1584,Alte Frankfurter Straße
+1585,Odenwaldstraße
 1586,Seckenheimer Straße
-1587,Steubenstraße
+1587,Feldbergstraße
 1588,Friedrich-Ebert-Straße
 1590,Friedrich-Ebert-Straße
 1591,Herzogenriedstraße
 1592,Neckarauer Straße
-1593,Neckarauer Straße
+1593,Paul-Wittsack-Straße
+1594,Schimperstraße
+1595,Lötzener Weg
 1597,Friedrich-Ebert-Straße
+1599,Angelstraße
 1600,Friedrich-Ebert-Straße
 1601,Siebenbürger Straße
 1602,Friedrichsplatz
+1603,Waldparkstraße
+1604,
 1605,Wattstraße
 1606,Karl-Feuerstein-Straße
 1607,Möhlstraße
-1608,Kloppenheimer Straße
+1608,Zähringer Straße
+1609,Armbrustweg
+1610,Akademiestraße
+1611,
 1612,Dudenstraße
 1613,Sandhofer Straße
+1614,
+1615,Altrheinstraße
 1616,Carl-Benz-Straße
-1617,Friedrichsring
-1618,Kloppenheimer Straße
+1617,Tullastraße
+1618,Zähringer Straße
+1619,
 1620,Auf dem Sand
+1621,Mittelstraße
+1622,Neumayerstraße
 1623,Rhenaniastraße
-1624,Waldhofstraße
-1625,Neckarauer Straße
+1624,Maybachstraße
+1625,Rheintalbahnstraße
+1626,
 1627,Auf dem Sand
-1628,Lilienthalstraße
+1628,Ortelsburger Straße
+1629,Feldbergstraße
 1630,Steubenstraße
 1631,Hanauer Straße
-1632,Seckenheimer Straße
+1632,Krappmühlstraße
 1633,Friedrichsring
+1634,Gottlieb-Daimler-Straße
+1637,Rheinstraße
 1638,Dalbergstraße
 1639,Freherstraße
 1640,Waldhofstraße
@@ -896,725 +1471,1259 @@ unfall_id,strasse
 1642,Floßwörthstraße
 1643,Neckarauer Straße
 1645,Friedrichsring
-1647,Friedrichsplatz
+1646,Rottfeldstraße
+1647,Roonstraße
 1648,Dalbergstraße
+1649,Gontardstraße
 1650,Rheingoldstraße
+1651,Kolpingstraße
+1652,Mundenheimer Straße
+1653,
 1654,Neckarauer Straße
-1656,Friedrich-Ebert-Straße
-1657,Käfertaler Straße
-1659,Steubenstraße
-1662,Friedrich-Ebert-Straße
-1664,Am Aubuckel
+1655,Stockhornstraße
+1656,Garnisonstraße
+1657,Kobellstraße
+1658,
+1659,Hans-Sachs-Ring
+1662,Eisenlohrstraße
+1663,Luisenstraße
+1664,Am Schelmenbuckel
+1666,Friedrich-Walter-Straße
+1667,Ortelsburger Straße
+1667,Marienburger Straße
+1668,
+1669,Obere Riedstraße
+1670,Alte Frankfurter Straße
+1671,
+1672,Fressgasse
 1673,Seckenheimer Hauptstraße
 1674,Schienenstraße
 1676,Viernheimer Weg
 1677,Landteilstraße
 1678,Möhlstraße
 1679,Theodor-Heuss-Anlage
+1680,Verschaffeltstraße
 1681,Neustadter Straße
+1682,Hessische Straße
 1683,Herzogenriedstraße
-1684,Landteilstraße
+1684,Julius-Hatry-Straße
+1685,
+1686,Lange Rötterstraße
 1688,Schwetzinger Straße
 1689,Kurpfalzbrücke
 1690,
 1692,Auf dem Sand
+1693,Cannabichstraße
 1694,Untermühlaustraße
 1695,Kurpfalzkreisel
+1696,Speckweg
 1697,Herzogenriedstraße
+1699,Neurottstraße
+1700,Mußbacher Straße
 1701,Herzogenriedstraße
+1702,Angelstraße
+1703,Ladenburger Straße
 1704,Schwetzinger Straße
-1705,Rohrhofer Straße
+1705,Ida-Pfeiffer-Straße
+1706,Hans-Sachs-Ring
+1707,Speckweg
 1708,Lilienthalstraße
 1709,Waldhofstraße
-1712,Luisenring
+1711,Weikersheimer Ring
+1712,
 1713,Möhlstraße
+1714,Groß-Gerauer Straße
 1715,
+1716,Speckweg
 1717,Karlsplatz
+1718,
+1719,Kunststraße
 1721,Friedrichsplatz
 1722,Neustadter Straße
-1725,Viehhofstraße
+1723,Beilstraße
+1724,Johann-Schütte-Straße
+1725,Augartenstraße
+1726,Cheliusstraße
+1727,Hessische Straße
+1728,Roonstraße
+1729,Dornheimer Ring
 1730,Seckenheimer Straße
 1731,Luisenring
-1733,Seckenheimer Hauptstraße
-1734,Friedrich-Ebert-Straße
+1732,Rohrlachstraße
+1733,Rheinfelder Straße
+1734,Soironstraße
 1735,Friedrichsring
+1737,
+1738,August-Bebel-Straße
 1739,Oskar-von-Miller-Straße
+1740,Domstiftstraße
+1741,Neckarstraße
 1742,Kurpfalzkreisel
+1743,Joseph-Haydn-Straße
+1744,
 1745,Dammstraße
 1746,Untermühlaustraße
-1747,Neckarauer Straße
+1747,Paul-Wittsack-Straße
+1748,Lange Rötterstraße
+1749,Donaustraße
 1750,Luzenbergstraße
 1751,Spinnereistraße
-1752,Auf dem Sand
+1752,Edisonstraße
 1753,Neckarauer Straße
 1754,Augustaanlage
-1756,Hauptstraße
-1761,Relaisstraße
+1755,Seckenheimer Landstraße
+1756,Schützenstraße
+1757,Xaver-Fuhr-Straße
+1759,Carl-Reuther-Straße
+1760,
+1761,Neuhofer Straße
 1762,Neustadter Straße
+1763,Kunststraße
 1764,Steubenstraße
-1765,Relaisstraße
+1765,Neuhofer Straße
 1766,Sandhofer Straße
+1767,Dürerstraße
 1768,Lilienthalstraße
+1769,Im Sennteich
 1770,Friesenheimer Straße
-1773,Sonderburger Straße
+1772,Freier Weg
+1773,Graudenzer Linie
+1774,Max-Joseph-Straße
 1775,Neckarauer Straße
+1776,Lortzingstraße
+1777,Tattersallstraße
+1778,Langstraße
 1779,Maria-Kirch-Straße
 1781,Friedrichsring
 1782,Alte Frankfurter Straße
+1783,Sophienstraße
+1784,
 1785,Luisenring
 1786,Steubenstraße
 1787,Auf dem Sand
 1788,Röntgenstraße
+1789,Ringstraße
 1790,Frankenthaler Straße
+1791,
+1792,Werftstraße
+1793,Max-Joseph-Straße
+1794,
 1795,Friedrich-Ebert-Straße
 1796,Seckenheimer Straße
+1797,Speckweg
 1798,Luzenbergstraße
+1800,Talstraße
 1801,Kurpfalzbrücke
-1802,Weinheimer Straße
+1802,Merziger Straße
 1803,Frankenthaler Straße
 1804,Mannheimer Straße
+1805,Hafenstraße
 1806,Carl-Benz-Straße
-1807,Steubenstraße
+1807,Freiheitsplatz
 1808,Dammstraße
-1812,Friedrich-Ebert-Straße
+1809,Lange Allee
+1810,Groß-Gerauer Straße
+1811,Mittelstraße
+1812,Lenaustraße
+1813,Riedfeldstraße
 1814,Schwetzinger Straße
 1815,Neckarauer Straße
-1817,Schwetzinger Landstraße
+1816,
+1816,
+1816,
+1817,Marie-Curie-Straße
 1818,Carl-Benz-Straße
 1819,
 1820,Friedrichsring
 1821,Möhlstraße
+1822,Kurzgewannstraße
 1823,Waldhofstraße
 1824,Möhlstraße
+1825,
 1826,Altriper Straße
+1827,Meeräckerplatz
 1828,Casterfeldstraße
-1830,Friedrich-Ebert-Straße
+1830,Garnisonstraße
 1831,Waldstraße
 1832,Otto-Beck-Straße
+1833,Waldhornstraße
 1834,Rhenaniastraße
-1838,Relaisstraße
+1835,Langer Schlag
+1836,Alphornstraße
+1838,Neuhofer Straße
+1839,Hafenstraße
 1840,Seckenheimer Straße
+1841,
 1843,Wachenburgstraße
-1845,Seckenheimer Straße
+1845,Traitteurstraße
+1846,
 1847,Augustaanlage
+1848,Zellerstraße
 1849,Germaniastraße
 1850,Bismarckstraße
-1854,Käfertaler Straße
+1851,Speckweg
+1852,
+1853,Fressgasse
+1854,Lange Rötterstraße
 1855,Seckenheimer Hauptstraße
-1856,Wingertsbuckel
+1856,Talstraße
 1857,Rheingoldstraße
 1858,Morchfeldstraße
 1859,Kurpfalzkreisel
 1860,Odenwaldstraße
+1861,Bürgermeister-Fuchs-Straße
 1864,Friedrich-Ebert-Straße
 1865,Steubenstraße
-1866,Augustaanlage
+1866,Werderstraße
 1867,Augustaanlage
 1868,Käfertaler Straße
+1869,Alter Postweg
 1870,Neckarauer Straße
+1871,Angelstraße
 1872,Alte Frankfurter Straße
 1873,Ulmenweg
-1874,Friedrich-Ebert-Straße
-1876,Friedrichsring
-1878,Otto-Beck-Straße
+1874,Garnisonstraße
+1875,
+1876,Hebelstraße
+1877,Fressgasse
+1878,Maximilianstraße
+1879,Mozartstraße
 1880,Otto-Beck-Straße
+1881,Fressgasse
 1882,Friedrichsring
+1883,Garnstraße
+1884,Hafenstraße
+1885,Pestalozzistraße
 1886,Neckarauer Straße
 1887,Lindenhofstraße
 1888,Friedrich-Ebert-Straße
+1889,Speckweg
 1890,Landteilstraße
-1893,Wachenburgstraße
+1891,Birkenauer Straße
+1892,Feldbergstraße
+1893,Kronenburgstraße
 1894,Waldstraße
 1895,Feudenheimer Straße
 1896,Karlsplatz
 1897,Auf dem Sand
+1898,Zum Herrenried
+1899,Gontardstraße
 1900,Mallaustraße
-1901,Friedrich-Ebert-Straße
+1901,Eisenlohrstraße
 1902,Waldhofstraße
 1903,Wasserwerkstraße
 1904,Waldstraße
 1905,Käfertaler Straße
 1907,Schwetzinger Straße
 1908,Sandhofer Straße
+1909,Hochstättstraße
+1910,Marburger Straße
 1912,Seckenheimer Straße
 1913,Dammstraße
 1915,Brückenstraße
+1916,Kleine Riedstraße
+1917,
+1918,Freiburger Straße
+1919,Fressgasse
+1920,
 1922,Herzogenriedstraße
+1923,Schulstraße
+1924,
+1925,Wilhelm-Blos-Straße
 1926,Kaiserring
+1928,Atzelhofstraße
 1929,Neckarauer Straße
 1931,Waldstraße
+1932,Schwabenheimer Straße
+1933,Gottlieb-Daimler-Straße
+1935,Planken
 1937,Kloppenheimer Straße
-1938,Friedrich-Ebert-Straße
+1938,Bibienastraße
 1939,Heppenheimer Straße
 1940,Überlinger Straße
 1941,Lilienthalstraße
-1943,Käfertaler Straße
-1944,Bismarckstraße
+1943,Schafweide
+1944,
 1945,Waldhofstraße
 1946,Friedrich-Ebert-Straße
 1947,Neckarauer Straße
 1948,Edinger Riedweg
 1949,Sandhofer Straße
+1950,Tullastraße
+1951,Pestalozzistraße
+1952,Fressgasse
+1953,Alte Frankfurter Straße
 1953,Alte Frankfurter Straße
 1954,Kaiserring
 1955,Reichskanzler-Müller-Straße
+1956,Harrlachweg
 1957,Oskar-von-Miller-Straße
-1958,Neckarauer Straße
+1958,Niederfeldstraße
+1959,Angelstraße
 1960,Theodor-Heuss-Anlage
 1961,Friedrichsplatz
+1962,Lange Rötterstraße
+1963,Fressgasse
+1964,Alemannenstraße
+1965,Max-Joseph-Straße
+1966,Eberbacher Straße
 1967,Friedrich-Ebert-Straße
+1968,Tattersallstraße
+1969,Mundenheimer Straße
 1970,Waldhofstraße
+1971,Schlossgartenstraße
 1972,Herzogenriedstraße
 1973,Seckenheimer Straße
-1975,Steubenstraße
+1974,Marktstraße
+1975,Hans-Sachs-Ring
+1976,Wachenburgstraße
 1977,Bismarckplatz
 1979,Josef-Braun-Ufer
+1980,
 1981,Friedrichsring
+1982,Storchenstraße
 1983,Feudenheimer Straße
+1984,August-Kuhn-Straße
+1985,
 1986,Lilienthalstraße
 1987,Lilienthalstraße
+1988,Jungbuschstraße
+1989,Wingertsau
+1990,
+1991,Stephanienufer
 1992,Ulmenweg
+1993,
+1994,Tattersallstraße
 1995,Waldhofstraße
+1996,Siebseeweg
 1997,Schwetzinger Straße
-1998,Steubenstraße
+1998,Feldbergstraße
 1999,Luzenbergstraße
 2000,Friedrichsring
+2001,Rheindammstraße
+2002,
 2005,Seckenheimer Straße
 2006,Suebenheimer Allee
-2007,Seckenheimer Hauptstraße
-2010,Schwetzinger Straße
+2007,Freiburger Straße
+2008,Sandhofer Straße
+2009,Hafenstraße
+2010,Tattersallstraße
+2012,Augartenstraße
 2013,Friedrich-Ebert-Straße
-2016,Friedrich-Ebert-Straße
-2017,Friedrichsring
+2014,Karlsruher Straße
+2015,Mittelstraße
+2016,Eisenlohrstraße
+2017,Hebelstraße
 2018,Luisenring
-2020,Helmertstraße
-2021,Schwetzinger Landstraße
+2020,Innstraße
+2021,Neumayerstraße
 2022,Bismarckstraße
+2023,Lange Rötterstraße
+2024,Beilstraße
 2025,Waldpforte
 2026,Essener Straße
-2027,Am Aubuckel
-2030,Carl-Benz-Straße
+2027,Ziethenstraße
+2028,Tannhäuserring
+2029,Uhlandstraße
+2030,Melchiorstraße
 2031,Kurpfalzkreisel
 2032,Wormser Straße
 2034,Neckarauer Straße
-2035,Kurpfalzstraße
+2035,
+2036,Rickertstraße
+2037,Rathausstraße
 2038,Hanauer Straße
-2039,Reichskanzler-Müller-Straße
+2039,Kleinfeldstraße
 2041,Lilienthalstraße
 2042,Rheingoldstraße
 2043,Steubenstraße
 2044,Weinheimer Straße
-2045,Diffenéstraße
+2045,Einsteinstraße
+2046,Speckweg
+2047,
 2049,Seckenheimer Hauptstraße
 2050,Ruhrorter Straße
 2051,Ruhrorter Straße
+2052,
+2053,Sensburger Weg
 2054,Bismarckplatz
 2055,Speyerer Straße
 2057,Rhenaniastraße
 2058,Neckarauer Straße
+2059,Landteilstraße
 2060,Luzenbergstraße
+2061,Otterstadter Straße
 2063,Lilienthalstraße
+2064,Max-Joseph-Straße
+2065,Sandhofer Straße
 2066,Renzstraße
 2067,Lilienthalstraße
 2068,Bismarckstraße
 2069,Duisburger Straße
 2070,Rhenaniastraße
 2071,
+2072,Lahnstraße
+2073,Hans-Thoma-Straße
+2074,Schulstraße
 2075,Luzenbergstraße
 2076,Sandhofer Straße
+2077,
+2078,Wacholderstraße
 2079,Kloppenheimer Straße
+2080,Schlossgartenstraße
+2081,Wertheimer Straße
 2082,Möhlstraße
 2083,Kaiserring
-2084,Fred-Joachim-Schoeps-Straße
+2084,Straßburger Ring
 2085,Vogesenstraße
 2086,Seckenheimer Straße
-2089,Neckarauer Straße
+2087,Karlstraße
+2088,Kattowitzer Zeile
+2089,Katharinenstraße
+2090,Rohrlachstraße
 2091,Steubenstraße
 2092,Carl-Benz-Straße
+2093,Schwarzwaldstraße
 2094,Neckarauer Straße
 2095,Rhenaniastraße
 2096,Kurpfalzstraße
-2097,Sonderburger Straße
+2097,Graudenzer Linie
 2098,Goethestraße
 2099,Edinger Riedweg
 2100,Kurpfalzbrücke
 2101,Friedrich-Ebert-Straße
 2102,Seckenheimer Hauptstraße
-2103,Odenwaldstraße
+2103,Wilhelm-Furtwängler-Straße
 2104,Relaisstraße
 2105,Waldpforte
 2106,Kurpfalzstraße
+2107,Rollbühlstraße
 2108,Luisenring
+2109,Moselstraße
+2110,Brandenburger Straße
+2111,Belchenstraße
+2112,
 2113,Waldhofstraße
 2115,Seckenheimer Straße
 2116,Steubenstraße
 2117,Herzogenriedstraße
 2118,Käfertaler Straße
+2119,Speckweg
 2120,Sandhofer Straße
-2121,Seckenheimer Straße
+2121,Traitteurstraße
 2122,Neckarauer Straße
+2123,Verschaffeltstraße
+2124,Domstiftstraße
 2125,Seckenheimer Straße
+2126,Gottlieb-Daimler-Straße
+2127,Speckweg
+2128,Marktstraße
 2129,Zeughausplanken
-2130,Kurpfalzstraße
+2130,
 2131,Kurpfalzstraße
 2132,Friedrichsring
 2133,Schubertstraße
 2134,Josef-Braun-Ufer
 2135,Kaiserring
+2136,Freinsheimer Straße
 2137,Dammstraße
 2138,Friedrich-Ebert-Straße
-2142,Steubenstraße
+2139,Langer Schlag
+2140,
+2141,
+2142,Hans-Sachs-Ring
+2143,Mollstraße
 2144,Mosbacher Straße
 2145,Friesenheimer Straße
+2146,Speckweg
+2147,
 2148,Eisenstraße
 2149,Feudenheimer Straße
-2150,Magdeburger Straße
+2150,Sachsenstraße
 2151,Käfertaler Straße
 2152,Weinheimer Straße
 2153,Meeräckerstraße
 2154,Kaiserring
 2155,Dalbergstraße
+2156,Freiheitsplatz
 2157,Theodor-Heuss-Anlage
+2158,Langstraße
+2159,
+2160,Maybachstraße
 2161,Friedrichsplatz
+2162,Schildkrötstraße
+2163,Storchenstraße
 2164,Voltastraße
 2165,
 2166,Käfertaler Straße
 2167,Friedrichsring
 2168,Friedrich-Ebert-Straße
+2169,
 2170,Parkring
 2171,Waldstraße
 2172,Augustaanlage
-2176,Augustaanlage
+2174,Kolpingstraße
+2175,Langer Schlag
+2176,Werderstraße
+2177,Edisonstraße
+2178,Werderplatz
 2179,Friedrichsring
-2180,Waldstraße
+2180,Kasseler Straße
 2181,Mannheimer Straße
-2183,Kurpfalzstraße
+2182,Kropsburgstraße
+2183,
 2184,Inselstraße
-2185,Magdeburger Straße
-2187,Steubenstraße
+2185,Sachsenstraße
+2186,Fressgasse
+2187,Feldbergstraße
+2189,Gartenfeldstraße
 2190,Schwetzinger Straße
+2191,
+2192,Meerfeldstraße
+2193,Johann-Schütte-Straße
+2195,Walkürenstraße
+2196,
 2197,Kaiserring
 2198,Duisburger Straße
 2199,Mannheimer Straße
+2200,Maybachstraße
 2201,Seckenheimer Straße
 2202,Friedrichsring
+2203,Richard-Wagner-Straße
 2204,Landteilstraße
+2205,Wetzlarer Winkel
+2206,Einsteinstraße
+2207,
 2208,Neckarauer Straße
 2209,Waldstraße
+2210,Sentastraße
 2211,Friedrich-Ebert-Straße
-2212,Mannheimer Straße
-2213,Friedrichsplatz
+2212,Bäckerweg
+2213,Stresemannstraße
 2214,Steubenstraße
-2215,Steubenstraße
+2215,Hans-Sachs-Ring
 2216,Möhlstraße
+2217,Neurottstraße
+2218,
+2219,Humboldtstraße
+2220,
 2221,Sandhofer Straße
+2223,Karolingerweg
 2224,Viehhofstraße
 2225,Waldhofstraße
-2227,Friedrich-Ebert-Straße
+2226,Kunststraße
+2227,Bibienastraße
+2228,Carolus-Vocke-Ring
 2229,Friedrichstraße
 2230,Untermühlaustraße
 2231,Luisenring
+2233,Schimperstraße
 2234,Seckenheimer Hauptstraße
 2235,Friedrichsring
+2236,Fressgasse
 2237,Auf dem Sand
+2238,Gontardstraße
 2240,Seckenheimer Straße
 2241,Untermühlaustraße
+2242,
+2244,Dynamostraße
+2245,Gärtnerstraße
 2246,Untermühlaustraße
 2247,Neckarauer Straße
 2248,Goethestraße
 2249,Alte Frankfurter Straße
-2250,Wachenburgstraße
+2250,Kronenburgstraße
 2251,Waldhofstraße
 2252,
+2253,
 2254,Kurpfalzstraße
+2255,
+2256,Binsenweg
+2257,Meerfeldstraße
+2258,Lindenhofstraße
 2259,Friedrich-Ebert-Straße
 2260,Käfertaler Straße
-2263,Helmertstraße
+2261,Lange Rötterstraße
+2262,Kalthorststraße
+2263,Innstraße
 2264,Friedrichsring
 2265,Relaisstraße
 2266,Waldhofstraße
+2267,Hafenstraße
+2268,
 2269,Ludwig-Jolly-Straße
-2270,Kurpfalzstraße
-2271,Friedrich-Ebert-Straße
+2270,
+2271,Bibienastraße
 2272,Friedrichsplatz
 2273,Frankenthaler Straße
 2274,Essener Straße
-2278,Parkring
-2279,Steubenstraße
+2275,Fressgasse
+2276,Meeräckerplatz
+2277,Feldbergstraße
+2278,
+2279,Feldbergstraße
 2280,Untermühlaustraße
 2281,Voltastraße
 2281,Voltastraße
-2282,Sonderburger Straße
+2282,Haderslebener Straße
 2283,Carl-Benz-Straße
 2284,Mittelstraße
-2285,Luisenring
+2285,
 2286,Lampertheimer Straße
 2287,Wormser Straße
-2288,Friedrichsring
+2288,
 2289,Schanzenstraße
-2290,Hermsheimer Straße
+2290,Franz-Conrad-Linck-Straße
+2291,Roteichenring
+2292,Madenburgstraße
 2293,Schwetzinger Straße
 2294,Kaiserring
 2295,Luisenring
 2297,Steubenstraße
 2298,Friedrich-Ebert-Straße
 2299,Viernheimer Weg
+2300,Kattowitzer Zeile
+2301,Speyerer Straße
 2302,Friedrich-Ebert-Straße
 2303,Seckenheimer Landstraße
+2304,Lange Rötterstraße
 2305,Herzogenriedstraße
 2306,Friedrich-Ebert-Straße
+2307,Tattersallstraße
 2308,Lilienthalstraße
+2309,Galvanistraße
+2310,
 2311,Waldhofstraße
-2314,Suebenheimer Allee
+2312,Trifelsstraße
+2313,Langstraße
+2314,Im Kaisergewann
 2315,Rhenaniastraße
 2316,Kurpfalzbrücke
 2318,Schwetzinger Straße
 2319,Rhenaniastraße
+2320,Bahnhofstraße
 2322,Kallstadter Straße
+2323,Weiherstraße
 2324,Augustaanlage
 2325,Luisenring
 2326,
+2327,Feldbergstraße
 2328,Steubenstraße
-2329,Schwetzinger Landstraße
+2329,Neumayerstraße
 2330,Hochuferstraße
 2331,Herzogenriedstraße
+2332,
+2333,
 2334,Neckarauer Straße
 2335,Möhlstraße
+2337,Kunststraße
 2338,Bismarckstraße
 2339,Friedrichsring
 2340,Klingenberger Straße
 2341,
 2342,Morchfeldstraße
 2343,Käfertaler Straße
-2345,Oskar-von-Miller-Straße
+2344,Neckarplatt
+2345,Turbinenstraße
+2347,Otto-Siffling-Straße
+2348,
 2349,Rhenaniastraße
-2350,Lampertheimer Straße
+2350,Sonnenschein
 2351,Neckarauer Straße
 2354,Cahn-Garnier-Ufer
 2355,Kurpfalzstraße
-2356,Käfertaler Straße
+2356,Lange Rötterstraße
 2357,Dudenstraße
 2358,Weinheimer Straße
-2359,Käfertaler Straße
+2359,Soironstraße
 2360,Leinenstraße
 2361,Diffenéstraße
-2362,Augustaanlage
+2362,Mühldorferstraße
 2363,Herzogenriedstraße
+2364,Dynamostraße
+2366,Dorfstraße
 2367,Dalbergstraße
 2368,Ludwigshafener Straße
 2369,Friedrich-Ebert-Straße
-2372,Schwetzinger Straße
+2370,
+2371,Elfenstraße
+2372,Toräckerstraße
+2373,Promenadenweg
 2374,Rheingoldstraße
 2375,Neckarauer Straße
 2376,Friedrichsring
+2377,Pettenkoferstraße
 2378,Herzogenriedstraße
-2381,Neckarauer Straße
+2379,
+2380,Schildkrötstraße
+2381,Kurzgewannstraße
 2382,Feudenheimer Straße
 2383,Käfertaler Straße
+2384,Im Lohr
 2385,Friedrich-Ebert-Straße
 2386,Luzenbergstraße
 2387,Reichskanzler-Müller-Straße
+2388,
 2389,Seckenheimer Straße
-2390,Waldpforte
+2390,Flensburger Ring
 2391,Herzogenriedstraße
 2392,Neustadter Straße
+2393,
+2394,Werderstraße
+2395,Eberswalder Weg
+2396,Elsa-Brändström-Straße
 2397,Kaiserring
-2398,Waldhofstraße
-2399,Mannheimer Straße
+2398,Maybachstraße
+2399,Rüdesheimer Straße
 2400,Freherstraße
+2401,Mecklenburger Straße
+2402,August-Bebel-Straße
+2403,
 2404,Kaiserring
 2405,
+2406,Maybachstraße
 2407,Schwetzinger Straße
+2408,
+2409,Maxstraße
 2410,Seckenheimer Straße
 2411,
 2412,Seckenheimer Straße
-2416,Landteilstraße
+2414,Maybachstraße
+2415,Lange Rötterstraße
+2416,Heinz-Haber-Straße
+2417,Luisenstraße
+2418,Rheinpromenade
 2420,Floßwörthstraße
 2422,Schubertstraße
 2423,Boveristraße
 2424,Lampertheimer Straße
+2425,Friedrichstraße
+2426,
 2427,Carl-Benz-Straße
+2428,Kopernikusstraße
+2429,Katharinenstraße
+2430,Zähringer Straße
 2431,Lindenhofstraße
 2432,Viernheimer Weg
+2433,Odenwaldstraße
+2434,Jungbuschstraße
 2435,Auf dem Sand
+2436,
 2437,Landteilstraße
 2438,Floßwörthstraße
+2439,Draisstraße
+2440,Luisenstraße
 2441,Seckenheimer Landstraße
+2443,
 2444,Lilienthalstraße
 2445,Inselstraße
+2446,Wingertstraße
 2447,
 2448,Friedrich-Ebert-Straße
+2449,Mittelstraße
 2450,Friedrichsring
 2451,Bismarckstraße
-2452,Friedrich-Ebert-Straße
+2452,Karl-Mathy-Straße
+2453,Neudorfstraße
 2454,Ludwig-Jolly-Straße
+2455,Wetzlarer Winkel
+2456,Alter Postweg
 2457,Lampertheimer Straße
-2459,Waldhofstraße
+2458,
+2459,Hohwiesenstraße
+2459,Hohwiesenstraße
+2460,
+2461,Mecklenburger Straße
+2462,Zellstoffstraße
 2463,Neckarauer Straße
+2464,Zähringer Straße
 2465,Käfertaler Straße
+2466,Thüringer Straße
 2467,Waldstraße
 2468,Schönauer Straße
 2470,Weinheimer Straße
 2471,Sonderburger Straße
 2473,Friesenheimer Straße
-2474,Friedrichsring
+2474,Hebelstraße
 2476,Steubenstraße
 2477,Industriestraße
 2478,Friedrich-Ebert-Straße
+2479,Blücherstraße
+2480,
+2481,Fressgasse
 2482,Schubertstraße
+2483,Mittelstraße
 2484,Röntgenstraße
 2485,Friedrich-Ebert-Straße
-2486,Hauptstraße
+2486,Wilhelmstraße
+2487,Mittelstraße
 2488,Friedrich-Ebert-Straße
+2489,Speckweg
+2490,Waldhornstraße
 2491,Röntgenstraße
 2494,Friedrichsfelder Landstraße
+2495,Gottlieb-Daimler-Straße
 2496,Sandhofer Straße
 2497,Friedrichsring
 2498,Vogesenstraße
+2499,Kunststraße
+2500,Kunststraße
+2501,Kunststraße
 2502,Käfertaler Straße
+2503,Kriegerstraße
+2505,Beilstraße
+2506,Johann-Schütte-Straße
 2507,Wormser Straße
+2508,Rappoltsweilerstraße
 2509,Hochuferstraße
 2510,Friedrich-Ebert-Straße
+2511,Hafenstraße
 2512,Friedrich-Ebert-Straße
 2513,Carl-Benz-Straße
-2515,Schwetzinger Straße
+2514,Carl-Reuther-Straße
+2515,Keplerstraße
 2516,Waldstraße
 2517,Sandhofer Straße
 2518,Magdeburger Straße
 2519,Friedrichsring
 2520,Kaiserring
+2521,Werderstraße
 2522,Theodor-Heuss-Anlage
-2524,Seckenheimer Straße
+2523,Donarstraße
+2524,Karl-Ludwig-Straße
 2525,Friedrich-Ebert-Straße
 2526,Waldhofstraße
+2528,Kunststraße
+2529,
 2530,Collinistraße
 2531,Augustaanlage
+2533,Fressgasse
 2536,Neustadter Straße
-2537,Schubertstraße
+2537,Nietzschestraße
+2538,
 2540,
+2541,Max-Joseph-Straße
+2542,Schulstraße
+2543,Sandhofer Straße
 2544,
 2545,Herzogenriedstraße
+2546,Kunststraße
+2547,Karl-Ludwig-Straße
+2548,
+2549,
+2550,
 2551,Sandhofer Straße
 2553,Industriestraße
-2555,Friedrich-Ebert-Straße
+2555,Lange Rötterstraße
 2556,Seckenheimer Straße
 2557,Reichskanzler-Müller-Straße
+2558,Mönchwörthstraße
+2559,Hessische Straße
+2560,Moselstraße
+2561,Zellerstraße
+2562,Obere Clignetstraße
 2563,Waldstraße
+2564,
 2565,Friedrichsring
 2566,Sandhofer Straße
 2568,Friedrich-Ebert-Straße
-2571,Wachenburgstraße
+2569,Moselstraße
+2571,Herbststraße
 2572,Feudenheimer Straße
 2573,Friedrichsring
+2574,Fressgasse
 2575,Germaniastraße
+2576,Hugo-Wolf-Straße
+2578,Schildkrötstraße
 2579,Waldstraße
 2580,Untermühlaustraße
+2581,Max-Joseph-Straße
+2582,Rappoltsweilerstraße
+2583,Sammelbahnhof
 2584,Friedrichsring
-2586,Steubenstraße
+2585,
+2586,Freiheitsplatz
+2587,Poststraße
 2588,Diffenéstraße
 2589,Bismarckplatz
 2590,Relaisstraße
+2591,Berliner Straße
+2592,Talstraße
 2593,Hauptstraße
+2595,Jägerstraße
+2596,Ratsschreibergasse
+2597,Wiesbadener Straße
 2598,Dalbergstraße
+2599,Tattersallstraße
 2600,Herzogenriedstraße
+2601,Heinrich-Zille-Straße
 2602,Viernheimer Weg
-2603,Sandhofer Straße
+2603,Mauerstraße
+2604,
+2605,Pappelallee
 2606,Neckarauer Straße
+2607,Emil-Heckel-Straße
 2608,Relaisstraße
-2609,Neckarauer Straße
+2609,Katharinenstraße
+2610,
+2611,Nelkenstraße
+2612,Spiegelfabrik
 2613,Auf dem Sand
 2614,Steubenstraße
+2615,Kleine Riedstraße
 2617,Friedrichsring
-2618,Landteilstraße
+2618,Heinz-Haber-Straße
+2619,Dorfgärtenstraße
 2621,Auf dem Sand
-2622,Am Aubuckel
-2623,Steubenstraße
+2622,Ziethenstraße
+2623,Heiligenbergstraße
+2624,Belchenstraße
 2625,Schafweide
-2626,Lampertheimer Straße
+2626,Sonnenschein
+2627,Hafenstraße
+2628,
 2629,Maria-Kirch-Straße
-2630,Luisenring
+2630,
+2631,Moselstraße
 2632,Seckenheimer Hauptstraße
+2633,Dürkheimer Straße
 2634,Neckarauer Straße
+2635,Neckarplatt
+2636,Julius-Leber-Straße
+2637,Kunststraße
+2638,Fressgasse
+2639,Memeler Straße
 2640,Röntgenstraße
+2641,Planken
 2642,Klingenberger Straße
+2643,Zellstoffstraße
 2644,Steubenstraße
 2645,Käfertaler Straße
+2646,Danziger Baumgang
+2647,Deutsche Gasse
 2648,Rhenaniastraße
+2649,
 2650,Luisenring
 2652,Röntgenstraße
-2653,Bismarckstraße
+2653,
 2654,Carl-Benz-Straße
-2656,Auf dem Sand
+2655,Otto-Selz-Straße
+2656,Jägerstraße
+2657,Augartenstraße
 2659,Sandhofer Straße
 2660,Karl-Feuerstein-Straße
-2661,Waldstraße
+2661,Alte Frankfurter Straße
+2662,Dynamostraße
 2663,Morchfeldstraße
+2664,Mittelstraße
+2665,
 2666,Ludwig-Jolly-Straße
+2667,Hessische Straße
+2668,Schwanenstraße
+2669,Neckarauer Waldweg
 2670,Diffenéstraße
 2671,Friedrichsring
-2672,Waldhofstraße
+2672,Zeppelinstraße
+2673,
 2674,Reichskanzler-Müller-Straße
 2675,Hermsheimer Straße
+2676,Freie Luft
 2677,Schwetzinger Straße
 2678,Friedrichsring
+2679,Hans-Sachs-Ring
 2680,Möhlstraße
+2681,Anemonenweg
+2682,Speckweg
 2683,Morchfeldstraße
+2684,Lassallestraße
+2685,
 2686,Hanauer Straße
+2687,
 2688,Friedrichsring
 2690,Relaisstraße
-2691,Steubenstraße
+2691,Feldbergstraße
+2692,Maybachstraße
+2693,Bibienastraße
+2694,Neueichwaldstraße
 2695,Hochuferstraße
+2696,
+2697,Am Rebstock
+2698,
+2699,Wilhelm-Wundt-Straße
+2700,Bäckerweg
 2701,Floßwörthstraße
-2703,Keltenstraße
-2704,Schienenstraße
+2703,Alemannenstraße
+2704,Jakob-Faulhaber-Straße
 2705,Friedrichstraße
 2706,Augustaanlage
-2708,Landteilstraße
-2710,Seckenheimer Hauptstraße
+2707,Casterfeldstraße
+2708,Heinz-Haber-Straße
+2709,
+2710,Stengelstraße
+2711,
 2712,Friedrich-Ebert-Straße
+2713,Weidenstraße
 2714,Friedrichsplatz
-2716,Sonderburger Straße
+2716,Boehringerstraße
 2717,Klingenberger Straße
 2718,Königsberger Allee
 2719,Untermühlaustraße
 2720,Sandhofer Straße
-2723,Waldhofstraße
+2722,
+2723,Hohwiesenstraße
+2724,Storchenstraße
+2725,Rohrlachstraße
 2726,Kaiserring
-2727,Steubenstraße
-2734,Waldhofstraße
+2727,Heiligenbergstraße
+2728,
+2731,
+2732,
+2733,Marktstraße
+2734,Paul-Gerhardt-Straße
 2735,Industriestraße
+2736,Bäckerweg
+2737,Lange Rötterstraße
 2738,Rheingoldstraße
-2739,Steubenstraße
+2739,Feldbergstraße
 2740,Feudenheimer Straße
 2741,Rhenaniastraße
 2742,Herzogenriedstraße
-2746,Neckarauer Straße
+2744,Fressgasse
+2745,Riedfeldstraße
+2746,Lettestraße
+2747,Karl-Ladenburg-Straße
 2748,Kurpfalzkreisel
 2749,Seckenheimer Straße
+2750,Rottfeldstraße
+2751,Rottfeldstraße
 2752,Osterburker Straße
 2753,Morchfeldstraße
 2754,Untermühlaustraße
+2755,Donarstraße
+2756,Schildkrötstraße
 2757,Koblenzer Straße
-2758,Friedrich-Ebert-Straße
+2758,Eisenlohrstraße
 2759,Collinistraße
 2760,Waldhofstraße
 2761,Carl-Benz-Straße
+2762,Groß-Gerauer Straße
 2763,Neckarauer Straße
 2764,Otto-Beck-Straße
-2766,Neckarauer Straße
+2765,
+2766,Paul-Wittsack-Straße
+2767,Wiesbadener Straße
 2768,Rhenaniastraße
 2769,Dudenstraße
-2770,Schwetzinger Landstraße
+2770,Marie-Curie-Straße
 2771,Altrheinbrücke
+2772,Bachstraße
+2773,Im Morchhof
 2774,Schienenstraße
+2775,Schmiedgasse
 2777,Seckenheimer Straße
 2778,Luisenring
-2781,Waldhofstraße
+2779,Otto-Beck-Straße
+2780,Brahmsstraße
+2781,Paul-Gerhardt-Straße
+2782,Niederfeldstraße
+2783,Neckarvorlandstraße
+2784,Lange Rötterstraße
+2785,Karl-Marx-Straße
 2786,Wachenburgstraße
-2788,Neckarauer Straße
+2788,Paul-Wittsack-Straße
 2789,Kaiserring
-2790,Auf dem Sand
+2790,Speckweg
 2791,Friedrich-Ebert-Straße
 2792,Untermühlaustraße
+2793,Güterhallenstraße
 2794,Schafweide
 2795,Herzogenriedstraße
-2796,Dammstraße
+2796,Draisstraße
+2797,Thüringer Straße
+2798,
+2799,Kehler Straße
 2800,Am Messplatz
+2800,Am Messplatz
+2801,Offenbacher Straße
+2802,
 2803,Untermühlaustraße
-2804,Waldstraße
+2804,Düppelweg
+2805,
 2806,Morchfeldstraße
-2807,Friedrichsring
+2807,Tullastraße
+2808,Sammelbahnhof
+2809,Waldparkstraße
 2810,Kurpfalzbrücke
+2811,Fressgasse
 2812,Bismarckstraße
-2814,Bismarckplatz
+2813,Eichendorffstraße
+2814,Tattersallstraße
 2815,Kaiserring
+2816,Mittelstraße
 2817,Seckenheimer Landstraße
 2818,Bismarckplatz
-2819,Mittelstraße
+2819,Schimperstraße
+2820,Rohrlachstraße
 2821,Friedrichsring
 2822,Lilienthalstraße
-2823,
-2823,Kurpfalzstraße
+2823,Kunststraße
+2825,Fressgasse
 2826,Herzogenriedstraße
-2828,Schubertstraße
+2828,Nietzschestraße
 2829,Waldstraße
-2831,Steubenstraße
+2830,Neckarauer Waldweg
+2831,Heiligenbergstraße
+2832,
+2833,Franz-Gelb-Weg
+2834,Mittelstraße
 2835,Friedrich-Ebert-Straße
 2836,Neckarauer Straße
 2837,Kaiserring
 2838,Herzogenriedstraße
+2839,Elbinger Weg
 2840,Hauptstraße
+2841,Mittelstraße
+2842,Rheinhäuser Straße
 2843,Neckarauer Straße
 2844,Seckenheimer Hauptstraße
+2845,Speckweg
+2846,
 2847,Schwetzinger Straße
 2848,Röntgenstraße
 2849,Ulmenweg
 2850,Luisenring
 2851,Kurpfalzstraße
-2853,Friedrich-Ebert-Straße
+2852,Brandenburger Straße
+2853,Karl-Mathy-Straße
 2854,Auf dem Sand
 2855,Waldhofstraße
+2857,Laudenbacher Straße
 2858,Neckarauer Straße
+2860,
+2861,Friedrichstraße
+2862,Niederfeldstraße
 2863,Waldhofstraße
+2864,Meerfeldstraße
+2865,
 2866,Waldpforte
+2867,Hirschgasse
 2868,Waldhofstraße
+2869,Lameystraße
+2872,
 2873,Seckenheimer Straße
-2877,Steubenstraße
+2874,Dannstadter Straße
+2876,Werderstraße
+2877,Hans-Sachs-Ring
+2878,
+2879,Speckweg
 2880,Waldhofstraße
 2882,Augustaanlage
+2883,Max-Joseph-Straße
 2884,Friesenheimer Straße
 2885,Seckenheimer Straße
+2886,
+2888,Mollstraße
 2889,Viernheimer Weg
+2890,
 2891,Dammstraße
+2892,Kolpingstraße
+2893,Mollstraße
 2894,Parkring
 2895,Meeräckerstraße
 2896,Steubenstraße
-2898,Seckenheimer Hauptstraße
+2897,
+2898,Freiburger Straße
+2899,Kunststraße
+2900,Alsenweg
 2901,Josef-Braun-Ufer
-2902,Auf dem Sand
+2902,Galvanistraße
+2903,Galvanistraße
+2904,Mittelstraße
+2905,Kunststraße
+2906,Mittelstraße
 2907,Steubenstraße
+2908,Waldhornstraße
+2909,
+2910,Weiherstraße
+2911,Niederbronner Straße
+2913,Lange Rötterstraße
 2914,Waldstraße
 2915,Weinheimer Straße
 2916,Ilvesheimer Straße
 2917,Josef-Braun-Ufer
+2918,Spinnereistraße
+2919,Rindenweg
+2920,Ida-Dehmel-Ring
+2921,Feldbergstraße
+2922,Rheinhäuser Straße
+2923,Fressgasse
+2924,Staufener Straße
+2925,Wilhelmstraße
+2927,Sandhofer Straße
 2928,Kloppenheimer Straße
 2929,Neckarauer Straße
 2930,Seckenheimer Straße
 2931,Waldstraße
-2933,Auf dem Sand
+2932,
+2933,Galvanistraße
 2934,Seckenheimer Hauptstraße
-2936,Bismarckstraße
-2938,Waldhofstraße
-2939,Friedrichsring
+2935,Melchiorstraße
+2936,
+2938,Lortzingstraße
+2938,Lortzingstraße
+2939,
+2940,Fressgasse
 2941,Weinheimer Straße
+2942,
 2943,Rheingoldstraße
+2944,Kasseler Straße
 2946,Ulmenweg
-2947,Steubenstraße
-2948,Ilvesheimer Straße
-2949,Steubenstraße
+2947,Feldbergstraße
+2948,Odenwaldstraße
+2949,Feldbergstraße
 2950,Waldpforte
 2951,Untermühlaustraße
 2952,Floßwörthstraße
 2953,Seckenheimer Straße
+2954,Otterstadter Straße
+2955,Lange Rötterstraße
 2956,Waldhofstraße
+2957,Friedrich-Dürr-Straße
+2958,Fröhlichstraße
+2959,Kehler Straße
 2960,Herzogenriedstraße
 2961,Ulmenweg
 2962,Steubenstraße
 2963,Friedrichsring
 2964,Hauptstraße
-2970,
+2965,Kinzigstraße
+2966,Schlossgartenstraße
+2967,Lange Rötterstraße
+2970,Gottlieb-Daimler-Straße
+2971,Scharhofer Straße
+2972,Elfenstraße
 2973,Käfertaler Straße
 2974,Speckweg
-2975,Hanauer Straße
-2977,Steubenstraße
+2975,Marburger Straße
+2976,Riedgärtenstraße
+2977,Hans-Sachs-Ring
+2978,Andreas-Hofer-Straße
 2979,Osterburker Straße
 2980,
+2981,Marburger Straße
+2982,
 2983,Renzstraße
-2986,Friedrich-Ebert-Straße
+2984,Fressgasse
+2986,Eisenlohrstraße
 2987,Rheingoldstraße
 2989,Friedrich-Ebert-Straße
+2990,Jakob-Trumpfheller-Straße
+2991,Alte Frankfurter Straße
 2992,Seckenheimer Hauptstraße
-2994,Luisenring
+2993,Speckweg
+2994,Jungbuschstraße
+2995,Hanauer Straße
+2996,Dürerstraße
 2997,Hafenbahnstraße
 2998,Mannheimer Straße
 2999,Seckenheimer Straße
@@ -1625,299 +2734,521 @@ unfall_id,strasse
 3005,Friedrich-Ebert-Straße
 3006,Seckenheimer Straße
 3007,Ludwig-Jolly-Straße
-3009,Steubenstraße
+3008,
+3009,Feldbergstraße
 3010,Goethestraße
+3011,Lutherstraße
+3012,Michael-Bitterich-Weg
+3013,Rottfeldstraße
 3014,Waldhofstraße
-3017,Relaisstraße
+3016,Blücherstraße
+3017,Schwabenheimer Straße
 3018,Zielstraße
 3019,Friedrichsplatz
 3020,Waldstraße
 3021,
 3022,Kaiserring
-3023,Bismarckstraße
+3023,
 3024,Friedrich-Ebert-Straße
 3026,Bismarckstraße
 3027,Auf dem Sand
 3029,Neckarauer Straße
-3030,Steubenstraße
+3030,Feldbergstraße
 3031,Feudenheimer Straße
+3032,Rottfeldstraße
+3033,Joseph-Haydn-Straße
+3034,Seckenheimer Landstraße
 3035,Hanauer Straße
-3036,Waldstraße
+3036,Anemonenweg
+3037,Neckarvorlandstraße
 3038,Kallstadter Straße
+3039,Feldbergstraße
+3040,Lange Rötterstraße
 3041,Luzenbergstraße
+3042,
 3043,Voltastraße
+3044,
+3045,Stabhalterstraße
+3046,Bismarckplatz
 3047,Akazienstraße
 3048,
 3049,Seckenheimer Straße
+3050,Schimperstraße
+3051,
 3053,Wachenburgstraße
+3054,Hafenstraße
 3055,Ulmenweg
+3056,
 3057,Herzogenriedstraße
 3059,Am Aubuckel
+3060,Neckarvorlandstraße
+3061,Lange Rötterstraße
 3062,Schwetzinger Straße
-3063,Käfertaler Straße
+3063,Cannabichstraße
 3064,Cochemer Straße
 3065,Bismarckstraße
+3066,
+3067,Mittelstraße
 3068,
-3070,Käfertaler Straße
+3069,
+3070,Lange Rötterstraße
+3071,Asamplatz
 3072,Friedrich-Ebert-Straße
 3073,Zeughausplanken
+3074,Luftschifferstraße
 3075,Collinistraße
-3077,Steubenstraße
-3078,Seckenheimer Straße
-3079,Friedrich-Ebert-Straße
+3076,Mittelstraße
+3077,Feldbergstraße
+3078,Werderstraße
+3079,Bibienastraße
+3080,Ballonstraße
+3081,Speckweg
+3082,Mönchwörthstraße
+3083,Fischerstraße
 3084,Kurpfalzstraße
 3085,Theodor-Heuss-Anlage
+3085,Theodor-Heuss-Anlage
+3086,Clausthaler Ring
+3087,Sandhofer Straße
 3088,Casterfeldstraße
-3089,Landteilstraße
+3089,Julius-Hatry-Straße
 3090,Wachenburgstraße
+3091,Waldparkdamm
 3092,Käfertaler Straße
 3093,Waldhofstraße
 3094,Schwetzinger Straße
+3095,
 3096,Hermsheimer Straße
 3097,Luzenbergstraße
+3098,Speckweg
+3099,
 3100,Friedrichsring
 3101,Parkring
 3102,Renzstraße
+3103,Burgstraße
 3104,Friedrich-Ebert-Straße
+3105,Paul-Wittsack-Straße
 3106,Bismarckstraße
 3107,Rhenaniastraße
-3109,Neckarauer Straße
-3111,Rohrhofer Straße
+3108,
+3109,Rheintalbahnstraße
+3110,Feldbergstraße
+3111,Perreystraße
+3112,Böckstraße
 3113,Rheingoldstraße
-3116,Friedrich-Ebert-Straße
+3114,
+3115,Ortelsburger Straße
+3116,Eisenlohrstraße
+3117,Untergasse
+3118,Am Steingarten
+3119,Hanfstraße
+3120,Baumstraße
 3121,Waldhofstraße
 3123,
 3124,Luisenring
+3125,Gabelsbergerstraße
 3126,Waldhofstraße
+3127,Fressgasse
+3129,Marienburger Straße
+3130,Fressgasse
 3131,Relaisstraße
 3132,Friedrichsring
 3133,Waldhofstraße
+3134,
 3135,Neckarauer Straße
-3138,Kurpfalzstraße
-3139,Meeräckerstraße
+3136,Eisenlohrstraße
+3138,
+3139,Peterskopfstraße
+3140,
+3141,Kirchwaldstraße
 3142,Waldpforte
+3143,Rebenstraße
 3144,Hermsheimer Straße
 3145,Röntgenstraße
 3146,Neckarauer Straße
 3147,Waldhofstraße
 3148,Kaiserring
 3149,Feudenheimer Straße
-3152,Waldstraße
+3150,Kunststraße
+3151,Karl-Ladenburg-Straße
+3152,Alte Frankfurter Straße
 3153,Meeräckerstraße
-3155,Augustaanlage
+3155,Carl-Reiß-Platz
 3156,Seckenheimer Landstraße
+3157,Hessische Straße
+3158,Morchfeldstraße
 3159,Friedrich-Ebert-Straße
+3160,
 3161,Schubertstraße
+3162,Gontardstraße
+3163,Akademiestraße
+3164,Weinbergstraße
+3165,Keplerstraße
+3166,Obere Riedstraße
+3167,Waldhornstraße
 3168,Kurpfalzstraße
 3169,Auf dem Sand
 3170,Lampertheimer Straße
 3171,Seckenheimer Straße
 3172,Kurpfalzstraße
+3173,
 3174,Friedrichsring
+3175,Rastenburger Straße
 3176,Floßwörthstraße
+3177,Xaver-Fuhr-Straße
+3179,Rastatter Straße
+3180,Schildkrötstraße
 3181,Luzenbergstraße
 3182,Carl-Benz-Straße
-3187,Kaiserring
+3183,
+3184,Werftstraße
+3185,
+3186,Domstiftstraße
+3187,
+3188,Bromberger Baumgang
 3189,Hafenbahnstraße
 3190,Schanzenstraße
-3192,Lampertheimer Straße
+3191,Waldstraße
+3192,Siedlerpfad
+3193,
+3194,Fressgasse
 3195,Hochuferstraße
 3196,Hanauer Straße
+3197,Fressgasse
 3198,Kurpfalzbrücke
+3199,Kunststraße
+3200,Schlossgartenstraße
 3201,Neckarauer Straße
+3202,
+3203,Zähringer Straße
 3204,Schafweide
+3205,
 3206,Seckenheimer Straße
-3207,Am Aubuckel
-3208,Reichskanzler-Müller-Straße
+3207,Ziethenstraße
+3208,Traitteurstraße
 3209,Augustaanlage
 3210,Untermühlaustraße
 3211,Speckweg
 3212,Schienenstraße
+3213,Geibelstraße
 3214,Seckenheimer Landstraße
 3215,Landteilstraße
 3216,Collinistraße
 3217,Bismarckstraße
+3218,Sonnenschein
 3219,Alte Frankfurter Straße
+3220,Luisenstraße
+3221,
+3222,Marktstraße
+3223,Zähringer Straße
 3224,Friedrich-Ebert-Straße
-3226,Carl-Benz-Straße
+3226,Schimperstraße
 3227,Karlsternstraße
 3228,Rhenaniastraße
+3230,Mittelstraße
 3232,Rheinfähre
+3233,Anemonenweg
 3234,Bismarckstraße
 3235,Floßwörthstraße
+3236,Bibienastraße
+3237,Alte Frankfurter Straße
+3238,Rottfeldstraße
 3239,Parkring
 3240,Steubenstraße
+3241,Domstiftstraße
 3242,Karlsternstraße
-3243,Steubenstraße
+3243,Hans-Sachs-Ring
+3244,Mittelstraße
 3245,Sandhofer Straße
-3248,Bismarckstraße
+3246,Hessische Straße
+3247,Kinzigstraße
+3248,
+3249,
+3250,Ida-Dehmel-Ring
+3251,Bibienastraße
 3252,Seckenheimer Hauptstraße
 3253,Wachenburgstraße
-3254,Lilienthalstraße
+3254,Friedrich-Dürr-Straße
+3255,Sporwörthstraße
 3256,Mallaustraße
-3262,Waldhofstraße
+3257,Waldhornstraße
+3259,Mittelstraße
+3260,
+3261,Heinrich-von-Stephan-Straße
+3262,Gärtnerstraße
+3264,Fischerstraße
 3265,Neckarauer Straße
-3268,Hauptstraße
+3266,
+3267,
+3268,Görresstraße
 3269,Relaisstraße
 3270,Reichskanzler-Müller-Straße
 3271,Neckarauer Straße
+3272,
 3273,Neckarauer Straße
-3276,Waldhofstraße
-3280,Schwetzinger Straße
+3274,Durlacher Straße
+3275,Holzstraße
+3276,Laurentiusstraße
+3277,Adlerstraße
+3278,
+3279,Bruno-Rüffer-Straße
+3280,Keplerstraße
 3281,Dalbergstraße
 3284,Käfertaler Straße
+3285,
+3286,
 3287,Waldpforte
+3288,
 3289,Kaiserring
-3290,Auf dem Sand
-3293,Augustaanlage
+3290,Galvanistraße
+3292,Paul-Wittsack-Straße
+3293,Karl-Ludwig-Straße
 3294,Waldhofstraße
+3295,Lange Rötterstraße
 3296,Friedrich-Ebert-Straße
-3297,Neckarauer Straße
+3297,Katharinenstraße
 3298,Friedrichsring
+3299,
 3300,Sandhofer Straße
+3302,Mittelstraße
 3303,Kurpfalzstraße
 3304,Friedrich-Ebert-Straße
 3305,Herzogenriedstraße
-3306,Steubenstraße
+3306,Hans-Sachs-Ring
 3307,Bismarckstraße
-3308,Friedrichsplatz
+3308,Stresemannstraße
+3309,
+3310,
+3311,Baumstraße
 3312,Josef-Braun-Ufer
 3313,Sandhofer Straße
 3314,Neckarauer Straße
 3315,
+3317,Rottfeldstraße
 3318,Am Messplatz
 3319,Seckenheimer Straße
 3320,Carl-Benz-Straße
-3321,Hauptstraße
+3321,Liebfrauenstraße
 3322,Frankenthaler Straße
 3323,Relaisstraße
 3324,Friedrich-Ebert-Straße
 3325,Friedrich-Ebert-Straße
+3326,Kunststraße
+3328,Carl-Metz-Straße
 3329,Alte Frankfurter Straße
+3330,Tattersallstraße
 3331,Friedrichsring
+3332,
+3333,Moselstraße
+3334,Scheffelstraße
+3335,Karlsruher Straße
 3336,Waldhofstraße
-3337,Oskar-von-Miller-Straße
+3337,Ludwig-Roebel-Straße
 3338,Untermühlaustraße
-3339,Waldhofstraße
+3339,Laurentiusstraße
 3340,Kaiserring
 3341,Relaisstraße
 3342,Neckarauer Straße
 3343,Königsberger Allee
+3344,Mönchwörthstraße
 3345,Augustaanlage
 3346,Neckarauer Straße
 3347,Friedrich-Ebert-Straße
 3348,Kurpfalzstraße
+3349,Lange Rötterstraße
 3350,Kaiserring
 3351,Neckarauer Straße
-3353,Speyerer Straße
+3352,Schimperstraße
+3353,Im Lohr
+3354,Tattersallstraße
 3355,Wachenburgstraße
-3356,Schwetzinger Straße
+3356,Kopernikusstraße
+3358,
 3359,Speckweg
-3361,Morchfeldstraße
+3360,Neckarvorlandstraße
+3361,Schildkrötstraße
 3362,Helmertstraße
+3363,Lange Rötterstraße
 3364,Wormser Straße
+3365,
+3366,Otto-Selz-Straße
+3367,Mittelstraße
 3368,Rheingoldstraße
 3369,Friedrichsfelder Landstraße
+3370,Uhlandstraße
+3371,Am Oberen Luisenpark
 3372,Friedrich-Ebert-Straße
-3381,Friedrich-Ebert-Straße
+3373,Stolzeneckstraße
+3374,Friedrichstraße
+3375,Obere Riedstraße
+3376,
+3378,Kleinfeldstraße
+3379,Wingertstraße
+3380,
+3381,Karl-Mathy-Straße
 3382,Vogesenstraße
+3383,Zwerchgasse
+3384,Stiller Weg
 3385,Käfertaler Straße
 3386,Voltastraße
+3387,
 3388,Viehhofstraße
 3389,Wachenburgstraße
-3390,Friedrich-Ebert-Straße
+3390,Lange Rötterstraße
 3391,Siebenbürger Straße
+3392,Edisonstraße
+3394,Tattersallstraße
+3395,
+3396,Obere Clignetstraße
 3397,Röntgenstraße
 3398,Ludwig-Jolly-Straße
 3399,Steubenstraße
+3400,Neckarauer Waldweg
+3401,Moltkestraße
+3402,
 3403,Relaisstraße
 3404,Seckenheimer Hauptstraße
+3405,Mittelstraße
 3406,Karl-Feuerstein-Straße
 3407,Reichskanzler-Müller-Straße
 3408,
+3409,Fressgasse
 3410,Freherstraße
+3411,Altrheinstraße
+3412,
 3413,Waldhofstraße
+3414,Soironstraße
+3415,
 3416,Boveristraße
-3417,Waldpforte
+3417,Alsenweg
 3418,Ludwig-Ratzel-Straße
+3419,Kunststraße
 3420,Voltastraße
 3421,
 3422,Untermühlaustraße
 3423,Wormser Straße
+3424,Mittelstraße
 3425,Floßwörthstraße
+3426,Riedfeldstraße
 3427,Untermühlaustraße
+3428,Valentin-Streuber-Straße
+3429,
 3430,Boveristraße
 3431,Waldstraße
-3432,Röntgenstraße
-3433,Speyerer Straße
+3432,Am Friedhof
+3433,Im Lohr
 3434,Untermühlaustraße
+3435,Carl-Reiß-Platz
+3436,Obere Riedstraße
+3437,
 3438,Bismarckstraße
-3443,Sandhofer Straße
+3439,
+3440,Zähringer Straße
+3441,
+3443,Zellstoffstraße
+3444,Talstraße
+3445,Rheinhäuser Straße
 3446,Waldhofstraße
+3447,Lortzingstraße
+3448,Hubenstraße
 3449,Waldhofstraße
 3450,Waldstraße
-3451,Steubenstraße
-3453,Wingertsbuckel
+3451,Hans-Sachs-Ring
+3452,Heustraße
+3453,Hölderlinstraße
+3454,
+3455,Moselstraße
 3456,Sonderburger Straße
+3458,Anemonenweg
 3459,Seckenheimer Straße
-3460,Schwetzinger Straße
-3461,Spinnereistraße
+3460,Kopernikusstraße
+3461,Am Stich
 3462,Schwabenstraße
 3463,Friedrich-Ebert-Straße
+3464,Bellenstraße
 3465,Hochuferstraße
 3466,Schwetzinger Straße
-3468,Morchfeldstraße
+3468,Schildkrötstraße
 3469,Friedrich-Ebert-Straße
+3470,Geibelstraße
 3471,Ulmenweg
 3472,Seckenheimer Hauptstraße
 3474,
+3475,Rheinhäuser Straße
 3476,Luzenbergstraße
 3477,Schwetzinger Straße
-3480,Steubenstraße
+3478,Marburger Straße
+3479,Speyerer Straße
+3480,Hans-Sachs-Ring
+3481,Zwickauer Weg
 3482,Möhlstraße
 3484,Carl-Benz-Straße
-3485,Käfertaler Straße
-3486,Waldhofstraße
+3485,Obere Clignetstraße
+3486,Lortzingstraße
 3487,Speyerer Straße
-3489,Schwetzinger Landstraße
+3488,Pumpwerkstraße
+3489,Marie-Curie-Straße
+3490,Waldhornstraße
 3491,Voltastraße
+3493,Zähringer Straße
+3494,
+3495,Richard-Wagner-Straße
+3496,Weizenstraße
 3497,Freherstraße
-3498,Auf dem Sand
+3498,Edisonstraße
+3499,Gabriel-Grupello-Weg
 3500,Neckarauer Straße
+3501,Robert-Blum-Straße
 3502,Frankenthaler Straße
 3503,Koblenzer Straße
+3504,Feldbergstraße
+3505,Gottlieb-Daimler-Straße
 3506,Friedrichsring
 3507,Suebenheimer Allee
 3508,Relaisstraße
-3509,Waldhofstraße
+3509,Hohwiesenstraße
 3510,Lilienthalstraße
+3511,Katharinenstraße
 3512,Auf dem Sand
 3513,Waldhofstraße
+3514,
 3515,Neckarauer Straße
+3516,Im Oberen Falltor
 3517,Relaisstraße
-3518,Kloppenheimer Straße
+3518,Zähringer Straße
+3519,Meerfeldstraße
+3520,Fressgasse
 3521,Herzogenriedstraße
 3523,Akazienstraße
 3524,Alte Frankfurter Straße
 3525,Goethestraße
+3526,Schlossgartenstraße
 3527,Seilerstraße
+3528,Ernst-Barlach-Allee
 3529,Morchfeldstraße
-3530,Waldhofstraße
+3530,Paul-Gerhardt-Straße
+3532,Alemannenstraße
 3533,Altriper Straße
 3534,Sibylla-Merian-Straße
-3535,Diffenéstraße
-3535,Diffenéstraße
+3535,Gerwigstraße
+3536,Valentin-Streuber-Straße
 3539,Neckarauer Straße
+3540,Chemnitzer Straße
 3541,Essener Straße
+3542,Tullastraße
 3543,Luisenring
+3544,Jungbuschstraße
 3546,Hochuferstraße
 3547,Dudenstraße
 3548,Viernheimer Weg
 3549,Waldstraße
+3550,
+3551,
+3552,
 3553,Viernheimer Weg
 3554,Alte Frankfurter Straße
-3555,Waldhofstraße
-3556,Steubenstraße
+3555,Paul-Gerhardt-Straße
+3556,Freiheitsplatz
 3557,Karl-Feuerstein-Straße
 3558,Waldhofstraße
 3559,Weinheimer Straße
@@ -1929,37 +3260,68 @@ unfall_id,strasse
 3566,Neckarauer Straße
 3567,Sonderburger Straße
 3568,Sandhofer Straße
+3569,
+3570,Am Brunnengarten
+3571,Verschaffeltstraße
 3572,Waldstraße
 3573,Dudenstraße
+3574,
 3575,Waldhofstraße
+3576,Lameystraße
+3577,Emil-Heckel-Straße
+3578,Blücherstraße
+3579,
 3580,Carl-Benz-Straße
 3581,Waldstraße
+3582,
 3584,Luzenbergstraße
 3585,Relaisstraße
 3586,Neckarauer Straße
+3587,Unteres Ringgässchen
+3588,Berliner Straße
 3589,Lilienthalstraße
-3590,Schwetzinger Straße
+3590,Tattersallstraße
+3591,Angelstraße
 3592,Friedrich-Ebert-Straße
+3593,Berliner Straße
 3594,Relaisstraße
-3598,Diffenéstraße
-3598,Diffenéstraße
-3600,Neustadter Straße
+3595,Zum Herrenried
+3596,
+3597,Bibienastraße
+3598,Gerwigstraße
+3599,Rottfeldstraße
+3600,Dürkheimer Straße
+3601,
+3602,Spinozastraße
+3603,Mülhauser Straße
 3604,Käfertaler Straße
+3606,Speckweg
 3607,Augustaanlage
 3608,Ulmenweg
+3609,Rottfeldstraße
 3611,Sandhofer Straße
 3612,
-3613,Friedrichsring
+3613,
 3614,Feudenheimer Straße
 3615,Friedrich-Ebert-Straße
 3616,Augustaanlage
 3617,Ilvesheimer Straße
-3618,Friedrichsring
+3618,
 3619,Karl-Feuerstein-Straße
+3620,Keplerstraße
+3621,Belfortstraße
 3622,Möhlstraße
-3625,Friedrich-Ebert-Straße
+3624,Mittelstraße
+3625,Schafweide
+3626,
+3627,Wingertstraße
 3628,Neckarauer Straße
-3630,Morchfeldstraße
+3630,Schildkrötstraße
+3631,
 3632,Luzenbergstraße
-3633,Spreewaldallee
+3633,Chemnitzer Straße
 3634,Mannheimer Straße
+3635,Dornheimer Ring
+3636,
+3637,Lange Rötterstraße
+3638,Memeler Straße

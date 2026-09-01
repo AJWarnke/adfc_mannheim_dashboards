@@ -1,189 +1,1604 @@
-strasse,strassentyp,stadtbezirke,laenge_km
-Akazienstraße,Sammelstrasse,"Neckarstadt-Ost/Wohlgelegen, Waldhof",0.5
-Alte Frankfurter Straße,Sammelstrasse,Waldhof,0.3
-Alte Seilerei,Sammelstrasse,Neckarau,0.09
-Alter Frankfurter Weg,Sammelstrasse,Sandhofen,0.78
-Altrheinbrücke,Hauptverkehrsstrasse,"Neckarstadt-West, Sandhofen",0.52
-Altriper Straße,Sammelstrasse,"Neckarau, Rheinau",0.47
-Am Aubuckel,Hauptverkehrsstrasse,"Feudenheim, Käfertal",2.65
-Am Herrschaftswald,Sammelstrasse,Waldhof,0.57
-Am Messplatz,Hauptverkehrsstrasse,Neckarstadt-West,0.16
-Am Straßenheimer Weg,Sammelstrasse,Wallstadt,0.92
-Auf dem Sand,Sammelstrasse,Käfertal,1.62
-Augustaanlage,Hauptverkehrsstrasse (B-Strasse),Schwetzingerstadt/Oststadt,2.36
-BBC-Behelfsbrücke,Hauptverkehrsstrasse (B-Strasse),"Käfertal, Neckarstadt-Ost/Wohlgelegen",0.13
-Banater Straße,Hauptverkehrsstrasse,Feudenheim,1.7
-Birkenauer Straße,Sammelstrasse,Käfertal,1.53
-Bismarckplatz,Hauptverkehrsstrasse (B-Strasse),"Innenstadt/Jungbusch, Schwetzingerstadt/Oststadt",0.18
-Bismarckstraße,Hauptverkehrsstrasse (B-Strasse),"Innenstadt/Jungbusch, Schwetzingerstadt/Oststadt",2.64
-Boveristraße,Hauptverkehrsstrasse,"Käfertal, Waldhof",1.51
-Brandenburger Straße,Sammelstrasse,Vogelstang,0.05
-Braunschweiger Allee,Sammelstrasse,"Sandhofen, Schönau",1.77
-Brückenstraße,Hauptverkehrsstrasse,"Neckarstadt-Ost/Wohlgelegen, Neckarstadt-West, Seckenheim",0.54
-Bunsenstraße,Sammelstrasse,Neckarstadt-West,0.63
-Bürstadter Straße,Hauptverkehrsstrasse,Sandhofen,1.23
-Cahn-Garnier-Ufer,Sammelstrasse,Schwetzingerstadt/Oststadt,0.67
-Carl-Benz-Straße,Sammelstrasse,"Neckarstadt-Ost/Wohlgelegen, Neckarstadt-West",1.36
-Carlo-Schmid-Brücke,Hauptverkehrsstrasse (B-Strasse),Neuostheim/Neuhermsheim,0.14
-Casterfeldstraße,Hauptverkehrsstrasse (B-Strasse),"Neckarau, Rheinau",2.18
-Cochemer Straße,Sammelstrasse,Käfertal,0.4
-Collinistraße,Sammelstrasse,Schwetzingerstadt/Oststadt,0.59
-Dalbergstraße,Hauptverkehrsstrasse (B-Strasse),Innenstadt/Jungbusch,0.23
-Dammstraße,Sammelstrasse,"Neckarstadt-Ost/Wohlgelegen, Neckarstadt-West",1.03
-Diffenéstraße,Hauptverkehrsstrasse,"Neckarstadt-West, Waldhof",4.34
-Dudenstraße,Sammelstrasse,Neckarstadt-Ost/Wohlgelegen,2.13
-Duisburger Straße,Sammelstrasse,Rheinau,1.25
-Edinger Riedweg,Hauptverkehrsstrasse,Rheinau,0.88
-Eisenstraße,Sammelstrasse,Waldhof,0.17
-Essener Straße,Sammelstrasse,Rheinau,1.35
-Fabrikstationstraße,Sammelstrasse,Neckarau,0.26
-Fardelystraße,Sammelstrasse,Neckarstadt-West,0.22
-Feudenheimer Straße,Hauptverkehrsstrasse,"Feudenheim, Neckarstadt-Ost/Wohlgelegen",4.0
-Floßwörthstraße,Hauptverkehrsstrasse,Neckarau,1.27
-Frankenthaler Straße,Hauptverkehrsstrasse (B-Strasse),"Sandhofen, Schönau, Waldhof",17.21
-Fred-Joachim-Schoeps-Straße,Sammelstrasse,Friedrichsfeld,0.15
-Freherstraße,Hauptverkehrsstrasse (B-Strasse),Innenstadt/Jungbusch,0.56
-Friedrich-Ebert-Straße,Hauptverkehrsstrasse (B-Strasse),Neckarstadt-Ost/Wohlgelegen,5.12
-Friedrichsfelder Landstraße,Hauptverkehrsstrasse,Friedrichsfeld,3.18
-Friedrichsplatz,Hauptverkehrsstrasse (B-Strasse),Schwetzingerstadt/Oststadt,0.62
-Friedrichsring,Hauptverkehrsstrasse (B-Strasse),"Innenstadt/Jungbusch, Schwetzingerstadt/Oststadt",2.2
-Friedrichstraße,Sammelstrasse,Neckarau,0.35
-Friesenheimer Straße,Sammelstrasse,Neckarstadt-West,1.72
-Germaniastraße,Sammelstrasse,Neckarau,0.09
-Goethestraße,Hauptverkehrsstrasse (B-Strasse),Schwetzingerstadt/Oststadt,0.53
-Gorxheimer Straße,Sammelstrasse,Käfertal,0.59
-Hafenbahnstraße,Hauptverkehrsstrasse,"Neckarstadt-West, Waldhof",2.55
-Hanauer Platz,Sammelstrasse,Waldhof,0.11
-Hanauer Straße,Sammelstrasse,Waldhof,0.36
-Harrlachweg,Sammelstrasse,Neuostheim/Neuhermsheim,0.26
-Hauptstraße,Sammelstrasse,Feudenheim,1.66
-Havellandstraße,Hauptverkehrsstrasse,Vogelstang,0.43
-Heddesheimer Landstraße,Hauptverkehrsstrasse,Wallstadt,0.66
-Helmertstraße,Sammelstrasse,Rheinau,1.6
-Helmholtzstraße,Sammelstrasse,Neckarstadt-West,0.64
-Helmut-Kohl-Straße,Hauptverkehrsstrasse (B-Strasse),Lindenhof,2.87
-Heppenheimer Straße,Sammelstrasse,Käfertal,1.12
-Hermsheimer Straße,Sammelstrasse,Neuostheim/Neuhermsheim,1.79
-Herzogenriedstraße,Sammelstrasse,"Neckarstadt-Ost/Wohlgelegen, Neckarstadt-West",2.37
-Hinter dem Wolfsberg,Hauptverkehrsstrasse,Vogelstang,0.27
-Hochuferstraße,Sammelstrasse,Neckarstadt-Ost/Wohlgelegen,1.41
-Ilvesheimer Straße,Sammelstrasse,Feudenheim,0.72
-Im Rott,Sammelstrasse,"Käfertal, Vogelstang",0.2
-Industriestraße,Sammelstrasse,Neckarstadt-West,2.02
-Inselstraße,Sammelstrasse,Neckarstadt-West,0.95
-Josef-Braun-Ufer,Sammelstrasse,Schwetzingerstadt/Oststadt,0.68
-Kaiserring,Hauptverkehrsstrasse (B-Strasse),"Innenstadt/Jungbusch, Schwetzingerstadt/Oststadt",0.85
-Kallstadter Straße,Hauptverkehrsstrasse,Käfertal,0.28
-Kapellenstraße,Sammelstrasse,Seckenheim,0.22
-Karl-Feuerstein-Straße,Sammelstrasse,Waldhof,0.82
-Karlsplatz,Hauptverkehrsstrasse,Rheinau,0.27
-Karlsternstraße,Sammelstrasse,Waldhof,1.62
-Keltenstraße,Sammelstrasse,Wallstadt,0.28
-Klingenberger Straße,Sammelstrasse,Wallstadt,0.26
-Kloppenheimer Straße,Hauptverkehrsstrasse,"Rheinau, Seckenheim",3.05
-Koblenzer Straße,Sammelstrasse,Vogelstang,1.01
-Krefelder Straße,Sammelstrasse,Rheinau,0.25
-Kurpfalzbrücke,Hauptverkehrsstrasse,"Innenstadt/Jungbusch, Neckarstadt-Ost/Wohlgelegen, Neckarstadt-West, Schwetzingerstadt/Oststadt",0.42
-Kurpfalzkreisel,Hauptverkehrsstrasse (B-Strasse),"Innenstadt/Jungbusch, Schwetzingerstadt/Oststadt",0.27
-Kurpfalzstraße,Sammelstrasse,Innenstadt/Jungbusch,0.49
-Käfertaler Straße,Sammelstrasse,Neckarstadt-Ost/Wohlgelegen,2.83
-Königsberger Allee,Sammelstrasse,"Sandhofen, Schönau",0.85
-Lampertheimer Straße,Sammelstrasse,"Käfertal, Waldhof",2.14
-Landteilstraße,Sammelstrasse,Lindenhof,0.97
-Langer Schlag,Sammelstrasse,Waldhof,0.1
-Leinenstraße,Sammelstrasse,Sandhofen,0.29
-Lilienthalstraße,Sammelstrasse,"Sandhofen, Schönau",1.94
-Lindenhofstraße,Sammelstrasse,Lindenhof,0.4
-Ludwig-Jolly-Straße,Hauptverkehrsstrasse (B-Strasse),Neckarstadt-West,0.81
-Ludwig-Ratzel-Straße,Sammelstrasse,Schwetzingerstadt/Oststadt,0.8
-Ludwigshafener Straße,Hauptverkehrsstrasse (B-Strasse),"Lindenhof, Neuostheim/Neuhermsheim, Schwetzingerstadt/Oststadt, Seckenheim",5.15
-Luisenring,Hauptverkehrsstrasse (B-Strasse),Innenstadt/Jungbusch,2.6
-Luzenbergstraße,Hauptverkehrsstrasse (B-Strasse),"Neckarstadt-West, Waldhof",2.75
-Magdeburger Straße,Hauptverkehrsstrasse,"Käfertal, Vogelstang",3.33
-Mallaustraße,Sammelstrasse,"Neckarau, Rheinau",2.75
-Mannheimer Landstraße,Hauptverkehrsstrasse,Rheinau,0.25
-Mannheimer Straße,Hauptverkehrsstrasse,"Käfertal, Wallstadt",2.49
-Maria-Kirch-Straße,Hauptverkehrsstrasse,Käfertal,0.3
-Meeräckerstraße,Sammelstrasse,Lindenhof,1.09
-Mittelstraße,Hauptverkehrsstrasse,"Neckarstadt-Ost/Wohlgelegen, Neckarstadt-West",0.22
-Morchfeldstraße,Hauptverkehrsstrasse,Neckarau,0.83
-Mosbacher Straße,Sammelstrasse,Wallstadt,1.29
-Mozartstraße,Sammelstrasse,Schwetzingerstadt/Oststadt,0.21
-Möhlstraße,Hauptverkehrsstrasse (B-Strasse),Schwetzingerstadt/Oststadt,0.99
-Neckarauer Straße,Hauptverkehrsstrasse (B-Strasse),"Lindenhof, Neckarau",5.48
-Neckarauer Übergang,Hauptverkehrsstrasse (B-Strasse),"Lindenhof, Neckarau, Schwetzingerstadt/Oststadt",0.19
-Neckarhauser Straße,Sammelstrasse,Friedrichsfeld,0.21
-Neuostheimer Straße,Hauptverkehrsstrasse,Seckenheim,2.28
-Neustadter Straße,Hauptverkehrsstrasse,"Feudenheim, Käfertal",0.79
-Odenwaldstraße,Sammelstrasse,Feudenheim,0.42
-Offenburger Straße,Sammelstrasse,Seckenheim,0.77
-Ortsstraße,Sammelstrasse,Wallstadt,0.45
-Oskar-von-Miller-Straße,Hauptverkehrsstrasse,"Käfertal, Waldhof",0.73
-Osterburker Straße,Sammelstrasse,Wallstadt,0.48
-Otto-Beck-Straße,Sammelstrasse,Schwetzingerstadt/Oststadt,1.04
-Parkring,Hauptverkehrsstrasse (B-Strasse),Innenstadt/Jungbusch,1.11
-Reichskanzler-Müller-Straße,Hauptverkehrsstrasse (B-Strasse),Schwetzingerstadt/Oststadt,2.06
-Relaisstraße,Hauptverkehrsstrasse,Rheinau,2.32
-Renzstraße,Hauptverkehrsstrasse (B-Strasse),Schwetzingerstadt/Oststadt,0.53
-Rheinfähre,Sammelstrasse,"Neckarau, Rheinau",0.36
-Rheingoldstraße,Sammelstrasse,Neckarau,0.66
-Rhenaniastraße,Sammelstrasse,"Neckarau, Rheinau",5.17
-Robert-Funari-Straße,Sammelstrasse,Käfertal,0.79
-Rohrhofer Straße,Hauptverkehrsstrasse,Rheinau,1.21
-Rollbühlstraße,Hauptverkehrsstrasse (B-Strasse),Käfertal,1.46
-Ruhrorter Straße,Sammelstrasse,Rheinau,1.48
-Römerstraße,Sammelstrasse,Wallstadt,0.85
-Röntgenstraße,Hauptverkehrsstrasse,Neckarstadt-Ost/Wohlgelegen,1.28
-Sandhofer Straße,Sammelstrasse,"Sandhofen, Waldhof",4.15
-Sandtorfer Weg,Sammelstrasse,Sandhofen,0.04
-Schafweide,Hauptverkehrsstrasse,Neckarstadt-Ost/Wohlgelegen,0.79
-Schanzenstraße,Hauptverkehrsstrasse (B-Strasse),Innenstadt/Jungbusch,0.1
-Scharhofer Straße,Sammelstrasse,Sandhofen,0.15
-Schienenstraße,Hauptverkehrsstrasse (B-Strasse),Waldhof,0.66
-Schubertstraße,Hauptverkehrsstrasse,Schwetzingerstadt/Oststadt,0.51
-Schwabenstraße,Sammelstrasse,"Friedrichsfeld, Seckenheim",2.38
-Schwetzinger Landstraße,Hauptverkehrsstrasse,Rheinau,0.77
-Schwetzinger Straße,Sammelstrasse,Schwetzingerstadt/Oststadt,1.63
-Schönauer Straße,Sammelstrasse,Sandhofen,0.43
-Seckenheimer Hauptstraße,Hauptverkehrsstrasse,Seckenheim,3.4
-Seckenheimer Landstraße,Hauptverkehrsstrasse,"Neuostheim/Neuhermsheim, Seckenheim",5.02
-Seckenheimer Straße,Sammelstrasse,Schwetzingerstadt/Oststadt,1.74
-Sedanstraße,Sammelstrasse,Neckarau,0.15
-Seilerstraße,Hauptverkehrsstrasse (B-Strasse),Innenstadt/Jungbusch,0.12
-Sibylla-Merian-Straße,Hauptverkehrsstrasse,Käfertal,0.64
-Siebenbürger Straße,Hauptverkehrsstrasse,"Feudenheim, Vogelstang, Wallstadt",4.01
-Siemensstraße,Sammelstrasse,Neckarau,0.35
-Sonderburger Straße,Sammelstrasse,"Schönau, Waldhof",2.53
-Speckweg,Sammelstrasse,Waldhof,0.37
-Speyerer Straße,Sammelstrasse,"Lindenhof, Neckarau",1.59
-Spinnereistraße,Sammelstrasse,Sandhofen,0.14
-Spreewaldallee,Sammelstrasse,Vogelstang,0.52
-Steubenstraße,Sammelstrasse,"Lindenhof, Neckarau",2.63
-Stotzstraße,Hauptverkehrsstrasse (B-Strasse),Schwetzingerstadt/Oststadt,0.34
-Straßenheimer Weg,Sammelstrasse,"Vogelstang, Wallstadt",2.25
-Sudetenstraße,Hauptverkehrsstrasse,"Feudenheim, Käfertal, Vogelstang, Wallstadt",3.71
-Suebenheimer Allee,Hauptverkehrsstrasse,Seckenheim,2.53
-Theodor-Heuss-Anlage,Hauptverkehrsstrasse,"Neuostheim/Neuhermsheim, Schwetzingerstadt/Oststadt",1.82
-Theodor-Storm-Straße,Sammelstrasse,Feudenheim,0.57
-Ulmenweg,Sammelstrasse,Neckarstadt-Ost/Wohlgelegen,0.87
-Untermühlaustraße,Hauptverkehrsstrasse (B-Strasse),"Neckarstadt-Ost/Wohlgelegen, Neckarstadt-West",1.39
-Viehhofstraße,Hauptverkehrsstrasse (B-Strasse),Schwetzingerstadt/Oststadt,0.65
-Viernheimer Weg,Sammelstrasse,"Sandhofen, Schönau",4.14
-Vogesenstraße,Sammelstrasse,Friedrichsfeld,1.09
-Voltastraße,Hauptverkehrsstrasse,Neckarau,0.39
-Wachenburgstraße,Hauptverkehrsstrasse,Rheinau,1.65
-Waldhofstraße,Sammelstrasse,"Neckarstadt-Ost/Wohlgelegen, Neckarstadt-West",3.45
-Waldpforte,Sammelstrasse,Waldhof,0.64
-Waldstraße,Hauptverkehrsstrasse,"Käfertal, Schönau, Vogelstang, Waldhof",7.96
-Wallstadter Straße,Sammelstrasse,"Feudenheim, Wallstadt",0.7
-Walter-Pahl-Brücke,Hauptverkehrsstrasse,"Schönau, Waldhof",0.16
-Wasserwerkstraße,Sammelstrasse,Käfertal,1.13
-Wattstraße,Sammelstrasse,Neckarau,0.23
-Weinheimer Straße,Sammelstrasse,"Käfertal, Vogelstang",1.31
-Wilhelm-Varnholt-Allee,Hauptverkehrsstrasse (B-Strasse),"Neuostheim/Neuhermsheim, Schwetzingerstadt/Oststadt",2.88
-Will-Sohl-Straße,Hauptverkehrsstrasse,Neuostheim/Neuhermsheim,0.57
-Wingertsbuckel,Sammelstrasse,"Feudenheim, Wallstadt",1.84
-Wormser Straße,Sammelstrasse,Käfertal,0.78
-Zeughausplanken,Sammelstrasse,Innenstadt/Jungbusch,0.07
-Zielstraße,Sammelstrasse,Neckarstadt-Ost/Wohlgelegen,0.91
-Überlinger Straße,Hauptverkehrsstrasse,Seckenheim,0.15
+strasse,strassentyp,stadtbezirke,anteil_hauptnetz,laenge_km
+Abendröte,Wohnstrasse,Käfertal,0.0,0.4
+Aberlering,Verkehrsberuhigter Bereich,Neckarstadt-Ost/Wohlgelegen,0.0,0.36
+Abraham-Lincoln-Allee,Wohnstrasse,Käfertal,0.0,0.61
+Acherner Straße,Wohnstrasse,Seckenheim,0.0,0.28
+Achkarrer Weg,Verkehrsberuhigter Bereich,Seckenheim,0.0,0.14
+Ackerstraße,Wohnstrasse,Neckarstadt-West,0.0,0.26
+Adalbert-Stifter-Straße,Wohnstrasse,Feudenheim,0.0,0.19
+Adelsheimer Straße,Wohnstrasse,Wallstadt,0.0,0.26
+Adlerstraße,Wohnstrasse,Neckarau,0.0,0.49
+Adolf-Damaschke-Ring,Wohnstrasse,Feudenheim,0.0,0.36
+Ahornhof,Wohnstrasse,Waldhof,0.0,0.48
+Ahornweg,Wohnstrasse,Waldhof,0.0,0.19
+Akademiestraße,Wohnstrasse,Innenstadt/Jungbusch,0.0,0.12
+Akazienstraße,Sammelstrasse,"Neckarstadt-Ost/Wohlgelegen, Waldhof",0.7128774900755668,0.53
+Alberichstraße,Verkehrsberuhigter Bereich,Neckarau,0.0,0.78
+Albert-Fritz-Weg,Wohnstrasse,Schönau,0.0,0.16
+Alemannenstraße,Wohnstrasse,Wallstadt,0.0,0.55
+Alfred-Delp-Straße,Wohnstrasse,Neckarau,0.0,0.13
+Alice-Droller-Straße,Wohnstrasse,Käfertal,0.0,0.07
+Allensteiner Weg,Wohnstrasse,Schönau,0.0,0.11
+Almenplatz,Wohnstrasse,Neckarau,0.0,0.11
+Almenstraße,Wohnstrasse,Neckarau,0.0,0.23
+Alphornstraße,Wohnstrasse,"Neckarstadt-Ost/Wohlgelegen, Neckarstadt-West",0.0,0.48
+Alpirsbacher Weg,Wohnstrasse,Seckenheim,0.0,0.12
+Alpseeweg,Verkehrsberuhigter Bereich,Rheinau,0.0,0.15
+Alsenweg,Wohnstrasse,Waldhof,0.0,0.54
+Altdammer Straße,Wohnstrasse,Sandhofen,0.0,0.29
+Alte Frankfurter Straße,Wohnstrasse,Waldhof,0.49040921816008054,0.62
+Alte Seilerei,Sammelstrasse,Neckarau,1.0,0.05
+Altenburger Weg,Wohnstrasse,Vogelstang,0.0,0.12
+Alter Frankfurter Weg,Sammelstrasse,Sandhofen,1.0,0.78
+Alter Friedhofweg,Wohnstrasse,Sandhofen,0.0,0.09
+Alter Postweg,Wohnstrasse,Käfertal,0.0,0.39
+Altheimer Straße,Wohnstrasse,Wallstadt,0.0,0.16
+Altkircher Straße,Wohnstrasse,Friedrichsfeld,0.0,0.09
+Altmühlstraße,Wohnstrasse,Neckarau,0.0,0.28
+Altrheinbrücke,Hauptverkehrsstrasse,"Neckarstadt-West, Sandhofen",1.0,0.52
+Altrheinstraße,Wohnstrasse,Waldhof,0.0,0.85
+Altriper Straße,Sammelstrasse,"Neckarau, Rheinau",1.0,0.47
+Am Aubuckel,Hauptverkehrsstrasse,"Feudenheim, Käfertal",1.0,1.78
+Am Bogen,Wohnstrasse,Feudenheim,0.0,0.43
+Am Brunnengarten,Verkehrsberuhigter Bereich,Neckarstadt-Ost/Wohlgelegen,0.0,0.12
+Am Dünenrand,Wohnstrasse,Seckenheim,0.0,0.43
+Am Exerzierplatz,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.01
+Am Friedhof,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.53
+Am Geheugraben,Wohnstrasse,Rheinau,0.0,0.47
+Am Grünen Hag,Wohnstrasse,Waldhof,0.0,0.22
+Am Hain,Wohnstrasse,Waldhof,0.0,0.11
+Am Herrschaftswald,Wohnstrasse,Waldhof,0.46081772213898875,1.23
+Am Kiefernbühl,Wohnstrasse,Waldhof,0.0,0.34
+Am Klumbengarten,Wohnstrasse,Seckenheim,0.0,0.14
+Am Kuhbuckel,Wohnstrasse,Käfertal,0.0,0.21
+Am Messplatz,Hauptverkehrsstrasse,Neckarstadt-West,1.0,0.08
+Am Oberen Luisenpark,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.84
+Am Rebstock,Wohnstrasse,Käfertal,0.0,0.42
+Am Rheinauer See,Wohnstrasse,Rheinau,0.0,0.92
+Am Römerbrunnen,Wohnstrasse,Seckenheim,0.0,0.13
+Am Salzkai,Wohnstrasse,Innenstadt/Jungbusch,0.0,0.42
+Am Sandhang,Wohnstrasse,Seckenheim,0.0,0.32
+Am Schelmenbuckel,Wohnstrasse,Feudenheim,0.0,0.46
+Am Schulgarten,Verkehrsberuhigter Bereich,Neckarstadt-Ost/Wohlgelegen,0.0,0.19
+Am Schwalbennest,Wohnstrasse,Rheinau,0.0,0.38
+Am Sonnengarten,Verkehrsberuhigter Bereich,Neckarstadt-Ost/Wohlgelegen,0.0,0.17
+Am Sonnigen Hang,Wohnstrasse,Feudenheim,0.0,0.37
+Am Steingarten,Verkehrsberuhigter Bereich,Neckarstadt-Ost/Wohlgelegen,0.0,0.17
+Am Stich,Wohnstrasse,Sandhofen,0.0,0.05
+Am Stock,Verkehrsberuhigter Bereich,Seckenheim,0.0,0.16
+Am Straßenheimer Weg,Sammelstrasse,Wallstadt,0.0,0.0
+Am Unkenteich,Verkehrsberuhigter Bereich,Wallstadt,0.0,0.17
+Am Waldrand,Wohnstrasse,Rheinau,0.0,0.55
+Am Wallstadter Bahnhof,Wohnstrasse,Wallstadt,0.0,0.42
+Am Weingarten,Verkehrsberuhigter Bereich,Neckarstadt-Ost/Wohlgelegen,0.0,0.18
+Am Wildpark,Wohnstrasse,Waldhof,0.0,0.12
+Amalie-Sieveking-Weg,Wohnstrasse,Waldhof,0.0,0.17
+Amerikanerstraße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.12
+Ammerseestraße,Verkehrsberuhigter Bereich,Rheinau,0.0,0.25
+Amorbacher Straße,Wohnstrasse,Wallstadt,0.0,0.27
+An den Kasernen,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.28
+An der Arena,Wohnstrasse,Seckenheim,0.0,1.0
+Andersenstraße,Wohnstrasse,Feudenheim,0.0,0.47
+Andreas-Hofer-Straße,Wohnstrasse,Feudenheim,0.0,0.64
+Anemonenweg,Wohnstrasse,Waldhof,0.0,0.83
+Angelstraße,Wohnstrasse,Neckarau,0.0,0.81
+Anklamer Weg,Wohnstrasse,Vogelstang,0.0,0.11
+Anna-Maria-von-Schrader-Weg,Verkehrsberuhigter Bereich,Neckarstadt-Ost/Wohlgelegen,0.0,0.21
+Anneliese-Rothenberger-Straße,Wohnstrasse,Käfertal,0.0,0.11
+Anton-Kurz-Weg,Verkehrsberuhigter Bereich,Schönau,0.0,0.16
+Apenrader Weg,Wohnstrasse,Schönau,0.0,0.45
+Apoldaer Weg,Wohnstrasse,Vogelstang,0.0,0.1
+Armbrustweg,Wohnstrasse,Neuostheim/Neuhermsheim,0.0,0.23
+Arndtstraße,Wohnstrasse,Feudenheim,0.0,0.33
+Arno-Anke-Weg,Verkehrsberuhigter Bereich,Käfertal,0.0,0.08
+Asamplatz,Verkehrsberuhigter Bereich,Innenstadt/Jungbusch,0.0,0.05
+Ascherslebener Weg,Wohnstrasse,Sandhofen,0.0,0.16
+Assenheimer Straße,Wohnstrasse,Rheinau,0.0,0.37
+Asterstraße,Wohnstrasse,Käfertal,0.0,0.29
+Atterseestraße,Verkehrsberuhigter Bereich,Rheinau,0.0,0.44
+Atzelbuckelstraße,Wohnstrasse,Wallstadt,0.0,0.27
+Atzelhofstraße,Wohnstrasse,Waldhof,0.0,0.33
+Auerhahnstraße,Wohnstrasse,Käfertal,0.0,0.31
+Auf dem Kegel,Wohnstrasse,Seckenheim,0.0,0.19
+Auf dem Sand,Sammelstrasse,Käfertal,1.0,1.37
+Auf den Brockenweg,Wohnstrasse,Sandhofen,0.0,0.08
+Auf der Blumenau,Wohnstrasse,Sandhofen,0.0,0.38
+Auf der Vogelstang,Wohnstrasse,Vogelstang,0.0,0.59
+Aufeldstraße,Wohnstrasse,Neckarau,0.0,0.21
+Aufstieg,Wohnstrasse,Käfertal,0.0,0.21
+Augartenstraße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.72
+Auggener Straße,Wohnstrasse,Seckenheim,0.0,0.25
+August-Bebel-Straße,Wohnstrasse,"Lindenhof, Neckarau",0.0,0.78
+August-Kuhn-Straße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.29
+Augustaanlage,Hauptverkehrsstrasse (B-Strasse),Schwetzingerstadt/Oststadt,1.0,1.18
+Ausgasse,Wohnstrasse,Sandhofen,0.0,0.59
+Außeneck,Wohnstrasse,Feudenheim,0.0,0.18
+Aßmannshäuser Straße,Wohnstrasse,Käfertal,0.0,0.12
+BBC-Behelfsbrücke,Hauptverkehrsstrasse (B-Strasse),"Käfertal, Neckarstadt-Ost/Wohlgelegen",1.0,0.07
+Bachstraße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.19
+Badener Platz,Wohnstrasse,Seckenheim,0.0,0.09
+Badener Straße,Wohnstrasse,Seckenheim,0.0,1.03
+Badenweilerstraße,Wohnstrasse,Seckenheim,0.0,0.65
+Bahlinger Straße,Wohnstrasse,Seckenheim,0.0,0.17
+Bahnhofstraße,Wohnstrasse,Käfertal,0.0,0.11
+Baiersbronner Winkel,Wohnstrasse,Seckenheim,0.0,0.25
+Baldurstraße,Wohnstrasse,Waldhof,0.0,0.67
+Ballonstraße,Wohnstrasse,Schönau,0.0,0.27
+Banater Straße,Hauptverkehrsstrasse,Feudenheim,1.0,1.28
+Bartholomäusstraße,Wohnstrasse,Sandhofen,0.0,0.49
+Bassermannstraße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.67
+Baumstraße,Wohnstrasse,Käfertal,0.0,0.39
+Bautzener Weg,Wohnstrasse,Vogelstang,0.0,0.13
+Beethovenstraße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.17
+Beilstraße,Wohnstrasse,Innenstadt/Jungbusch,0.0,0.05
+Beim Bauerspfad,Verkehrsberuhigter Bereich,Seckenheim,0.0,0.33
+Beim Glockacker,Wohnstrasse,Seckenheim,0.0,0.16
+Beim Hochwald,Wohnstrasse,Käfertal,0.0,0.49
+Beim Johannkirchhof,Wohnstrasse,Rheinau,0.0,0.84
+Belchenstraße,Wohnstrasse,"Lindenhof, Neckarau",0.0,0.68
+Belfortstraße,Wohnstrasse,Neckarau,0.0,0.48
+Bellenstraße,Wohnstrasse,Lindenhof,0.0,0.47
+Bellinger Weg,Wohnstrasse,Seckenheim,0.0,0.21
+Bensheimer Straße,Wohnstrasse,Käfertal,0.0,0.45
+Bensingerstraße,Wohnstrasse,Neckarau,0.0,0.12
+Bergiusstraße,Wohnstrasse,Rheinau,0.0,0.52
+Berliner Straße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.21
+Bernburger Weg,Wohnstrasse,Vogelstang,0.0,0.1
+Berta-Benz-Straße,Wohnstrasse,Waldhof,0.0,0.06
+Bibienastraße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.19
+Bibliser Straße,Wohnstrasse,Sandhofen,0.0,0.12
+Bickensohler Weg,Verkehrsberuhigter Bereich,Seckenheim,0.0,0.12
+Billingstraße,Verkehrsberuhigter Bereich,Rheinau,0.0,0.18
+Binnenhafenstraße,Wohnstrasse,Innenstadt/Jungbusch,0.0,0.18
+Binsenweg,Verkehrsberuhigter Bereich,Wallstadt,0.0,0.25
+Birkenauer Straße,Sammelstrasse,Käfertal,0.7479048577617735,1.59
+Birnbaumstraße,Wohnstrasse,Sandhofen,0.0,0.39
+Bischoffinger Weg,Wohnstrasse,Seckenheim,0.0,0.05
+Bischweilerring,Wohnstrasse,Friedrichsfeld,0.0,0.21
+Bismarckplatz,Hauptverkehrsstrasse (B-Strasse),"Innenstadt/Jungbusch, Schwetzingerstadt/Oststadt",0.6919442189015771,0.15
+Bismarckstraße,Hauptverkehrsstrasse (B-Strasse),"Innenstadt/Jungbusch, Schwetzingerstadt/Oststadt",0.9941446886970775,1.33
+Bitterfelder Weg,Wohnstrasse,Vogelstang,0.0,0.12
+Blankenburger Weg,Wohnstrasse,Sandhofen,0.0,0.29
+Blumenstraße,Wohnstrasse,Neckarau,0.0,0.14
+Blücherstraße,Wohnstrasse,Feudenheim,0.0,0.27
+Blütenweg,Wohnstrasse,Waldhof,0.0,0.14
+Bodelschwinghweg,Wohnstrasse,Waldhof,0.0,0.18
+Boehringerstraße,Wohnstrasse,"Sandhofen, Schönau",0.0,0.49
+Bonndorfer Straße,Wohnstrasse,Seckenheim,0.0,0.35
+Boveristraße,Hauptverkehrsstrasse,"Käfertal, Waldhof",1.0,1.51
+Boxberger Straße,Wohnstrasse,Wallstadt,0.0,0.33
+Brahmsstraße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.13
+Brandenburger Straße,Wohnstrasse,Vogelstang,0.04935432177928032,0.92
+Braunschweiger Allee,Sammelstrasse,"Sandhofen, Schönau",1.0,1.67
+Braustraße,Wohnstrasse,Käfertal,0.0,0.31
+Breisacher Straße,Wohnstrasse,Seckenheim,0.0,0.36
+Brentanostraße,Wohnstrasse,Neckarau,0.0,0.35
+Brettener Straße,Wohnstrasse,Seckenheim,0.0,0.25
+Brockenweg,Wohnstrasse,Sandhofen,0.0,0.26
+Brombeerweg,Wohnstrasse,Waldhof,0.0,0.16
+Bromberger Baumgang,Wohnstrasse,Schönau,0.0,0.8
+Bruchsaler Straße,Wohnstrasse,Rheinau,0.0,0.81
+Brucknerstraße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.1
+Brunhildestraße,Verkehrsberuhigter Bereich,Neckarau,0.0,0.94
+Brunnenpfad,Wohnstrasse,Feudenheim,0.0,0.3
+Brunnenstraße,Wohnstrasse,Feudenheim,0.0,0.24
+Bruno-Rüffer-Straße,Wohnstrasse,Schönau,0.0,0.58
+Brückenstraße,Hauptverkehrsstrasse,"Neckarstadt-Ost/Wohlgelegen, Neckarstadt-West, Seckenheim",1.0,0.22
+Brückeswasen,Wohnstrasse,Neckarau,0.0,0.59
+Brüder-Grimm-Straße,Wohnstrasse,Feudenheim,0.0,0.2
+Brühler Ring,Verkehrsberuhigter Bereich,Rheinau,0.0,0.2
+Buchener Straße,Wohnstrasse,Wallstadt,0.0,0.63
+Bunsenstraße,Sammelstrasse,Neckarstadt-West,1.0,0.33
+Burgstraße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.24
+Bussardstraße,Wohnstrasse,Sandhofen,0.0,0.21
+Bäckerweg,Wohnstrasse,Käfertal,0.0,0.43
+Böcklinplatz,Wohnstrasse,Neuostheim/Neuhermsheim,0.0,0.09
+Böcklinstraße,Wohnstrasse,Neuostheim/Neuhermsheim,0.0,0.7
+Böckstraße,Wohnstrasse,Innenstadt/Jungbusch,0.0,0.16
+Bötzinger Weg,Verkehrsberuhigter Bereich,Seckenheim,0.0,0.2
+Bühler Straße,Wohnstrasse,Seckenheim,0.0,0.23
+Bürgermeister-Fuchs-Straße,Wohnstrasse,Neckarstadt-West,0.0,0.73
+Bürstadter Straße,Hauptverkehrsstrasse,Sandhofen,1.0,0.98
+Cahn-Garnier-Ufer,Sammelstrasse,Schwetzingerstadt/Oststadt,1.0,0.41
+Calvinstraße,Wohnstrasse,Friedrichsfeld,0.0,0.13
+Cannabichstraße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.3
+Carl-Benz-Straße,Sammelstrasse,"Neckarstadt-Ost/Wohlgelegen, Neckarstadt-West, Waldhof",0.7522389960751431,1.71
+Carl-Goerdeler-Straße,Wohnstrasse,Neckarau,0.0,0.35
+Carl-Metz-Straße,Wohnstrasse,Lindenhof,0.0,0.11
+Carl-Reiß-Platz,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.17
+Carl-Reuther-Straße,Wohnstrasse,Waldhof,0.0,0.26
+Carl-Zuckmayer-Straße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.38
+Carlo-Schmid-Brücke,Hauptverkehrsstrasse (B-Strasse),Neuostheim/Neuhermsheim,1.0,0.07
+Caroline-Jagemann-Weg,Verkehrsberuhigter Bereich,Käfertal,0.0,0.09
+Carolus-Vocke-Ring,Wohnstrasse,Feudenheim,0.0,1.0
+Casterfeldstraße,Hauptverkehrsstrasse (B-Strasse),"Neckarau, Rheinau",0.6495613123532962,2.18
+Cecil-Taylor-Ring,Wohnstrasse,Vogelstang,0.0,0.35
+Celluloidstraße,Wohnstrasse,Neckarau,0.0,0.15
+Chamissostraße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.09
+Charlottenplatz,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.12
+Cheliusstraße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.34
+Chemnitzer Straße,Wohnstrasse,Vogelstang,0.0,0.49
+Cheruskerring,Wohnstrasse,Wallstadt,0.0,0.17
+Chiemseestraße,Wohnstrasse,Rheinau,0.0,0.59
+Christian-Morgenstern-Straße,Wohnstrasse,Feudenheim,0.0,0.09
+Clara-Reimann-Straße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.16
+Claus-von-Stauffenberg-Straße,Wohnstrasse,Neckarau,0.0,0.53
+Clausthaler Ring,Wohnstrasse,Sandhofen,0.0,0.28
+Coblitzallee,Wohnstrasse,Neuostheim/Neuhermsheim,0.0,0.16
+Cochemer Straße,Sammelstrasse,Käfertal,1.0,0.36
+Collinistraße,Sammelstrasse,Schwetzingerstadt/Oststadt,1.0,0.32
+Columbusstraße,Wohnstrasse,Käfertal,0.0,0.35
+Corneliusstraße,Wohnstrasse,Neuostheim/Neuhermsheim,0.0,0.25
+Cottbuser Weg,Wohnstrasse,Vogelstang,0.0,0.12
+Dachspfad,Wohnstrasse,Friedrichsfeld,0.0,0.11
+Dahlienweg,Wohnstrasse,Waldhof,0.0,0.13
+Dalbergstraße,Hauptverkehrsstrasse (B-Strasse),Innenstadt/Jungbusch,0.5622034306906686,0.26
+Dammstraße,Sammelstrasse,"Neckarstadt-Ost/Wohlgelegen, Neckarstadt-West",1.0,0.94
+Daniel-Seizinger-Weg,Wohnstrasse,Schönau,0.0,0.14
+Dannstadter Straße,Wohnstrasse,Rheinau,0.0,0.21
+Danziger Baumgang,Wohnstrasse,Schönau,0.0,1.3
+Darmstadter Straße,Wohnstrasse,Waldhof,0.0,0.4
+Deidesheimer Straße,Wohnstrasse,Käfertal,0.0,0.48
+Delitzscher Straße,Wohnstrasse,Vogelstang,0.0,0.09
+Demminer Weg,Wohnstrasse,Vogelstang,0.0,0.06
+Dessauer Weg,Wohnstrasse,Vogelstang,0.0,0.1
+Deutsche Gasse,Wohnstrasse,Sandhofen,0.0,0.32
+Diakonissenstraße,Wohnstrasse,Feudenheim,0.0,0.11
+Dieburger Straße,Wohnstrasse,Waldhof,0.0,0.08
+Diedesfelder Straße,Wohnstrasse,Käfertal,0.0,0.23
+Diesterwegstraße,Verkehrsberuhigter Bereich,Neckarstadt-West,0.0,0.08
+Dietrich-Bonhoeffer-Straße,Wohnstrasse,Neckarau,0.0,0.13
+Diffenéstraße,Hauptverkehrsstrasse,"Neckarstadt-West, Waldhof",1.0,3.03
+Dillinger Straße,Wohnstrasse,Käfertal,0.0,0.14
+Dilsberger Straße,Wohnstrasse,Feudenheim,0.0,0.2
+Dirschauer Weg,Wohnstrasse,Schönau,0.0,0.27
+Distelsand,Wohnstrasse,Rheinau,0.0,0.12
+Dohlengasse,Wohnstrasse,Sandhofen,0.0,0.31
+Domstiftstraße,Wohnstrasse,Sandhofen,0.0,0.53
+Donarstraße,Wohnstrasse,Waldhof,0.0,0.63
+Donaustraße,Wohnstrasse,"Neckarau, Rheinau",0.0,1.09
+Donnersbergstraße,Wohnstrasse,Lindenhof,0.0,0.46
+Dononstraße,Wohnstrasse,Friedrichsfeld,0.0,0.13
+Dorfgärtenstraße,Wohnstrasse,Neckarau,0.0,0.15
+Dorfstraße,Wohnstrasse,Sandhofen,0.0,0.28
+Dornheimer Ring,Wohnstrasse,Käfertal,0.0,0.75
+Drachenfelsstraße,Wohnstrasse,Lindenhof,0.0,0.13
+Dragonerweg,Verkehrsberuhigter Bereich,Neuostheim/Neuhermsheim,0.0,0.3
+Draisstraße,Wohnstrasse,Neckarstadt-West,0.0,0.6
+Dreesbachstraße,Wohnstrasse,Neckarau,0.0,0.19
+Dresdener Straße,Wohnstrasse,Vogelstang,0.0,0.48
+Drosselstraße,Wohnstrasse,Waldhof,0.0,0.26
+Dudenstraße,Sammelstrasse,Neckarstadt-Ost/Wohlgelegen,1.0,1.59
+Duisburger Straße,Sammelstrasse,Rheinau,1.0,1.25
+Durlacher Straße,Wohnstrasse,Rheinau,0.0,1.03
+Dynamostraße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.41
+Dänischer Tisch,Wohnstrasse,Rheinau,0.0,0.45
+Dünenhof,Wohnstrasse,Seckenheim,0.0,0.05
+Dünenweg,Wohnstrasse,Seckenheim,0.0,0.18
+Düppelweg,Wohnstrasse,Waldhof,0.0,0.11
+Dürerstraße,Wohnstrasse,Neuostheim/Neuhermsheim,0.0,1.42
+Dürkheimer Straße,Wohnstrasse,Käfertal,0.0,1.15
+Düsseldorfer Straße,Wohnstrasse,Rheinau,0.0,0.68
+Eberbacher Platz,Wohnstrasse,Feudenheim,0.0,0.09
+Eberbacher Straße,Wohnstrasse,Feudenheim,0.0,0.51
+Ebernburgstraße,Wohnstrasse,Rheinau,0.0,0.14
+Eberswalder Weg,Wohnstrasse,Vogelstang,0.0,0.5
+Edenkobener Straße,Wohnstrasse,Käfertal,0.0,0.23
+Edinger Riedweg,Hauptverkehrsstrasse,Rheinau,1.0,0.74
+Edisonstraße,Wohnstrasse,Käfertal,0.0,0.37
+Edwin-Reis-Straße,Wohnstrasse,Friedrichsfeld,0.0,0.19
+Egellstraße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.11
+Eibseeweg,Verkehrsberuhigter Bereich,Rheinau,0.0,0.13
+Eichbaumstraße,Wohnstrasse,Feudenheim,0.0,0.34
+Eichelbergstraße,Wohnstrasse,Neckarau,0.0,0.52
+Eichelsheimer Straße,Wohnstrasse,Lindenhof,0.0,0.48
+Eichendorffstraße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.6
+Eichenhof,Verkehrsberuhigter Bereich,Waldhof,0.0,0.4
+Eichenweg,Wohnstrasse,Waldhof,0.0,0.3
+Eichstetter Straße,Verkehrsberuhigter Bereich,Seckenheim,0.0,0.15
+Eifelstraße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.22
+Eigene Scholle,Wohnstrasse,Käfertal,0.0,0.9
+Eilenburger Weg,Wohnstrasse,Vogelstang,0.0,0.13
+Einsteinstraße,Wohnstrasse,Neckarstadt-West,0.0,0.99
+Eintrachtstraße,Wohnstrasse,Feudenheim,0.0,0.31
+Eisenacher Weg,Wohnstrasse,Vogelstang,0.0,0.36
+Eisenbahnstraße,Wohnstrasse,Neckarau,0.0,0.94
+Eisenlohrstraße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.24
+Eisenstraße,Wohnstrasse,Waldhof,0.26892661266382173,0.53
+Eislebener Weg,Wohnstrasse,Vogelstang,0.0,0.13
+Elbinger Weg,Wohnstrasse,Schönau,0.0,0.12
+Elfenstraße,Wohnstrasse,Neckarstadt-West,0.0,0.45
+Elisabeth-Altmann-Gottheiner-Straße,Wohnstrasse,Käfertal,0.0,0.37
+Elisabeth-Bergner-Weg,Verkehrsberuhigter Bereich,Käfertal,0.0,0.04
+Elisabeth-Blaustein-Straße,Wohnstrasse,Käfertal,0.0,0.24
+Elisabeth-von-Thadden-Straße,Wohnstrasse,Neckarau,0.0,0.12
+Elisabethstraße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.12
+Ellerstadter Straße,Wohnstrasse,Rheinau,0.0,0.2
+Elsa-Brändström-Straße,Wohnstrasse,Friedrichsfeld,0.0,0.52
+Elstergasse,Wohnstrasse,Sandhofen,0.0,0.36
+Emil-Heckel-Straße,Wohnstrasse,Lindenhof,0.0,0.4
+Emy-Roeder-Straße,Wohnstrasse,Neuostheim/Neuhermsheim,0.0,0.42
+Endinger Straße,Verkehrsberuhigter Bereich,Seckenheim,0.0,0.22
+Entennest,Wohnstrasse,Sandhofen,0.0,0.09
+Entenstrich,Wohnstrasse,Friedrichsfeld,0.0,0.35
+Enzianstraße,Wohnstrasse,Käfertal,0.0,0.58
+Erbacher Straße,Wohnstrasse,Waldhof,0.0,0.12
+Erfurter Weg,Wohnstrasse,Vogelstang,0.0,0.29
+Erlenstraße,Wohnstrasse,Neckarstadt-West,0.0,0.44
+Ernst-Barlach-Allee,Wohnstrasse,Neuostheim/Neuhermsheim,0.0,0.94
+Ernst-Throm-Straße,Verkehrsberuhigter Bereich,Feudenheim,0.0,0.27
+Ernsttaler Straße,Wohnstrasse,Wallstadt,0.0,0.16
+Ersteiner Straße,Wohnstrasse,Friedrichsfeld,0.0,0.29
+Erwin-von-Witzleben-Straße,Wohnstrasse,Neckarau,0.0,0.14
+Erzbergerstraße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.42
+Eschenhof,Verkehrsberuhigter Bereich,Waldhof,0.0,0.46
+Eschkopfstraße,Wohnstrasse,Lindenhof,0.0,0.21
+Espenstraße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.14
+Essener Straße,Sammelstrasse,Rheinau,0.8790914267458371,1.38
+Esther-Charlotte-Brandes-Weg,Verkehrsberuhigter Bereich,Käfertal,0.0,0.04
+Ettlinger Straße,Wohnstrasse,Seckenheim,0.0,0.21
+Eugen-Bolz-Straße,Wohnstrasse,Neckarau,0.0,0.24
+Eugen-Richter-Straße,Wohnstrasse,Neckarau,0.0,0.28
+Eugen-Sigrist-Weg,Verkehrsberuhigter Bereich,Schönau,0.0,0.16
+Eugenie-Kaufmann-Straße,Verkehrsberuhigter Bereich,Neuostheim/Neuhermsheim,0.0,0.22
+Eulenweg,Wohnstrasse,Sandhofen,0.0,0.18
+Eva-Hermann-Straße,Verkehrsberuhigter Bereich,Neckarstadt-Ost/Wohlgelegen,0.0,0.17
+Fabrikstationstraße,Sammelstrasse,Neckarau,1.0,0.26
+Fadenweg,Wohnstrasse,Sandhofen,0.0,0.2
+Fahrgasse,Wohnstrasse,Sandhofen,0.0,0.38
+Fahrlachstraße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.08
+Falkensteinweg,Verkehrsberuhigter Bereich,Rheinau,0.0,0.38
+Falkenstraße,Wohnstrasse,Sandhofen,0.0,0.44
+Fardelystraße,Sammelstrasse,Neckarstadt-West,1.0,0.18
+Farnkrautweg,Wohnstrasse,Waldhof,0.0,0.21
+Fasanenstraße,Wohnstrasse,Käfertal,0.0,0.32
+Faserweg,Wohnstrasse,Sandhofen,0.0,0.2
+Feldbergstraße,Wohnstrasse,"Lindenhof, Neckarau",0.0,1.15
+Feldstraße,Wohnstrasse,Feudenheim,0.0,0.98
+Feudenheimer Grün,Wohnstrasse,Feudenheim,0.0,0.26
+Feudenheimer Straße,Hauptverkehrsstrasse,"Feudenheim, Neckarstadt-Ost/Wohlgelegen",1.0,1.88
+Feuerbachstraße,Wohnstrasse,Neuostheim/Neuhermsheim,0.0,0.35
+Fichtestraße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.22
+Fischerstraße,Wohnstrasse,Neckarau,0.0,0.38
+Flachsstraße,Wohnstrasse,Sandhofen,0.0,0.09
+Flamländerstraße,Wohnstrasse,Friedrichsfeld,0.0,0.15
+Flensburger Ring,Wohnstrasse,Waldhof,0.0,0.36
+Fliederweg,Wohnstrasse,Waldhof,0.0,0.23
+Floßwörthstraße,Hauptverkehrsstrasse,Neckarau,0.9393498767170285,1.36
+Forbacher Weg,Wohnstrasse,Seckenheim,0.0,0.17
+Forggenseestraße,Verkehrsberuhigter Bereich,Rheinau,0.0,0.25
+Forlenstraße,Wohnstrasse,Waldhof,0.0,0.08
+Forster Straße,Wohnstrasse,Käfertal,0.0,0.2
+Frankenberger Weg,Wohnstrasse,Vogelstang,0.0,0.22
+Frankenstraße,Wohnstrasse,Wallstadt,0.0,0.4
+Frankenthaler Straße,Hauptverkehrsstrasse (B-Strasse),"Sandhofen, Schönau, Waldhof",1.0,8.6
+Franklin-D.-Roosevelt-Straße,Wohnstrasse,Käfertal,0.0,0.35
+Franz-Conrad-Linck-Straße,Wohnstrasse,Neuostheim/Neuhermsheim,0.0,0.31
+Franz-Gelb-Weg,Verkehrsberuhigter Bereich,Neuostheim/Neuhermsheim,0.0,0.09
+Franz-Grashof-Straße,Wohnstrasse,Neckarau,0.0,0.7
+Franz-Schnabel-Straße,Wohnstrasse,Feudenheim,0.0,0.11
+Franz-Sigel-Straße,Wohnstrasse,Neckarau,0.0,0.15
+Franz-Volhard-Straße,Verkehrsberuhigter Bereich,Neckarstadt-Ost/Wohlgelegen,0.0,0.27
+Franzosenweg,Wohnstrasse,Neckarau,0.0,0.13
+Fratrelstraße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.22
+Fraunhoferstraße,Wohnstrasse,Käfertal,0.0,0.34
+Fred-Joachim-Schoeps-Straße,Sammelstrasse,Friedrichsfeld,1.0,0.14
+Freherstraße,Hauptverkehrsstrasse (B-Strasse),Innenstadt/Jungbusch,1.0,0.28
+Freiburger Straße,Wohnstrasse,Seckenheim,0.0,0.68
+Freie Luft,Wohnstrasse,Käfertal,0.0,0.25
+Freier Weg,Wohnstrasse,Waldhof,0.0,0.29
+Freiheitsplatz,Wohnstrasse,Neckarau,0.0,0.22
+Freinsheimer Straße,Wohnstrasse,Rheinau,0.0,0.18
+Fressgasse,Wohnstrasse,Innenstadt/Jungbusch,0.0,0.46
+Freyastraße,Wohnstrasse,Waldhof,0.0,0.45
+Fridtjof-Nansen-Weg,Verkehrsberuhigter Bereich,Rheinau,0.0,0.6
+Friedberger Straße,Wohnstrasse,Waldhof,0.0,0.21
+Friedelsheimer Straße,Wohnstrasse,"Neckarau, Rheinau",0.0,0.21
+Friedensstraße,Wohnstrasse,Neckarau,0.0,0.2
+Friedhofstraße,Wohnstrasse,Neckarau,0.0,0.15
+Friedrich-Böttger-Straße,Wohnstrasse,Neckarau,0.0,0.17
+Friedrich-Dürr-Straße,Wohnstrasse,Schönau,0.0,0.36
+Friedrich-Ebert-Straße,Hauptverkehrsstrasse (B-Strasse),Neckarstadt-Ost/Wohlgelegen,0.9479672482736885,3.07
+Friedrich-Engelhorn-Straße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.23
+Friedrich-Karl-Straße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.17
+Friedrich-Traumann-Straße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.5
+Friedrich-Walter-Straße,Wohnstrasse,Feudenheim,0.0,0.15
+Friedrichsfelder Landstraße,Hauptverkehrsstrasse,Friedrichsfeld,1.0,2.14
+Friedrichsplatz,Hauptverkehrsstrasse (B-Strasse),Schwetzingerstadt/Oststadt,1.0,0.35
+Friedrichsring,Hauptverkehrsstrasse (B-Strasse),"Innenstadt/Jungbusch, Schwetzingerstadt/Oststadt",1.0,1.1
+Friedrichstraße,Wohnstrasse,Neckarau,0.25652463155432315,1.26
+Friesenheimer Straße,Sammelstrasse,Neckarstadt-West,1.0,1.7
+Frischer Mut,Wohnstrasse,Käfertal,0.0,0.16
+Frischer Sinn,Wohnstrasse,"Käfertal, Waldhof",0.0,0.14
+Fritz-Salm-Straße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.39
+Frobeniusstraße,Wohnstrasse,Rheinau,0.0,0.34
+Frohe Arbeit,Wohnstrasse,Waldhof,0.0,0.3
+Frohe Zuversicht,Wohnstrasse,Waldhof,0.0,0.14
+Fronäckerstraße,Wohnstrasse,Rheinau,0.0,0.77
+Fröhlichstraße,Wohnstrasse,Neckarstadt-West,0.0,0.55
+Frühlingstraße,Wohnstrasse,Rheinau,0.0,0.4
+Fuchsfalle,Wohnstrasse,Friedrichsfeld,0.0,0.14
+Fuchsienweg,Wohnstrasse,Waldhof,0.0,0.37
+Föhrenhof,Wohnstrasse,Waldhof,0.0,0.2
+Föhrenweg,Wohnstrasse,Waldhof,0.0,0.42
+Füllenweg,Wohnstrasse,Sandhofen,0.0,0.17
+Fürstenwalder Weg,Wohnstrasse,Vogelstang,0.0,0.2
+Fürther Straße,Wohnstrasse,Käfertal,0.0,0.01
+Gabelsbergerstraße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.05
+Gabriel-Grupello-Weg,Verkehrsberuhigter Bereich,Neuostheim/Neuhermsheim,0.0,0.24
+Gaggenauer Straße,Wohnstrasse,Seckenheim,0.0,0.09
+Galileistraße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.2
+Galvanistraße,Wohnstrasse,Käfertal,0.0,0.33
+Gambrinusstraße,Wohnstrasse,Sandhofen,0.0,0.18
+Garnisonstraße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.24
+Garnstraße,Wohnstrasse,Sandhofen,0.0,0.2
+Gartenfeldstraße,Wohnstrasse,Neckarstadt-West,0.0,0.59
+Gartenstraße,Wohnstrasse,Käfertal,0.0,0.19
+Gaswerkstraße,Wohnstrasse,Sandhofen,0.0,0.32
+Gaußstraße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.11
+Gebweilerstraße,Wohnstrasse,Friedrichsfeld,0.0,0.19
+Geheimrat-Haas-Platz,Wohnstrasse,Waldhof,0.0,0.04
+Geibelstraße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.33
+Geierstraße,Wohnstrasse,Neckarau,0.0,0.11
+Gengenbacher Straße,Wohnstrasse,Seckenheim,0.0,0.14
+Georg-Lechleiter-Platz,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.16
+George-Sullivan-Ring,Wohnstrasse,Käfertal,0.0,1.53
+George-Washington-Straße,Wohnstrasse,Käfertal,0.0,0.78
+Geranienweg,Wohnstrasse,Waldhof,0.0,0.29
+Gerhard-Marcks-Straße,Verkehrsberuhigter Bereich,Neuostheim/Neuhermsheim,0.0,0.21
+Gerhart-Hauptmann-Straße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.3
+Germaniastraße,Wohnstrasse,Neckarau,0.1252656211225148,0.65
+Gernotweg,Verkehrsberuhigter Bereich,Neckarau,0.0,0.23
+Gernsheimer Straße,Wohnstrasse,Sandhofen,0.0,0.12
+Gerstenstraße,Wohnstrasse,Käfertal,0.0,0.15
+Gertrud-Bäumer-Straße,Verkehrsberuhigter Bereich,Neckarstadt-Ost/Wohlgelegen,0.0,0.1
+Gerwigstraße,Wohnstrasse,Waldhof,0.0,0.26
+Geschwister-Grünbaum-Straße,Wohnstrasse,Käfertal,0.0,0.12
+Gewerbstraße,Wohnstrasse,Käfertal,0.0,0.32
+Gießenstraße,Wohnstrasse,Neckarau,0.0,0.16
+Gimmeldinger Straße,Wohnstrasse,Käfertal,0.0,0.19
+Ginsterweg,Wohnstrasse,Waldhof,0.0,0.23
+Glasstraße,Wohnstrasse,Waldhof,0.0,0.23
+Glauchauer Weg,Wohnstrasse,Vogelstang,0.0,0.21
+Gluckstraße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.1
+Glücksburger Weg,Wohnstrasse,Waldhof,0.0,1.21
+Gneisenaustraße,Wohnstrasse,Feudenheim,0.0,0.19
+Gnesener Straße,Wohnstrasse,Schönau,0.0,0.48
+Goeggstraße,Wohnstrasse,Neckarau,0.0,0.15
+Goethestraße,Hauptverkehrsstrasse (B-Strasse),Schwetzingerstadt/Oststadt,1.0,0.27
+Gondelplatz,Wohnstrasse,Schönau,0.0,0.08
+Gondelstraße,Wohnstrasse,Schönau,0.0,0.2
+Gontardplatz,Wohnstrasse,Lindenhof,0.0,0.08
+Gontardstraße,Wohnstrasse,Lindenhof,0.0,0.36
+Gorch-Fock-Straße,Wohnstrasse,Feudenheim,0.0,0.12
+Gorxheimer Straße,Sammelstrasse,Käfertal,0.5915130130801768,0.81
+Goslarer Weg,Wohnstrasse,Sandhofen,0.0,0.18
+Gotenstraße,Wohnstrasse,Wallstadt,0.0,0.29
+Gothaer Weg,Wohnstrasse,Vogelstang,0.0,0.1
+Gottfriedstraße,Wohnstrasse,Wallstadt,0.0,0.15
+Gottlieb-Daimler-Straße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.87
+Gralsstraße,Verkehrsberuhigter Bereich,Neckarau,0.0,0.32
+Graudenzer Linie,Wohnstrasse,Schönau,0.0,0.9
+Graßmannstraße,Wohnstrasse,Rheinau,0.0,0.2
+Greifswalder Weg,Wohnstrasse,Vogelstang,0.0,0.11
+Grenadierstraße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.28
+Grenzweg,Wohnstrasse,Lindenhof,0.0,0.07
+Grete-Fleischmann-Straße,Verkehrsberuhigter Bereich,Neuostheim/Neuhermsheim,0.0,0.42
+Grillenbergerstraße,Wohnstrasse,Neckarau,0.0,0.14
+Grillparzerstraße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.06
+Grohbergstraße,Wohnstrasse,Käfertal,0.0,0.17
+Groß-Gerauer Straße,Wohnstrasse,Sandhofen,0.0,0.86
+Große Ausdauer,Wohnstrasse,Waldhof,0.0,0.4
+Große Holzgasse,Wohnstrasse,Lindenhof,0.0,0.1
+Großer Weidstückerweg,Wohnstrasse,Lindenhof,0.0,0.13
+Großfeldstraße,Wohnstrasse,Neckarau,0.0,0.17
+Großgehrenstraße,Wohnstrasse,Sandhofen,0.0,0.12
+Gryphiusweg,Wohnstrasse,Schönau,0.0,0.59
+Grüner Winkel,Wohnstrasse,Waldhof,0.0,0.19
+Grünewaldstraße,Wohnstrasse,Neuostheim/Neuhermsheim,0.0,0.38
+Grüntenseeweg,Verkehrsberuhigter Bereich,Rheinau,0.0,0.16
+Gudrunweg,Verkehrsberuhigter Bereich,Neckarau,0.0,0.15
+Gundelsheimer Straße,Wohnstrasse,Wallstadt,0.0,0.29
+Guntherweg,Verkehrsberuhigter Bereich,Neckarau,0.0,0.37
+Gustav-Seitz-Straße,Wohnstrasse,Neuostheim/Neuhermsheim,0.0,0.44
+Gutacher Ring,Wohnstrasse,Seckenheim,0.0,0.28
+Gute Erde,Wohnstrasse,"Käfertal, Waldhof",0.0,0.19
+Guter Fortschritt,Wohnstrasse,Waldhof,0.0,0.4
+Gärtnerstraße,Wohnstrasse,Neckarstadt-West,0.0,0.73
+Gönnheimer Weg,Wohnstrasse,Rheinau,0.0,0.24
+Görlitzer Weg,Wohnstrasse,Vogelstang,0.0,0.12
+Görresstraße,Wohnstrasse,Feudenheim,0.0,0.27
+Güterhallenstraße,Wohnstrasse,Innenstadt/Jungbusch,0.0,1.62
+Haardtstraße,Wohnstrasse,Lindenhof,0.0,0.38
+Habichtplatz,Wohnstrasse,Käfertal,0.0,0.08
+Habichtstraße,Wohnstrasse,Käfertal,0.0,0.5
+Haderslebener Straße,Wohnstrasse,Schönau,0.0,0.24
+Hafenbahnstraße,Hauptverkehrsstrasse,"Neckarstadt-West, Waldhof",1.0,1.58
+Hafenstraße,Wohnstrasse,Innenstadt/Jungbusch,0.0,0.93
+Hagenauer Straße,Wohnstrasse,Friedrichsfeld,0.0,0.36
+Hagenauer Winkel,Wohnstrasse,Friedrichsfeld,0.0,0.21
+Hagenstraße,Wohnstrasse,Neckarau,0.0,0.19
+Hainbuchenhof,Verkehrsberuhigter Bereich,Waldhof,0.0,0.29
+Hainbuchenweg,Wohnstrasse,Waldhof,0.0,0.54
+Halberstadter Weg,Wohnstrasse,Sandhofen,0.0,0.1
+Hallenbuckel,Wohnstrasse,Rheinau,0.0,0.37
+Hallenstraße,Wohnstrasse,Rheinau,0.0,0.24
+Hallesche Straße,Wohnstrasse,Vogelstang,0.0,0.34
+Halmhuberstraße,Verkehrsberuhigter Bereich,Rheinau,0.0,0.17
+Hambacher Straße,Verkehrsberuhigter Bereich,Käfertal,0.0,0.2
+Hamsterweg,Verkehrsberuhigter Bereich,Friedrichsfeld,0.0,0.15
+Hanauer Platz,Sammelstrasse,Waldhof,0.8035029282633356,0.11
+Hanauer Straße,Sammelstrasse,Waldhof,0.5734100038230584,0.52
+Hanfstraße,Wohnstrasse,Sandhofen,0.0,0.31
+Hangstraße,Wohnstrasse,Neckarau,0.0,0.08
+Hanns-Martin-Schleyer-Straße,Wohnstrasse,Waldhof,0.0,0.15
+Hans-Heck-Weg,Verkehrsberuhigter Bereich,Schönau,0.0,0.16
+Hans-Kampffmeyer-Weg,Verkehrsberuhigter Bereich,Käfertal,0.0,0.17
+Hans-Reschke-Ufer,Wohnstrasse,"Neuostheim/Neuhermsheim, Schwetzingerstadt/Oststadt",0.0,0.41
+Hans-Sachs-Ring,Wohnstrasse,Neckarau,0.0,1.64
+Hans-Schüler-Weg,Verkehrsberuhigter Bereich,Feudenheim,0.0,0.21
+Hans-Thoma-Straße,Wohnstrasse,Neuostheim/Neuhermsheim,0.0,1.5
+Hansastraße,Wohnstrasse,Neckarstadt-West,0.0,0.17
+Hardenburgstraße,Wohnstrasse,Rheinau,0.0,0.28
+Hardheimer Straße,Wohnstrasse,Wallstadt,0.0,0.24
+Harpener Straße,Wohnstrasse,Rheinau,0.0,0.12
+Harrlachgärtenweg,Verkehrsberuhigter Bereich,Neuostheim/Neuhermsheim,0.0,0.46
+Harrlachweg,Sammelstrasse,Neuostheim/Neuhermsheim,0.6736120585240026,0.38
+Harzburger Weg,Wohnstrasse,Sandhofen,0.0,0.24
+Haselweg,Wohnstrasse,Waldhof,0.0,0.13
+Hasenackerstraße,Wohnstrasse,Neckarau,0.0,0.36
+Hasengasse,Wohnstrasse,Friedrichsfeld,0.0,0.3
+Hauffstraße,Wohnstrasse,Feudenheim,0.0,0.33
+Hauptstraße,Sammelstrasse,Feudenheim,0.9716612285735942,1.56
+Hausacher Straße,Wohnstrasse,Seckenheim,0.0,0.14
+Havellandstraße,Hauptverkehrsstrasse,Vogelstang,0.6061436688463782,0.63
+Haßlocher Straße,Wohnstrasse,Rheinau,0.0,0.36
+Hebelstraße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.2
+Hechtstraße,Wohnstrasse,Neckarau,0.0,0.15
+Heckerstraße,Wohnstrasse,Neckarau,0.0,0.14
+Heckweg,Wohnstrasse,Seckenheim,0.0,0.27
+Heddesheimer Landstraße,Hauptverkehrsstrasse,Wallstadt,1.0,0.6
+Heddesheimer Straße,Wohnstrasse,Feudenheim,0.0,0.15
+Heidestraße,Wohnstrasse,Waldhof,0.0,0.18
+Heilbronner Straße,Wohnstrasse,Feudenheim,0.0,0.39
+Heiligenbergstraße,Wohnstrasse,Neckarau,0.0,0.25
+Heilsberger Hof,Wohnstrasse,Schönau,0.0,0.07
+Heilsberger Straße,Wohnstrasse,Schönau,0.0,0.34
+Heinrich-Heine-Straße,Wohnstrasse,Neckarau,0.0,0.34
+Heinrich-Hertz-Straße,Wohnstrasse,Neckarau,0.0,0.19
+Heinrich-Hoff-Straße,Wohnstrasse,Neckarau,0.0,0.18
+Heinrich-Lanz-Straße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.33
+Heinrich-Pesch-Weg,Wohnstrasse,Waldhof,0.0,0.09
+Heinrich-Wittkamp-Straße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.18
+Heinrich-Zille-Straße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.29
+Heinrich-von-Stephan-Straße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.48
+Heinrichaussee-Haag-Straße,Wohnstrasse,Seckenheim,0.0,0.02
+Heinz-Haber-Straße,Wohnstrasse,Lindenhof,0.0,0.17
+Helene-Hecht-Ring,Verkehrsberuhigter Bereich,Neckarstadt-Ost/Wohlgelegen,0.0,0.37
+Hellebardenweg,Wohnstrasse,Neuostheim/Neuhermsheim,0.0,0.14
+Helmertstraße,Sammelstrasse,Rheinau,1.0,1.24
+Helmholtzstraße,Sammelstrasse,Neckarstadt-West,1.0,0.35
+Helmut-Kohl-Straße,Hauptverkehrsstrasse (B-Strasse),Lindenhof,1.0,1.43
+Hemsbacher Weg,Wohnstrasse,Käfertal,0.0,0.16
+Heppenheimer Straße,Sammelstrasse,Käfertal,0.8999723963965911,1.19
+Herbert-Albert-Straße,Verkehrsberuhigter Bereich,Feudenheim,0.0,0.18
+Herbert-Maisch-Weg,Verkehrsberuhigter Bereich,Feudenheim,0.0,0.12
+Herbststraße,Wohnstrasse,Rheinau,0.0,0.28
+Hermann-Esch-Weg,Verkehrsberuhigter Bereich,Käfertal,0.0,0.08
+Hermann-Gropengießer-Straße,Verkehrsberuhigter Bereich,Feudenheim,0.0,0.3
+Hermann-Heimerich-Ufer,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.22
+Hermann-Hesse-Straße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.26
+Hermann-Löns-Straße,Wohnstrasse,Feudenheim,0.0,0.42
+Hermsheimer Straße,Sammelstrasse,Neuostheim/Neuhermsheim,0.9623428152900018,1.77
+Herrenalber Straße,Wohnstrasse,Seckenheim,0.0,0.32
+Herrensand,Wohnstrasse,Rheinau,0.0,0.37
+Herrlachstraße,Wohnstrasse,Neckarau,0.0,0.06
+Herrmannstraße,Wohnstrasse,Wallstadt,0.0,0.13
+Hersfelder Straße,Wohnstrasse,Waldhof,0.0,0.13
+Herxheimer Straße,Wohnstrasse,Käfertal,0.0,0.19
+Herzogenriedstraße,Sammelstrasse,"Neckarstadt-Ost/Wohlgelegen, Neckarstadt-West",0.8176147236582136,2.57
+Hessische Straße,Wohnstrasse,"Käfertal, Waldhof",0.0,1.06
+Heumarkt,Wohnstrasse,Seckenheim,0.0,0.09
+Heustraße,Wohnstrasse,Neckarstadt-West,0.0,0.1
+Hildegard-Lagrenne-Straße,Verkehrsberuhigter Bereich,Käfertal,0.0,0.2
+Hinter dem Wolfsberg,Hauptverkehrsstrasse,Vogelstang,0.7515940124284134,0.28
+Hintergasse,Wohnstrasse,Sandhofen,0.0,0.27
+Hirschgasse,Wohnstrasse,Friedrichsfeld,0.0,0.77
+Hirschhorner Straße,Wohnstrasse,Feudenheim,0.0,0.35
+Hirtenbrunnenstraße,Wohnstrasse,Friedrichsfeld,0.0,0.23
+Hochdorfer Straße,Wohnstrasse,Rheinau,0.0,0.1
+Hochfirststraße,Wohnstrasse,Lindenhof,0.0,0.14
+Hochstättstraße,Wohnstrasse,Seckenheim,0.0,0.44
+Hochuferstraße,Sammelstrasse,Neckarstadt-Ost/Wohlgelegen,1.0,0.7
+Hockenheimer Straße,Wohnstrasse,Rheinau,0.0,0.36
+Hofgasse,Verkehrsberuhigter Bereich,Sandhofen,0.0,0.21
+Hofgewannstraße,Wohnstrasse,Sandhofen,0.0,0.31
+Hofheimer Straße,Wohnstrasse,Sandhofen,0.0,0.21
+Hohensalzaer Straße,Wohnstrasse,Schönau,0.0,0.61
+Hoher Weg,Wohnstrasse,Sandhofen,0.0,0.25
+Hohwiesenstraße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.12
+Hohwörthstraße,Wohnstrasse,Sandhofen,0.0,0.09
+Holbeinplatz,Wohnstrasse,Neuostheim/Neuhermsheim,0.0,0.07
+Holbeinstraße,Wohnstrasse,Neuostheim/Neuhermsheim,0.0,0.41
+Holderweg,Wohnstrasse,Waldhof,0.0,0.17
+Holunderstraße,Wohnstrasse,Neckarau,0.0,0.15
+Holzbauerstraße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.09
+Holzstraße,Wohnstrasse,Innenstadt/Jungbusch,0.0,0.15
+Hopfenstraße,Wohnstrasse,Käfertal,0.0,0.24
+Hornbergstraße,Wohnstrasse,Rheinau,0.0,0.19
+Hornisgrindestraße,Wohnstrasse,Lindenhof,0.0,0.22
+Hubenstraße,Wohnstrasse,Waldhof,0.0,0.29
+Hubertusweg,Wohnstrasse,Friedrichsfeld,0.0,0.2
+Hugenottenstraße,Wohnstrasse,Friedrichsfeld,0.0,0.26
+Hugo-Wolf-Straße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.16
+Humboldtstraße,Wohnstrasse,Neckarstadt-West,0.0,0.35
+Husarenweg,Verkehrsberuhigter Bereich,Neuostheim/Neuhermsheim,0.0,0.3
+Höchster Straße,Wohnstrasse,Waldhof,0.0,0.14
+Höferstraße,Wohnstrasse,Neckarau,0.0,0.18
+Höhenstraße,Wohnstrasse,Feudenheim,0.0,0.29
+Hölderlinstraße,Wohnstrasse,Feudenheim,0.0,0.29
+Hörselbergstraße,Wohnstrasse,Feudenheim,0.0,0.04
+Hüninger Straße,Wohnstrasse,Friedrichsfeld,0.0,0.2
+Ida-Dehmel-Ring,Wohnstrasse,Käfertal,0.0,1.41
+Ida-Ehre-Weg,Verkehrsberuhigter Bereich,Käfertal,0.0,0.04
+Ida-Pfeiffer-Straße,Wohnstrasse,Rheinau,0.0,0.95
+Iffezheimer Straße,Wohnstrasse,Seckenheim,0.0,0.13
+Ifflandstraße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.19
+Iggelheimer Straße,Wohnstrasse,Rheinau,0.0,0.3
+Ihringer Straße,Wohnstrasse,Seckenheim,0.0,0.43
+Illerstraße,Wohnstrasse,Neckarau,0.0,0.14
+Iltisweg,Wohnstrasse,Friedrichsfeld,0.0,0.19
+Ilvesheimer Straße,Sammelstrasse,Feudenheim,1.0,0.72
+Im Büchsenschall,Wohnstrasse,Friedrichsfeld,0.0,0.44
+Im Hummelhorst,Wohnstrasse,Rheinau,0.0,0.28
+Im Kaisergewann,Wohnstrasse,Seckenheim,0.0,0.28
+Im Lohr,Wohnstrasse,Neckarau,0.0,0.52
+Im Morchhof,Wohnstrasse,Neckarau,0.0,0.54
+Im Oberen Falltor,Verkehrsberuhigter Bereich,Seckenheim,0.0,0.3
+Im Probstgewann,Wohnstrasse,Käfertal,0.0,0.19
+Im Rott,Sammelstrasse,"Käfertal, Vogelstang",1.0,0.1
+Im Sennteich,Wohnstrasse,Neckarau,0.0,0.39
+Im Stillen Winkel,Wohnstrasse,Waldhof,0.0,0.16
+Im Wirbel,Wohnstrasse,Rheinau,0.0,0.67
+Im Wörtel,Wohnstrasse,Neckarau,0.0,0.3
+Immenweg,Wohnstrasse,Rheinau,0.0,0.1
+In den Alten Wiesen,Wohnstrasse,Rheinau,0.0,0.65
+In den Hopfengärten,Wohnstrasse,Seckenheim,0.0,0.33
+Industriestraße,Sammelstrasse,Neckarstadt-West,1.0,1.99
+Inge-Borkh-Straße,Verkehrsberuhigter Bereich,Käfertal,0.0,0.1
+Ingeborg-Bachmann-Straße,Verkehrsberuhigter Bereich,Feudenheim,0.0,0.11
+Inneneck,Wohnstrasse,Feudenheim,0.0,0.16
+Innere Bogenstraße,Wohnstrasse,Käfertal,0.0,0.05
+Innere Wingertstraße,Wohnstrasse,Käfertal,0.0,0.24
+Innerer Heckweg,Wohnstrasse,Seckenheim,0.0,0.41
+Innstraße,Wohnstrasse,"Neckarau, Rheinau",0.0,0.51
+Inselstraße,Sammelstrasse,Neckarstadt-West,1.0,0.86
+Insterburger Weg,Wohnstrasse,Schönau,0.0,0.16
+Irisweg,Wohnstrasse,Käfertal,0.0,0.12
+Isabelle-Eberhardt-Straße,Verkehrsberuhigter Bereich,Rheinau,0.0,0.14
+Isoldestraße,Verkehrsberuhigter Bereich,Neckarau,0.0,0.22
+Itzsteinstraße,Wohnstrasse,Neckarstadt-West,0.0,0.16
+Jahnstraße,Wohnstrasse,Feudenheim,0.0,0.15
+Jakob-Baumann-Straße,Verkehrsberuhigter Bereich,Schönau,0.0,0.15
+Jakob-Faulhaber-Straße,Wohnstrasse,Waldhof,0.0,0.23
+Jakob-Trumpfheller-Straße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.57
+James-Monroe-Ring,Wohnstrasse,Käfertal,0.0,1.47
+Janderstraße,Wohnstrasse,Neckarau,0.0,0.24
+Jasminweg,Verkehrsberuhigter Bereich,Neckarstadt-Ost/Wohlgelegen,0.0,0.36
+Jean-Becker-Straße,Wohnstrasse,Neckarstadt-West,0.0,0.1
+Jean-Moore-Fasse-Ring,Verkehrsberuhigter Bereich,Käfertal,0.0,0.24
+Jechtinger Weg,Verkehrsberuhigter Bereich,Seckenheim,0.0,0.16
+Jenaer Weg,Wohnstrasse,Vogelstang,0.0,0.1
+Joachim-Ringelnatz-Straße,Wohnstrasse,Feudenheim,0.0,0.08
+Johann-Philipp-Drais-Straße,Wohnstrasse,Waldhof,0.0,0.2
+Johann-Schütte-Straße,Wohnstrasse,Schönau,0.0,0.52
+Johann-Weiß-Straße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.31
+Johannes-Hoffart-Straße,Wohnstrasse,Neuostheim/Neuhermsheim,0.0,0.42
+Johannesmühler Straße,Wohnstrasse,Sandhofen,0.0,0.2
+Johannisberger Straße,Wohnstrasse,Käfertal,0.0,0.11
+Josef-Braun-Ufer,Sammelstrasse,Schwetzingerstadt/Oststadt,0.9807401690621453,0.68
+Josef-Rutz-Straße,Wohnstrasse,Schönau,0.0,0.28
+Joseph-Bauer-Straße,Wohnstrasse,Feudenheim,0.0,0.25
+Joseph-Haydn-Straße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.12
+Julius-Hatry-Straße,Wohnstrasse,Lindenhof,0.0,0.17
+Julius-Leber-Straße,Wohnstrasse,Neckarau,0.0,0.32
+Jungbuschstraße,Wohnstrasse,Innenstadt/Jungbusch,0.0,0.2
+Jupiterweg,Wohnstrasse,Käfertal,0.0,0.17
+Juteweg,Wohnstrasse,Sandhofen,0.0,0.09
+Jägerstraße,Wohnstrasse,Käfertal,0.0,0.37
+Jürgen-Fehling-Weg,Verkehrsberuhigter Bereich,Feudenheim,0.0,0.13
+Jüterboger Weg,Wohnstrasse,Vogelstang,0.0,0.07
+Kaiserring,Hauptverkehrsstrasse (B-Strasse),"Innenstadt/Jungbusch, Schwetzingerstadt/Oststadt",1.0,0.43
+Kaiserstuhlring,Wohnstrasse,Seckenheim,0.0,0.71
+Kallstadter Straße,Hauptverkehrsstrasse,Käfertal,1.0,0.19
+Kalmitplatz,Wohnstrasse,Lindenhof,0.0,0.13
+Kalmitstraße,Wohnstrasse,Lindenhof,0.0,0.29
+Kalthorststraße,Wohnstrasse,Sandhofen,0.0,0.42
+Kamenzer Straße,Wohnstrasse,Vogelstang,0.0,0.14
+Kantstraße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.34
+Kapellenplatz,Wohnstrasse,Seckenheim,0.0,0.07
+Kapellenstraße,Sammelstrasse,Seckenheim,1.0,0.14
+Kappesstraße,Wohnstrasse,Neckarau,0.0,0.18
+Karl-Blind-Straße,Wohnstrasse,Neckarau,0.0,0.16
+Karl-Feuerstein-Straße,Sammelstrasse,Waldhof,0.8792840185622088,0.84
+Karl-Kuntz-Weg,Wohnstrasse,Neuostheim/Neuhermsheim,0.0,0.15
+Karl-Ladenburg-Straße,Wohnstrasse,Neuostheim/Neuhermsheim,0.0,0.51
+Karl-Ludwig-Straße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.62
+Karl-Marx-Straße,Wohnstrasse,Neckarau,0.0,0.6
+Karl-Mathy-Straße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.12
+Karl-Peters-Straße,Wohnstrasse,Rheinau,0.0,0.01
+Karl-Schwaner-Straße,Verkehrsberuhigter Bereich,Rheinau,0.0,0.3
+Karl-Traub-Straße,Wohnstrasse,Neckarau,0.0,0.17
+Karl-Valentin-Straße,Wohnstrasse,Feudenheim,0.0,0.1
+Karlsberger Weg,Wohnstrasse,Schönau,0.0,0.57
+Karlsplatz,Hauptverkehrsstrasse,Rheinau,1.0,0.14
+Karlsruher Straße,Wohnstrasse,Rheinau,0.0,1.15
+Karlsternstraße,Sammelstrasse,Waldhof,1.0,1.61
+Karlstraße,Wohnstrasse,Sandhofen,0.0,0.96
+Karolingerweg,Wohnstrasse,Seckenheim,0.0,0.32
+Karpfenstraße,Wohnstrasse,Neckarau,0.0,0.14
+Kasseler Straße,Wohnstrasse,Waldhof,0.0,0.88
+Kastanienstraße,Wohnstrasse,Feudenheim,0.0,0.11
+Katharinenstraße,Wohnstrasse,Neckarau,0.0,0.69
+Kattowitzer Zeile,Wohnstrasse,Schönau,0.0,1.13
+Kehler Straße,Wohnstrasse,Seckenheim,0.0,0.14
+Kellereistraße,Wohnstrasse,Sandhofen,0.0,0.08
+Keltenstraße,Sammelstrasse,Wallstadt,1.0,0.23
+Keplerstraße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.35
+Ketscher Ring,Verkehrsberuhigter Bereich,Rheinau,0.0,0.22
+Kettelerweg,Wohnstrasse,Waldhof,0.0,0.22
+Kiefernstraße,Wohnstrasse,Waldhof,0.0,0.09
+Kieselgrund,Wohnstrasse,Seckenheim,0.0,0.24
+Kinzigstraße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.15
+Kirchbergstraße,Wohnstrasse,Feudenheim,0.0,0.33
+Kirchenstraße,Wohnstrasse,Innenstadt/Jungbusch,0.0,0.19
+Kirchgasse,Wohnstrasse,Sandhofen,0.0,0.08
+Kirchpfad,Wohnstrasse,Käfertal,0.0,0.12
+Kirchplatz,Verkehrsberuhigter Bereich,Käfertal,0.0,0.07
+Kirchwaldstraße,Wohnstrasse,Waldhof,0.0,0.63
+Kirschgartshäuser Straße,Wohnstrasse,Sandhofen,0.0,0.72
+Kleestraße,Wohnstrasse,Neckarstadt-West,0.0,0.15
+Kleine Adlerstraße,Wohnstrasse,Neckarau,0.0,0.05
+Kleine Riedstraße,Verkehrsberuhigter Bereich,Neckarstadt-West,0.0,0.19
+Kleine Schwanengasse,Wohnstrasse,Feudenheim,0.0,0.12
+Kleine Straße,Wohnstrasse,Neckarau,0.0,0.11
+Kleiner Anfang,Wohnstrasse,Waldhof,0.0,0.4
+Kleinfeldstraße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.28
+Kleingehrenstraße,Wohnstrasse,Sandhofen,0.0,0.09
+Kleiststraße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.09
+Klingenberger Straße,Sammelstrasse,Wallstadt,0.7935139579600236,0.28
+Kloppenheimer Straße,Hauptverkehrsstrasse,"Rheinau, Seckenheim",0.9871272437232087,2.81
+Knie,Wohnstrasse,Neckarau,0.0,0.05
+Kniebisstraße,Wohnstrasse,Lindenhof,0.0,0.29
+Kobellstraße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.3
+Koblenzer Straße,Sammelstrasse,Vogelstang,1.0,0.63
+Kochelseeweg,Verkehrsberuhigter Bereich,Rheinau,0.0,0.1
+Kolmarer Straße,Wohnstrasse,Friedrichsfeld,0.0,0.67
+Kolpingstraße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.68
+Kometenweg,Wohnstrasse,Käfertal,0.0,0.45
+Konitzer Weg,Wohnstrasse,Schönau,0.0,0.27
+Konrad-Witz-Straße,Wohnstrasse,Neuostheim/Neuhermsheim,0.0,0.26
+Konstanzer Straße,Wohnstrasse,Seckenheim,0.0,0.2
+Kopernikusstraße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.3
+Korbangel,Wohnstrasse,"Käfertal, Waldhof",0.0,1.05
+Kormoranstraße,Wohnstrasse,Wallstadt,0.0,0.5
+Kornblumenstraße,Wohnstrasse,Käfertal,0.0,0.18
+Krafft-Ebing-Straße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.05
+Kranichweg,Wohnstrasse,Sandhofen,0.0,0.37
+Krappitzer Straße,Wohnstrasse,Sandhofen,0.0,0.36
+Krappmühlstraße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.2
+Krautgartenweg,Wohnstrasse,Seckenheim,0.0,0.5
+Krautheimer Straße,Wohnstrasse,Wallstadt,0.0,0.22
+Krefelder Straße,Sammelstrasse,Rheinau,1.0,0.25
+Kreuzstraße,Wohnstrasse,Wallstadt,0.0,0.08
+Kriegerstraße,Wohnstrasse,Sandhofen,0.0,0.29
+Krokusweg,Wohnstrasse,Waldhof,0.0,0.15
+Kronberger Straße,Wohnstrasse,Waldhof,0.0,0.14
+Kronenburgstraße,Wohnstrasse,Rheinau,0.0,0.51
+Kronenstraße,Wohnstrasse,Feudenheim,0.0,0.26
+Kropsburgstraße,Wohnstrasse,Rheinau,0.0,0.31
+Krähenweg,Wohnstrasse,Sandhofen,0.0,0.21
+Kulmer Straße,Wohnstrasse,Schönau,0.0,0.43
+Kunststraße,Wohnstrasse,Innenstadt/Jungbusch,0.0,0.23
+Kurpfalzbrücke,Hauptverkehrsstrasse,"Innenstadt/Jungbusch, Neckarstadt-Ost/Wohlgelegen, Neckarstadt-West, Schwetzingerstadt/Oststadt",1.0,0.21
+Kurpfalzkreisel,Hauptverkehrsstrasse (B-Strasse),"Innenstadt/Jungbusch, Schwetzingerstadt/Oststadt",1.0,0.13
+Kurpfalzstraße,Sammelstrasse,Innenstadt/Jungbusch,1.0,0.35
+Kurzgewannstraße,Wohnstrasse,Neckarau,0.0,0.09
+Kußmaulstraße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.18
+Käfertaler Straße,Sammelstrasse,Neckarstadt-Ost/Wohlgelegen,1.0,2.2
+Käthe-Kollwitz-Straße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.51
+Königsbacher Straße,Wohnstrasse,Käfertal,0.0,0.19
+Königsberger Allee,Sammelstrasse,"Sandhofen, Schönau",1.0,0.85
+Königshofer Straße,Wohnstrasse,Wallstadt,0.0,0.39
+Königsseestraße,Verkehrsberuhigter Bereich,Rheinau,0.0,0.12
+Königsteiner Straße,Wohnstrasse,Waldhof,0.0,0.14
+Königstuhlstraße,Wohnstrasse,Neckarau,0.0,0.26
+Körnerstraße,Wohnstrasse,Feudenheim,0.0,0.45
+Köthener Weg,Wohnstrasse,Vogelstang,0.0,0.13
+Külsheimer Straße,Wohnstrasse,Wallstadt,0.0,0.44
+L11/L9,Wohnstrasse,Innenstadt/Jungbusch,0.0,0.0
+L5,Verkehrsberuhigter Bereich,Innenstadt/Jungbusch,0.0,0.09
+Lachnerstraße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.21
+Ladenburger Straße,Wohnstrasse,Käfertal,0.0,0.56
+Lafettenweg,Verkehrsberuhigter Bereich,Neuostheim/Neuhermsheim,0.0,0.15
+Lahnstraße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.22
+Lahrer Straße,Wohnstrasse,Seckenheim,0.0,0.5
+Lameystraße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.37
+Lampertheimer Straße,Sammelstrasse,"Käfertal, Waldhof",1.0,2.1
+Landsknechtweg,Wohnstrasse,Neuostheim/Neuhermsheim,0.0,0.65
+Landteilstraße,Sammelstrasse,Lindenhof,0.7460211583649745,0.8
+Landwehrstraße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.23
+Landzungenstraße,Wohnstrasse,Innenstadt/Jungbusch,0.0,0.74
+Lange Allee,Wohnstrasse,Käfertal,0.0,0.21
+Lange Rötterstraße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.97
+Langer Schlag,Wohnstrasse,Waldhof,0.06393501369245394,1.55
+Langstraße,Wohnstrasse,Neckarstadt-West,0.0,0.95
+Lassallestraße,Wohnstrasse,Neckarau,0.0,0.35
+Laubenheimer Straße,Wohnstrasse,Käfertal,0.0,0.16
+Laudenbacher Straße,Wohnstrasse,Käfertal,0.0,0.25
+Lauffener Straße,Wohnstrasse,Feudenheim,0.0,0.59
+Laurentiusstraße,Wohnstrasse,Neckarstadt-West,0.0,0.21
+Lauterburger Straße,Wohnstrasse,Friedrichsfeld,0.0,0.18
+Leiblstraße,Wohnstrasse,Neuostheim/Neuhermsheim,0.0,0.21
+Leibnizstraße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.46
+Leinenstraße,Sammelstrasse,Sandhofen,1.0,0.29
+Leinpfad,Wohnstrasse,Sandhofen,0.0,0.85
+Leipziger Straße,Wohnstrasse,Vogelstang,0.0,0.49
+Leistadter Straße,Wohnstrasse,Käfertal,0.0,0.19
+Lemaitrestraße,Wohnstrasse,Käfertal,0.0,0.39
+Lembacher Straße,Wohnstrasse,Friedrichsfeld,0.0,0.35
+Lemle-Moses-Straße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.13
+Lenaustraße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.57
+Leni-Neuenschwander-Straße,Wohnstrasse,Käfertal,0.0,0.09
+Leonie-Ossowski-Promenade,Wohnstrasse,Käfertal,0.0,0.21
+Leoniweg,Verkehrsberuhigter Bereich,Neckarstadt-Ost/Wohlgelegen,0.0,0.24
+Lerchenstraße,Wohnstrasse,Waldhof,0.0,0.13
+Lessingstraße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.11
+Lettestraße,Wohnstrasse,Neckarau,0.0,0.09
+Levkojenweg,Wohnstrasse,Waldhof,0.0,0.37
+Libellenweg,Verkehrsberuhigter Bereich,Wallstadt,0.0,0.12
+Lichte Zeile,Wohnstrasse,Käfertal,0.0,0.29
+Lichtenauer Straße,Wohnstrasse,Seckenheim,0.0,0.09
+Liebfrauenstraße,Wohnstrasse,Feudenheim,0.0,0.36
+Liebigstraße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.09
+Ligusterweg,Wohnstrasse,Waldhof,0.0,0.11
+Lilienstraße,Wohnstrasse,Käfertal,0.0,0.29
+Lilienthalstraße,Sammelstrasse,"Sandhofen, Schönau",1.0,1.77
+Limbacher Straße,Wohnstrasse,Wallstadt,0.0,0.15
+Limburgstraße,Wohnstrasse,Rheinau,0.0,0.15
+Lina-Kehl-Weg,Wohnstrasse,Käfertal,0.0,0.35
+Lindenhofplatz,Verkehrsberuhigter Bereich,Lindenhof,0.0,0.05
+Lindenhofstraße,Wohnstrasse,Lindenhof,0.431237117985819,0.73
+Lindenstraße,Wohnstrasse,Käfertal,0.0,0.17
+Lissaer Weg,Wohnstrasse,Schönau,0.0,0.17
+Lochgärtenweg,Verkehrsberuhigter Bereich,Neuostheim/Neuhermsheim,0.0,0.26
+Logauweg,Wohnstrasse,Schönau,0.0,0.18
+Lohengrinstraße,Verkehrsberuhigter Bereich,Neckarau,0.0,0.43
+Lorscher Straße,Wohnstrasse,Sandhofen,0.0,0.17
+Lortzingstraße,Wohnstrasse,Neckarstadt-West,0.0,0.41
+Loslauer Weg,Wohnstrasse,Schönau,0.0,0.21
+Lucas-Cranach-Straße,Wohnstrasse,Neuostheim/Neuhermsheim,0.0,0.37
+Ludwig-Beck-Straße,Wohnstrasse,Neckarau,0.0,0.45
+Ludwig-Frank-Straße,Wohnstrasse,Neckarau,0.0,0.3
+Ludwig-Jolly-Straße,Hauptverkehrsstrasse (B-Strasse),Neckarstadt-West,1.0,0.4
+Ludwig-Neischwander-Weg,Verkehrsberuhigter Bereich,Schönau,0.0,0.16
+Ludwig-Ratzel-Straße,Sammelstrasse,Schwetzingerstadt/Oststadt,0.9608462644053058,0.42
+Ludwig-Richter-Straße,Wohnstrasse,Neuostheim/Neuhermsheim,0.0,0.09
+Ludwig-Roebel-Straße,Wohnstrasse,"Käfertal, Waldhof",0.0,0.21
+Ludwigshafener Straße,Hauptverkehrsstrasse (B-Strasse),"Lindenhof, Neuostheim/Neuhermsheim, Schwetzingerstadt/Oststadt, Seckenheim",1.0,2.57
+Luftschifferstraße,Wohnstrasse,Sandhofen,0.0,0.52
+Luisenring,Hauptverkehrsstrasse (B-Strasse),Innenstadt/Jungbusch,1.0,1.3
+Luisenstraße,Wohnstrasse,Neckarau,0.0,0.74
+Lutherstraße,Wohnstrasse,Neckarstadt-West,0.0,0.26
+Luzenbergstraße,Hauptverkehrsstrasse (B-Strasse),"Neckarstadt-West, Waldhof",0.9359604887079138,1.71
+Lörracher Straße,Wohnstrasse,Seckenheim,0.0,0.42
+Lötzener Weg,Wohnstrasse,Schönau,0.0,0.18
+Löwenstraße,Wohnstrasse,Feudenheim,0.0,0.23
+Lützowstraße,Wohnstrasse,Feudenheim,0.0,0.12
+Mabel-Grammer-Ring,Verkehrsberuhigter Bereich,Käfertal,0.0,0.18
+Madenburgstraße,Wohnstrasse,Rheinau,0.0,0.38
+Magdeburger Straße,Hauptverkehrsstrasse,"Käfertal, Vogelstang",1.0,1.66
+Maiblumenhof,Verkehrsberuhigter Bereich,Waldhof,0.0,0.09
+Maienweg,Wohnstrasse,Waldhof,0.0,0.08
+Maikammerstraße,Wohnstrasse,Käfertal,0.0,0.23
+Main-Neckar-Bahn-Straße,Wohnstrasse,Friedrichsfeld,0.0,0.4
+Mainauer Weg,Wohnstrasse,Seckenheim,0.0,0.13
+Mainstraße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.48
+Mallaustraße,Sammelstrasse,"Neckarau, Rheinau",1.0,2.63
+Malvenweg,Wohnstrasse,Waldhof,0.0,0.57
+Malzstraße,Wohnstrasse,Käfertal,0.0,0.31
+Mannheimer Landstraße,Hauptverkehrsstrasse,Rheinau,1.0,0.11
+Mannheimer Straße,Hauptverkehrsstrasse,"Käfertal, Wallstadt",0.9033482206134399,1.63
+Mansfelder Weg,Wohnstrasse,Sandhofen,0.0,0.11
+Marburger Straße,Wohnstrasse,Waldhof,0.0,0.57
+Marcobrunnerstraße,Wohnstrasse,Käfertal,0.0,0.12
+Marconistraße,Wohnstrasse,Käfertal,0.0,0.3
+Marguerrestraße,Wohnstrasse,Neckarau,0.0,0.48
+Maria-Kirch-Straße,Hauptverkehrsstrasse,Käfertal,1.0,0.18
+Maria-Rigel-Straße,Wohnstrasse,Sandhofen,0.0,0.34
+Maria-Scherer-Straße,Wohnstrasse,Käfertal,0.0,0.37
+Marianne-Cohn-Straße,Verkehrsberuhigter Bereich,Neckarstadt-Ost/Wohlgelegen,0.0,0.18
+Marie-Bernays-Platz,Verkehrsberuhigter Bereich,Käfertal,0.0,0.22
+Marie-Curie-Straße,Wohnstrasse,Rheinau,0.0,0.41
+Marienburger Straße,Wohnstrasse,Schönau,0.0,0.38
+Marienwerderweg,Wohnstrasse,Schönau,0.0,0.19
+Marketenderweg,Wohnstrasse,Neuostheim/Neuhermsheim,0.0,0.14
+Markircher Straße,Wohnstrasse,Friedrichsfeld,0.0,0.66
+Marktstraße,Wohnstrasse,Innenstadt/Jungbusch,0.0,0.04
+Marsweg,Verkehrsberuhigter Bereich,Käfertal,0.0,0.13
+Martinistraße,Wohnstrasse,Rheinau,0.0,0.42
+Mary-Wigman-Straße,Wohnstrasse,Käfertal,0.0,0.38
+Maudacher Straße,Wohnstrasse,Rheinau,0.0,0.16
+Mauerstraße,Verkehrsberuhigter Bereich,Waldhof,0.0,0.07
+Max-Enderlin-Straße,Verkehrsberuhigter Bereich,Feudenheim,0.0,0.16
+Max-Frisch-Straße,Verkehrsberuhigter Bereich,Feudenheim,0.0,0.26
+Max-Hachenburg-Straße,Wohnstrasse,Feudenheim,0.0,0.33
+Max-Josef-Metzger-Straße,Wohnstrasse,Neckarau,0.0,0.07
+Max-Joseph-Straße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,1.02
+Max-Laeuger-Weg,Verkehrsberuhigter Bereich,Neuostheim/Neuhermsheim,0.0,0.1
+Max-Winterhalter-Ring,Wohnstrasse,Schönau,0.0,0.71
+Max-von-Seubert-Straße,Wohnstrasse,Feudenheim,0.0,0.39
+Maxauer Straße,Wohnstrasse,Seckenheim,0.0,0.24
+Maxburgstraße,Wohnstrasse,Rheinau,0.0,0.13
+Maxdorfer Straße,Wohnstrasse,Rheinau,0.0,0.23
+Maximilianstraße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.24
+Maxstraße,Wohnstrasse,Neckarau,0.0,0.4
+Maybachstraße,Wohnstrasse,"Neckarstadt-Ost/Wohlgelegen, Neckarstadt-West",0.0,0.52
+Meckenheimer Straße,Wohnstrasse,Neckarau,0.0,0.29
+Mecklenburger Straße,Wohnstrasse,Vogelstang,0.0,0.43
+Medicusstraße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.12
+Meerfeldstraße,Wohnstrasse,Lindenhof,0.0,0.7
+Meerlachstraße,Wohnstrasse,Lindenhof,0.0,0.16
+Meersburger Straße,Wohnstrasse,Seckenheim,0.0,0.79
+Meerwiesenstraße,Wohnstrasse,Lindenhof,0.0,0.71
+Meeräckerplatz,Wohnstrasse,Lindenhof,0.0,0.09
+Meeräckerstraße,Sammelstrasse,Lindenhof,1.0,0.55
+Meininger Weg,Wohnstrasse,Vogelstang,0.0,0.09
+Meistersingerstraße,Wohnstrasse,Neckarau,0.0,0.26
+Meißener Weg,Wohnstrasse,Vogelstang,0.0,0.13
+Melchiorstraße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.22
+Memeler Straße,Wohnstrasse,Schönau,0.0,0.9
+Menzelstraße,Wohnstrasse,Neuostheim/Neuhermsheim,0.0,0.15
+Merkurweg,Verkehrsberuhigter Bereich,Käfertal,0.0,0.26
+Merziger Straße,Wohnstrasse,Käfertal,0.0,0.21
+Meteorweg,Verkehrsberuhigter Bereich,Käfertal,0.0,0.14
+Mettlacher Straße,Wohnstrasse,Käfertal,0.0,0.3
+Metzer Straße,Wohnstrasse,Friedrichsfeld,0.0,0.25
+Meßkircher Straße,Wohnstrasse,Seckenheim,0.0,0.44
+Michael-Bitterich-Weg,Verkehrsberuhigter Bereich,Neuostheim/Neuhermsheim,0.0,0.2
+Michelstadter Straße,Wohnstrasse,Waldhof,0.0,0.16
+Minneburgstraße,Wohnstrasse,Rheinau,0.0,0.21
+Mittelried,Wohnstrasse,Waldhof,0.0,0.27
+Mittelstraße,Wohnstrasse,"Neckarstadt-Ost/Wohlgelegen, Neckarstadt-West",0.16469352471303866,1.16
+Mohnäckerstraße,Wohnstrasse,Feudenheim,0.0,0.21
+Molkenbuhrstraße,Wohnstrasse,Neckarau,0.0,0.17
+Mollstraße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.7
+Molsheimer Straße,Wohnstrasse,Friedrichsfeld,0.0,0.17
+Moltkestraße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.28
+Mondgasse,Wohnstrasse,Sandhofen,0.0,0.17
+Moosgasse,Wohnstrasse,Waldhof,0.0,0.37
+Morchfeldstraße,Hauptverkehrsstrasse,Neckarau,0.8140522113709338,0.8
+Morgenröte,Wohnstrasse,Käfertal,0.0,0.41
+Mosbacher Straße,Sammelstrasse,Wallstadt,1.0,0.84
+Moselstraße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.48
+Mozartstraße,Sammelstrasse,Schwetzingerstadt/Oststadt,0.5437731873682877,0.27
+Mudauer Ring,Wohnstrasse,Wallstadt,0.0,0.97
+Mundenheimer Straße,Wohnstrasse,Rheinau,0.0,0.3
+Murgstraße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.23
+Musketenweg,Wohnstrasse,Neuostheim/Neuhermsheim,0.0,0.14
+Mutterstadter Platz,Wohnstrasse,Rheinau,0.0,0.06
+Mutterstadter Straße,Wohnstrasse,Rheinau,0.0,0.37
+Mußbacher Straße,Verkehrsberuhigter Bereich,Käfertal,0.0,0.2
+Märker Querschlag,Wohnstrasse,Waldhof,0.0,1.05
+Möhlstraße,Hauptverkehrsstrasse (B-Strasse),Schwetzingerstadt/Oststadt,1.0,0.5
+Mönchplatz,Wohnstrasse,Sandhofen,0.0,0.17
+Mönchstraße,Wohnstrasse,Sandhofen,0.0,0.23
+Mönchwörthstraße,Wohnstrasse,Neckarau,0.0,1.06
+Mörikestraße,Wohnstrasse,Feudenheim,0.0,0.2
+Mühldorferstraße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.32
+Mülhauser Straße,Wohnstrasse,Friedrichsfeld,0.0,0.49
+Mülhauser Winkel,Wohnstrasse,Friedrichsfeld,0.0,0.18
+Mülheimer Straße,Wohnstrasse,Rheinau,0.0,0.53
+Münchwälderstraße,Wohnstrasse,Rheinau,0.0,0.27
+Nadlerstraße,Wohnstrasse,Feudenheim,0.0,0.49
+Nahestraße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.12
+Narzissenweg,Wohnstrasse,Waldhof,0.0,0.61
+Nauheimer Straße,Wohnstrasse,Waldhof,0.0,0.13
+Naumannstraße,Wohnstrasse,Neckarau,0.0,0.16
+Naumburger Weg,Wohnstrasse,Vogelstang,0.0,0.12
+Nebeniusstraße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.16
+Neckarauer Straße,Hauptverkehrsstrasse (B-Strasse),"Lindenhof, Neckarau",1.0,2.74
+Neckarauer Waldweg,Wohnstrasse,Neckarau,0.0,1.16
+Neckarauer Übergang,Hauptverkehrsstrasse (B-Strasse),"Lindenhof, Neckarau, Schwetzingerstadt/Oststadt",1.0,0.1
+Neckargrün,Wohnstrasse,Feudenheim,0.0,0.15
+Neckarhauser Straße,Sammelstrasse,Friedrichsfeld,1.0,0.21
+Neckarplatt,Wohnstrasse,Feudenheim,0.0,0.39
+Neckarspitze,Wohnstrasse,Innenstadt/Jungbusch,0.0,0.08
+Neckarstraße,Wohnstrasse,Feudenheim,0.0,0.58
+Neckarvorlandstraße,Wohnstrasse,Innenstadt/Jungbusch,0.0,2.14
+Nelkenstraße,Wohnstrasse,Käfertal,0.0,0.28
+Neonstraße,Wohnstrasse,Neckarau,0.0,0.19
+Neudammstraße,Wohnstrasse,Neckarau,0.0,0.11
+Neudorfstraße,Wohnstrasse,Friedrichsfeld,0.0,0.54
+Neue Heimat,Wohnstrasse,Käfertal,0.0,0.29
+Neueichwaldstraße,Wohnstrasse,Waldhof,0.0,0.62
+Neues Leben,Wohnstrasse,Käfertal,0.0,0.89
+Neugasse,Wohnstrasse,Neckarau,0.0,0.12
+Neuhofer Straße,Wohnstrasse,Rheinau,0.0,0.49
+Neumayerstraße,Wohnstrasse,Rheinau,0.0,0.47
+Neunkircher Straße,Wohnstrasse,Käfertal,0.0,0.22
+Neuostheimer Straße,Hauptverkehrsstrasse,Seckenheim,1.0,1.71
+Neurottstraße,Wohnstrasse,Sandhofen,0.0,0.53
+Neuschloßweg,Verkehrsberuhigter Bereich,Sandhofen,0.0,0.21
+Neustadter Straße,Hauptverkehrsstrasse,"Feudenheim, Käfertal",1.0,0.72
+Neustrelitzer Weg,Wohnstrasse,Vogelstang,0.0,0.11
+Nibelungenring,Wohnstrasse,Neckarau,0.0,0.99
+Niederbronner Straße,Wohnstrasse,Sandhofen,0.0,0.28
+Niederfeldstraße,Wohnstrasse,Neckarau,0.0,0.86
+Niersteiner Straße,Wohnstrasse,Käfertal,0.0,0.11
+Nietzschestraße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.64
+Nonnenstraße,Wohnstrasse,Sandhofen,0.0,0.11
+Nordhäuser Weg,Wohnstrasse,Sandhofen,0.0,0.13
+Normannenstraße,Wohnstrasse,Wallstadt,0.0,0.21
+Nußbaumweg,Verkehrsberuhigter Bereich,Neckarstadt-Ost/Wohlgelegen,0.0,0.15
+Nürburgstraße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.22
+Oberbergener Straße,Verkehrsberuhigter Bereich,Seckenheim,0.0,0.24
+Obere Clignetstraße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.24
+Obere Riedstraße,Wohnstrasse,Käfertal,0.0,0.7
+Oberer Bruchrand,Wohnstrasse,Sandhofen,0.0,0.27
+Oberes Ringgässchen,Wohnstrasse,Feudenheim,0.0,0.04
+Obergasse,Wohnstrasse,Sandhofen,0.0,0.32
+Oberkircher Straße,Wohnstrasse,Seckenheim,0.0,0.15
+Oberlinweg,Wohnstrasse,Waldhof,0.0,0.2
+Oberneugasse,Wohnstrasse,Sandhofen,0.0,0.13
+Oberrotweiler Straße,Wohnstrasse,Seckenheim,0.0,0.23
+Obhut,Wohnstrasse,Käfertal,0.0,0.2
+Obstgartenweg,Wohnstrasse,Neckarau,0.0,0.11
+Odenwaldstraße,Wohnstrasse,Feudenheim,0.38798840083183583,1.0
+Offenbacher Straße,Wohnstrasse,Waldhof,0.0,0.19
+Offenburger Straße,Sammelstrasse,Seckenheim,0.8166868056307903,0.88
+Ohmweg,Wohnstrasse,Neckarau,0.0,0.58
+Opitzstraße,Wohnstrasse,Schönau,0.0,0.27
+Oppauer Kreuzweg,Wohnstrasse,Sandhofen,0.0,0.28
+Oppauer Straße,Wohnstrasse,Waldhof,0.0,0.36
+Ortelsburger Straße,Wohnstrasse,Schönau,0.0,0.15
+Ortenaustraße,Wohnstrasse,"Lindenhof, Neckarau",0.0,0.24
+Ortsstraße,Sammelstrasse,Wallstadt,1.0,0.45
+Oskar-Meixner-Straße,Wohnstrasse,Neckarau,0.0,0.29
+Oskar-von-Miller-Straße,Hauptverkehrsstrasse,"Käfertal, Waldhof",1.0,0.61
+Osterburker Straße,Sammelstrasse,Wallstadt,1.0,0.42
+Osteroder Weg,Wohnstrasse,Schönau,0.0,0.11
+Osterstraße,Wohnstrasse,Rheinau,0.0,0.28
+Oswaldstraße,Verkehrsberuhigter Bereich,Wallstadt,0.0,0.2
+Ottenhöfer Straße,Wohnstrasse,Seckenheim,0.0,0.1
+Otterstadter Straße,Wohnstrasse,Rheinau,0.0,0.34
+Otto-Beck-Straße,Sammelstrasse,Schwetzingerstadt/Oststadt,0.6795304044694641,0.76
+Otto-Meißner-Weg,Verkehrsberuhigter Bereich,Käfertal,0.0,0.08
+Otto-Selz-Straße,Verkehrsberuhigter Bereich,Innenstadt/Jungbusch,0.0,0.12
+Otto-Siffling-Straße,Wohnstrasse,Waldhof,0.0,0.26
+Pappelallee,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.24
+Parkring,Hauptverkehrsstrasse (B-Strasse),Innenstadt/Jungbusch,1.0,0.56
+Parsevalstraße,Wohnstrasse,Schönau,0.0,0.34
+Paul-Gerhardt-Straße,Wohnstrasse,Neckarstadt-West,0.0,0.11
+Paul-Martin-Ufer,Wohnstrasse,Neuostheim/Neuhermsheim,0.0,1.0
+Paul-Wittsack-Straße,Wohnstrasse,Lindenhof,0.0,0.31
+Paulusbergstraße,Wohnstrasse,Feudenheim,0.0,0.29
+Perreystraße,Wohnstrasse,Rheinau,0.0,0.39
+Pestalozzistraße,Verkehrsberuhigter Bereich,Neckarstadt-West,0.0,0.28
+Peter-Rosegger-Straße,Wohnstrasse,Feudenheim,0.0,0.12
+Petersauer Straße,Wohnstrasse,Sandhofen,0.0,0.27
+Peterskopfstraße,Wohnstrasse,Lindenhof,0.0,0.12
+Pettenkoferstraße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.28
+Pfalzburger Straße,Wohnstrasse,Friedrichsfeld,0.0,0.29
+Pfalzplatz,Wohnstrasse,Lindenhof,0.0,0.49
+Pfalzstraße,Wohnstrasse,Feudenheim,0.0,0.26
+Pfarrer-Egger-Straße,Wohnstrasse,Rheinau,0.0,0.12
+Pfarrgasse,Wohnstrasse,Neckarau,0.0,0.09
+Pfauengasse,Wohnstrasse,Sandhofen,0.0,0.12
+Pfeilkrautweg,Verkehrsberuhigter Bereich,Wallstadt,0.0,0.15
+Pfeilstraße,Wohnstrasse,Käfertal,0.0,0.16
+Pfingstbergplatz,Wohnstrasse,Rheinau,0.0,0.14
+Pfingstbergstraße,Wohnstrasse,Rheinau,0.0,0.21
+Pflugstraße,Wohnstrasse,Feudenheim,0.0,0.18
+Pflügersgrundstraße,Wohnstrasse,Neckarstadt-West,0.0,0.25
+Pforzheimer Straße,Wohnstrasse,Seckenheim,0.0,0.33
+Pfungstadter Straße,Wohnstrasse,Waldhof,0.0,0.11
+Philipp-Brunnemer-Weg,Wohnstrasse,Waldhof,0.0,0.4
+Philosophenplatz,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.3
+Pigagestraße,Verkehrsberuhigter Bereich,Rheinau,0.0,0.11
+Pillauer Straße,Wohnstrasse,Schönau,0.0,0.23
+Pirnaer Straße,Wohnstrasse,Vogelstang,0.0,0.37
+Pirolweg,Wohnstrasse,Sandhofen,0.0,0.21
+Planetenweg,Wohnstrasse,Käfertal,0.0,0.42
+Planken,Wohnstrasse,Innenstadt/Jungbusch,0.0,0.21
+Plankstadter Straße,Wohnstrasse,Rheinau,0.0,0.36
+Plattstraße,Wohnstrasse,Neckarau,0.0,0.12
+Plauener Weg,Wohnstrasse,Vogelstang,0.0,0.13
+Plittersdorfer Straße,Wohnstrasse,Seckenheim,0.0,0.09
+Pommernstraße,Wohnstrasse,Vogelstang,0.0,0.28
+Posener Platz,Wohnstrasse,Schönau,0.0,0.17
+Posener Straße,Wohnstrasse,Schönau,0.0,0.39
+Posthornweg,Wohnstrasse,Rheinau,0.0,0.22
+Poststraße,Wohnstrasse,Käfertal,0.0,0.38
+Potsdamer Weg,Wohnstrasse,Vogelstang,0.0,0.2
+Pozzistraße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.08
+Promenadenweg,Wohnstrasse,Neckarau,0.0,1.14
+Pulversheimer Straße,Wohnstrasse,Friedrichsfeld,0.0,0.22
+Pumpwerkstraße,Wohnstrasse,Neckarstadt-West,0.0,0.6
+Pyramidenstraße,Wohnstrasse,Neckarstadt-West,0.0,0.26
+Quedlinburger Weg,Wohnstrasse,Sandhofen,0.0,0.35
+Querstraße,Wohnstrasse,Feudenheim,0.0,0.07
+Rabengasse,Wohnstrasse,Sandhofen,0.0,0.09
+Radeberger Straße,Wohnstrasse,Vogelstang,0.0,0.29
+Rahnfelsstraße,Wohnstrasse,Lindenhof,0.0,0.16
+Rainweidenstraße,Wohnstrasse,Neckarstadt-West,0.0,0.25
+Rampenweg,Wohnstrasse,Lindenhof,0.0,0.19
+Rappoltsweilerstraße,Wohnstrasse,Friedrichsfeld,0.0,0.52
+Rappoltsweilerwinkel,Wohnstrasse,Friedrichsfeld,0.0,0.2
+Rastatter Straße,Wohnstrasse,Seckenheim,0.0,0.97
+Rastenburger Straße,Wohnstrasse,Schönau,0.0,0.51
+Rathausstraße,Wohnstrasse,Neckarau,0.0,0.26
+Rathenaustraße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.23
+Ratsschreibergasse,Wohnstrasse,Neckarau,0.0,0.11
+Rauenberger Straße,Verkehrsberuhigter Bereich,Rheinau,0.0,0.15
+Rebenstraße,Wohnstrasse,Käfertal,0.0,0.36
+Regenbogen,Wohnstrasse,Käfertal,0.0,0.6
+Regenweg,Wohnstrasse,Neckarau,0.0,0.31
+Rehpfad,Wohnstrasse,Friedrichsfeld,0.0,0.36
+Reichshofer Straße,Wohnstrasse,Friedrichsfeld,0.0,0.15
+Reichskanzler-Müller-Straße,Hauptverkehrsstrasse (B-Strasse),Schwetzingerstadt/Oststadt,1.0,1.03
+Reiherstraße,Wohnstrasse,Käfertal,0.0,0.39
+Reiterweg,Wohnstrasse,Neuostheim/Neuhermsheim,0.0,0.62
+Relaisstraße,Hauptverkehrsstrasse,Rheinau,1.0,2.08
+Renchener Straße,Wohnstrasse,Seckenheim,0.0,0.16
+Rennershofstraße,Wohnstrasse,Lindenhof,0.0,0.39
+Renzstraße,Hauptverkehrsstrasse (B-Strasse),Schwetzingerstadt/Oststadt,1.0,0.28
+Rethelstraße,Wohnstrasse,Neuostheim/Neuhermsheim,0.0,0.15
+Rheinauer Ring,Wohnstrasse,Rheinau,0.0,1.77
+Rheinaustraße,Wohnstrasse,Lindenhof,0.0,0.28
+Rheinbadweg,Wohnstrasse,Neckarau,0.0,0.13
+Rheindammstraße,Wohnstrasse,Lindenhof,0.0,0.43
+Rheinfelder Straße,Wohnstrasse,Seckenheim,0.0,0.2
+Rheinfähre,Sammelstrasse,"Neckarau, Rheinau",1.0,0.36
+Rheingoldstraße,Sammelstrasse,Neckarau,0.7942216931555512,0.71
+Rheingärtenstraße,Wohnstrasse,Neckarau,0.0,0.18
+Rheingönheimer Straße,Wohnstrasse,Rheinau,0.0,0.26
+Rheinhäuser Straße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.67
+Rheinparkstraße,Wohnstrasse,Lindenhof,0.0,0.04
+Rheinpromenade,Wohnstrasse,Lindenhof,0.0,0.57
+Rheinstraße,Wohnstrasse,Innenstadt/Jungbusch,0.0,0.28
+Rheintalbahnstraße,Wohnstrasse,Neckarau,0.0,0.36
+Rheintöchterstraße,Verkehrsberuhigter Bereich,Neckarau,0.0,0.43
+Rheinvillenstraße,Wohnstrasse,Lindenhof,0.0,0.22
+Rheinwiesenstraße,Wohnstrasse,Waldhof,0.0,0.06
+Rhenaniastraße,Sammelstrasse,"Neckarau, Rheinau",1.0,4.72
+Richard-Lenel-Straße,Wohnstrasse,Feudenheim,0.0,0.36
+Richard-Wagner-Straße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.88
+Rickertstraße,Wohnstrasse,Neckarau,0.0,0.13
+Riedfeldstraße,Wohnstrasse,Neckarstadt-West,0.0,0.92
+Riedgärtenstraße,Wohnstrasse,Sandhofen,0.0,0.1
+Riedlach,Wohnstrasse,Sandhofen,0.0,0.2
+Riegeler Weg,Verkehrsberuhigter Bereich,Seckenheim,0.0,0.21
+Riesaer Weg,Wohnstrasse,Vogelstang,0.0,0.14
+Rieslingweg,Wohnstrasse,Käfertal,0.0,0.1
+Riestenweg,Wohnstrasse,Seckenheim,0.0,0.36
+Rietburgstraße,Wohnstrasse,Rheinau,0.0,0.11
+Rilkestraße,Verkehrsberuhigter Bereich,Neckarstadt-Ost/Wohlgelegen,0.0,0.15
+Rindenweg,Wohnstrasse,Waldhof,0.0,0.23
+Ringstraße,Wohnstrasse,Feudenheim,0.0,0.28
+Rittershofener Straße,Wohnstrasse,Friedrichsfeld,0.0,0.08
+Robert-Blum-Straße,Wohnstrasse,Neckarau,0.0,0.46
+Robert-Funari-Straße,Sammelstrasse,Käfertal,1.0,0.46
+Robert-Hammonds-Ring,Wohnstrasse,Seckenheim,0.0,0.66
+Robert-Schmoll-Weg,Verkehrsberuhigter Bereich,Schönau,0.0,0.17
+Robinienstraße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.19
+Roggenplatz,Verkehrsberuhigter Bereich,Waldhof,0.0,0.04
+Roggenstraße,Wohnstrasse,Waldhof,0.0,0.2
+Rohrhofer Straße,Hauptverkehrsstrasse,Rheinau,0.9341140610080038,1.25
+Rohrkolbenweg,Verkehrsberuhigter Bereich,Wallstadt,0.0,0.46
+Rohrlachstraße,Wohnstrasse,Seckenheim,0.0,0.65
+Rollbühlstraße,Hauptverkehrsstrasse (B-Strasse),Käfertal,0.7585680753128484,1.19
+Roonstraße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.18
+Rosenstraße,Wohnstrasse,Neckarau,0.0,0.88
+Rostocker Weg,Wohnstrasse,Vogelstang,0.0,0.14
+Rotdornweg,Verkehrsberuhigter Bereich,Neckarstadt-Ost/Wohlgelegen,0.0,0.15
+Roteichenring,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.97
+Rottannenweg,Wohnstrasse,Waldhof,0.0,0.61
+Rottfeldstraße,Wohnstrasse,Neckarau,0.0,0.77
+Roxheimer Straße,Wohnstrasse,Rheinau,0.0,0.08
+Roßlauer Weg,Wohnstrasse,Vogelstang,0.0,0.24
+Ruchheimer Weg,Wohnstrasse,Rheinau,0.0,0.12
+Rudolf-Langendorf-Straße,Wohnstrasse,Friedrichsfeld,0.0,0.2
+Rudolf-Maus-Straße,Wohnstrasse,Schönau,0.0,0.26
+Rudolstadter Weg,Wohnstrasse,Vogelstang,0.0,0.09
+Ruhrorter Straße,Sammelstrasse,Rheinau,1.0,1.48
+Ruhrstraße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.22
+Ruppertsberger Straße,Wohnstrasse,Käfertal,0.0,0.31
+Römerstraße,Sammelstrasse,Wallstadt,0.9159789645884723,0.66
+Röntgenstraße,Hauptverkehrsstrasse,Neckarstadt-Ost/Wohlgelegen,0.9536696270064945,0.67
+Rückertstraße,Wohnstrasse,Feudenheim,0.0,0.12
+Rüdesheimer Straße,Wohnstrasse,"Feudenheim, Käfertal",0.0,0.73
+Rügener Weg,Wohnstrasse,Vogelstang,0.0,0.08
+Rüsselsheimer Straße,Wohnstrasse,Waldhof,0.0,0.66
+Saalfelder Weg,Wohnstrasse,Vogelstang,0.0,0.16
+Saarbrücker Straße,Wohnstrasse,Käfertal,0.0,0.46
+Saarburger Ring,Wohnstrasse,Friedrichsfeld,0.0,0.96
+Sachsenstraße,Wohnstrasse,Vogelstang,0.0,1.13
+Sackgasse,Wohnstrasse,Sandhofen,0.0,0.06
+Salmenstraße,Wohnstrasse,Neckarau,0.0,0.14
+Salzachstraße,Wohnstrasse,Neckarau,0.0,0.12
+Salzwedeler Weg,Wohnstrasse,Vogelstang,0.0,0.13
+Sammelbahnhof,Wohnstrasse,Waldhof,0.0,0.17
+Sandhofer Straße,Sammelstrasse,"Sandhofen, Waldhof",0.8611138212452433,4.12
+Sandrain,Wohnstrasse,Rheinau,0.0,0.75
+Sandtorfer Weg,Sammelstrasse,Sandhofen,1.0,0.01
+Sankt Ingberter Straße,Wohnstrasse,Käfertal,0.0,0.23
+Sankt-Peter-und-Paul-Straße,Wohnstrasse,Feudenheim,0.0,0.12
+Sasbacher Straße,Wohnstrasse,Seckenheim,0.0,0.05
+Saturnweg,Verkehrsberuhigter Bereich,Käfertal,0.0,0.13
+Saßnitzer Weg,Wohnstrasse,Vogelstang,0.0,0.08
+Schafscheuerstraße,Wohnstrasse,Sandhofen,0.0,0.14
+Schafweide,Hauptverkehrsstrasse,Neckarstadt-Ost/Wohlgelegen,0.687150990345202,0.66
+Schanzenstraße,Wohnstrasse,Innenstadt/Jungbusch,0.4067916952805722,0.2
+Scharhofer Straße,Wohnstrasse,Sandhofen,0.20024475068634587,0.7
+Scharnhorststraße,Wohnstrasse,Feudenheim,0.0,0.26
+Schauenburgweg,Wohnstrasse,Rheinau,0.0,0.17
+Schauinslandstraße,Wohnstrasse,Lindenhof,0.0,0.21
+Scheffelstraße,Wohnstrasse,Feudenheim,0.0,0.77
+Schefflenzer Straße,Wohnstrasse,Wallstadt,0.0,0.28
+Schellingstraße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.15
+Schenkendorfstraße,Wohnstrasse,Feudenheim,0.0,0.08
+Schienenstraße,Hauptverkehrsstrasse (B-Strasse),Waldhof,0.9241392181092246,0.36
+Schifferstadter Straße,Wohnstrasse,Rheinau,0.0,0.54
+Schildkrötstraße,Wohnstrasse,Neckarau,0.0,0.47
+Schilfweg,Verkehrsberuhigter Bereich,Wallstadt,0.0,0.17
+Schillerstraße,Wohnstrasse,Feudenheim,0.0,0.36
+Schimperstraße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.31
+Schindkautweg,Wohnstrasse,Neckarau,0.0,0.37
+Schlehenweg,Wohnstrasse,Waldhof,0.0,0.23
+Schleiermacherstraße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.09
+Schlettstadter Straße,Wohnstrasse,Friedrichsfeld,0.0,0.39
+Schlierbacher Straße,Wohnstrasse,Feudenheim,0.0,0.1
+Schlierseeweg,Verkehrsberuhigter Bereich,Rheinau,0.0,0.12
+Schliffkopfstraße,Wohnstrasse,Lindenhof,0.0,0.32
+Schlossgartenstraße,Wohnstrasse,Innenstadt/Jungbusch,0.0,0.23
+Schmiedgasse,Wohnstrasse,Neckarau,0.0,0.14
+Schmitzstraße,Verkehrsberuhigter Bereich,Rheinau,0.0,0.19
+Schneeberger Straße,Wohnstrasse,Vogelstang,0.0,0.31
+Schopenhauerstraße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.31
+Schopfheimer Straße,Wohnstrasse,Seckenheim,0.0,0.28
+Schramberger Winkel,Wohnstrasse,Seckenheim,0.0,0.2
+Schriesheimer Straße,Wohnstrasse,Rheinau,0.0,0.31
+Schubertstraße,Hauptverkehrsstrasse,Schwetzingerstadt/Oststadt,1.0,0.25
+Schulstraße,Wohnstrasse,Neckarau,0.0,0.72
+Schulzenstraße,Wohnstrasse,Wallstadt,0.0,0.23
+Schumannstraße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.07
+Schwabenheimer Straße,Wohnstrasse,Rheinau,0.0,0.12
+Schwabenstraße,Sammelstrasse,"Friedrichsfeld, Seckenheim",1.0,2.06
+Schwalbacher Straße,Wohnstrasse,Waldhof,0.0,0.26
+Schwalbenstraße,Wohnstrasse,Käfertal,0.0,0.4
+Schwanenstraße,Wohnstrasse,Feudenheim,0.0,0.53
+Schwarzenberger Straße,Wohnstrasse,Vogelstang,0.0,0.22
+Schwarzwaldstraße,Wohnstrasse,Lindenhof,0.0,1.29
+Schweizerstraße,Wohnstrasse,Feudenheim,0.0,0.11
+Schweriner Weg,Wohnstrasse,Vogelstang,0.0,0.12
+Schwertlilienweg,Verkehrsberuhigter Bereich,Wallstadt,0.0,0.54
+Schwetzinger Landstraße,Hauptverkehrsstrasse,Rheinau,1.0,0.53
+Schwetzinger Platz,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.07
+Schwetzinger Straße,Sammelstrasse,Schwetzingerstadt/Oststadt,1.0,1.3
+Schwindstraße,Wohnstrasse,Neuostheim/Neuhermsheim,0.0,0.12
+Schwingstraße,Wohnstrasse,Neckarau,0.0,0.4
+Schönauer Straße,Sammelstrasse,Sandhofen,1.0,0.43
+Schöpflinstraße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.11
+Schützenstraße,Wohnstrasse,Feudenheim,0.0,0.29
+Seckacher Straße,Wohnstrasse,Wallstadt,0.0,0.61
+Seckenheimer Hauptstraße,Hauptverkehrsstrasse,Seckenheim,0.9624124869290358,3.34
+Seckenheimer Landstraße,Hauptverkehrsstrasse,"Neuostheim/Neuhermsheim, Seckenheim",0.8308846725955417,4.42
+Seckenheimer Straße,Sammelstrasse,Schwetzingerstadt/Oststadt,1.0,1.44
+Sedanstraße,Sammelstrasse,Neckarau,1.0,0.15
+Seerosenweg,Verkehrsberuhigter Bereich,Wallstadt,0.0,0.22
+Seidenstraße,Wohnstrasse,Sandhofen,0.0,0.17
+Seilerstraße,Wohnstrasse,Innenstadt/Jungbusch,0.4664754714765226,0.22
+Sennteichplatz,Wohnstrasse,Neckarau,0.0,0.22
+Sensburger Weg,Wohnstrasse,Schönau,0.0,0.17
+Sentastraße,Verkehrsberuhigter Bereich,Neckarau,0.0,0.41
+Sibylla-Merian-Straße,Hauptverkehrsstrasse,Käfertal,1.0,0.57
+Siebenbürger Straße,Hauptverkehrsstrasse,"Feudenheim, Vogelstang, Wallstadt",1.0,3.36
+Siebseeweg,Wohnstrasse,Waldhof,0.0,0.71
+Siedlerpfad,Wohnstrasse,Käfertal,0.0,0.26
+Siegfriedstraße,Verkehrsberuhigter Bereich,Neckarau,0.0,0.39
+Siegstraße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.22
+Siemensstraße,Sammelstrasse,Neckarau,1.0,0.35
+Sigmund-Schott-Straße,Wohnstrasse,Feudenheim,0.0,0.16
+Sigrid-Hackbarth-Straße,Wohnstrasse,Neckarau,0.0,0.31
+Silvesterstraße,Wohnstrasse,Rheinau,0.0,0.19
+Singener Weg,Wohnstrasse,Seckenheim,0.0,0.13
+Sinsheimer Straße,Wohnstrasse,Seckenheim,0.0,0.41
+Sisalweg,Wohnstrasse,Sandhofen,0.0,0.09
+Sohrauer Straße,Wohnstrasse,Schönau,0.0,0.55
+Soironstraße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.22
+Soldatenweg,Wohnstrasse,Waldhof,0.0,0.69
+Sonderburger Straße,Sammelstrasse,"Schönau, Waldhof",0.9915414051254456,2.13
+Sonnenschein,Wohnstrasse,Käfertal,0.0,0.85
+Sonnenstraße,Wohnstrasse,Sandhofen,0.0,0.64
+Sophienstraße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.34
+Spargelweg,Wohnstrasse,Seckenheim,0.0,0.38
+Spatenstraße,Wohnstrasse,Neckarstadt-West,0.0,0.08
+Spatzenbrücke,Wohnstrasse,Innenstadt/Jungbusch,0.0,0.01
+Speckweg,Wohnstrasse,"Käfertal, Waldhof",0.16231352698384088,2.15
+Spelzenstraße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.18
+Sperbergasse,Wohnstrasse,Sandhofen,0.0,0.1
+Sperlingweg,Wohnstrasse,Sandhofen,0.0,0.23
+Spessartstraße,Wohnstrasse,Feudenheim,0.0,0.53
+Speyerer Straße,Sammelstrasse,"Lindenhof, Neckarau",0.5490114198389858,1.46
+Spiegelfabrik,Wohnstrasse,Waldhof,0.0,0.44
+Spiegelstraße,Wohnstrasse,Waldhof,0.0,0.39
+Spielgäßchen,Wohnstrasse,Waldhof,0.0,0.11
+Spindelweg,Wohnstrasse,Sandhofen,0.0,0.2
+Spinnereistraße,Wohnstrasse,Sandhofen,0.24235636621065856,0.56
+Spinozastraße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.64
+Sporwörthplatz,Wohnstrasse,Rheinau,0.0,0.05
+Sporwörthstraße,Wohnstrasse,Rheinau,0.0,0.99
+Spreewaldallee,Wohnstrasse,Vogelstang,0.32389065157234415,1.18
+Stabhalterstraße,Wohnstrasse,Sandhofen,0.0,0.52
+Staffelseeweg,Verkehrsberuhigter Bereich,Rheinau,0.0,0.13
+Stamitzstraße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.11
+Starengasse,Wohnstrasse,Sandhofen,0.0,0.11
+Stargarder Weg,Wohnstrasse,Schönau,0.0,0.24
+Starke Hoffnung,Wohnstrasse,Käfertal,0.0,0.49
+Staudenweg,Wohnstrasse,Waldhof,0.0,0.59
+Staufener Straße,Verkehrsberuhigter Bereich,Seckenheim,0.0,0.24
+Staßfurter Weg,Wohnstrasse,Vogelstang,0.0,0.11
+Stegerwaldweg,Wohnstrasse,Waldhof,0.0,0.12
+Steinacher Straße,Wohnstrasse,Feudenheim,0.0,0.1
+Steinsburgweg,Wohnstrasse,Rheinau,0.0,0.4
+Steinstraße,Verkehrsberuhigter Bereich,Waldhof,0.0,0.07
+Stendaler Weg,Wohnstrasse,Vogelstang,0.0,0.19
+Stengelhofstraße,Wohnstrasse,Rheinau,0.0,0.37
+Stengelstraße,Wohnstrasse,Seckenheim,0.0,0.11
+Stephanienufer,Wohnstrasse,Lindenhof,0.0,0.77
+Sternengasse,Wohnstrasse,Sandhofen,0.0,0.26
+Stettiner Straße,Wohnstrasse,Schönau,0.0,1.16
+Steubenstraße,Sammelstrasse,"Lindenhof, Neckarau",1.0,1.32
+Stieglitzgasse,Wohnstrasse,Sandhofen,0.0,0.11
+Stiller Weg,Wohnstrasse,Käfertal,0.0,0.52
+Stockacher Straße,Wohnstrasse,Seckenheim,0.0,0.35
+Stockhornstraße,Wohnstrasse,Neckarstadt-West,0.0,0.43
+Stolberger Straße,Wohnstrasse,Waldhof,0.0,0.27
+Stolzeneckstraße,Wohnstrasse,Rheinau,0.0,0.96
+Stolzestraße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.11
+Storchenstraße,Wohnstrasse,Wallstadt,0.0,0.86
+Stotzstraße,Hauptverkehrsstrasse (B-Strasse),Schwetzingerstadt/Oststadt,1.0,0.3
+Strahlenburgstraße,Wohnstrasse,Rheinau,0.0,0.42
+Stralsunder Weg,Wohnstrasse,Vogelstang,0.0,0.14
+Straßburger Ring,Wohnstrasse,Friedrichsfeld,0.0,1.1
+Straßenheimer Weg,Sammelstrasse,"Vogelstang, Wallstadt",1.0,2.25
+Stresemannstraße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.3
+Struvestraße,Wohnstrasse,Neckarau,0.0,0.15
+Suckowstraße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.11
+Sudetenstraße,Hauptverkehrsstrasse,"Feudenheim, Käfertal, Vogelstang, Wallstadt",1.0,3.5
+Suebenheimer Allee,Hauptverkehrsstrasse,Seckenheim,1.0,1.68
+Suebenstraße,Wohnstrasse,Seckenheim,0.0,0.34
+Sufflenheimer Straße,Wohnstrasse,Friedrichsfeld,0.0,0.36
+Suhler Weg,Wohnstrasse,Vogelstang,0.0,0.12
+Sulzbacher Straße,Wohnstrasse,Käfertal,0.0,0.07
+Sylter Weg,Wohnstrasse,Waldhof,0.0,0.18
+Säckinger Straße,Wohnstrasse,Seckenheim,0.0,0.28
+Talhausring,Verkehrsberuhigter Bereich,Rheinau,0.0,0.23
+Talstraße,Wohnstrasse,Feudenheim,0.0,1.07
+Tambourweg,Verkehrsberuhigter Bereich,Neuostheim/Neuhermsheim,0.0,0.23
+Tannenstraße,Wohnstrasse,Waldhof,0.0,0.14
+Tannhäuserring,Verkehrsberuhigter Bereich,Neckarau,0.0,1.95
+Tarnowitzer Weg,Wohnstrasse,Schönau,0.0,0.63
+Tattersallstraße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.51
+Taubenstraße,Wohnstrasse,Sandhofen,0.0,0.65
+Tauberbischofsheimer Straße,Wohnstrasse,Wallstadt,0.0,0.26
+Taubergrund,Wohnstrasse,Wallstadt,0.0,0.12
+Tauberstraße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.12
+Tegernseeweg,Verkehrsberuhigter Bereich,Rheinau,0.0,0.15
+Teutonenring,Wohnstrasse,Wallstadt,0.0,0.17
+Theodor-Fliedner-Weg,Wohnstrasse,Waldhof,0.0,0.23
+Theodor-Heuss-Anlage,Hauptverkehrsstrasse,"Neuostheim/Neuhermsheim, Schwetzingerstadt/Oststadt",1.0,0.91
+Theodor-Kutzer-Ufer,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.02
+Theodor-Storm-Straße,Sammelstrasse,Feudenheim,0.6526575345855995,0.81
+Therese-Blase-Straße,Wohnstrasse,Käfertal,0.0,0.32
+Thomas-Jefferson-Straße,Wohnstrasse,Käfertal,0.0,1.1
+Thomas-Mann-Straße,Verkehrsberuhigter Bereich,Neckarstadt-Ost/Wohlgelegen,0.0,0.13
+Thorner Straße,Wohnstrasse,Schönau,0.0,0.54
+Thüringer Straße,Wohnstrasse,Vogelstang,0.0,1.09
+Tieckstraße,Wohnstrasse,Feudenheim,0.0,0.06
+Tiefburgweg,Wohnstrasse,Rheinau,0.0,0.14
+Tillessenstraße,Verkehrsberuhigter Bereich,Rheinau,0.0,0.2
+Tilsiter Straße,Wohnstrasse,Schönau,0.0,0.56
+Titiseestraße,Wohnstrasse,Lindenhof,0.0,0.28
+Tonderner Weg,Wohnstrasse,Schönau,0.0,0.3
+Torgauer Weg,Wohnstrasse,Vogelstang,0.0,0.12
+Torwiesenstraße,Wohnstrasse,Lindenhof,0.0,0.21
+Toräckerstraße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.07
+Traitteurstraße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.38
+Traminerweg,Wohnstrasse,Käfertal,0.0,0.14
+Traubenstraße,Wohnstrasse,Neckarau,0.0,0.09
+Traunstraße,Wohnstrasse,"Neckarau, Rheinau",0.0,0.11
+Trautenfeldstraße,Wohnstrasse,Friedrichsfeld,0.0,0.24
+Triberger Ring,Wohnstrasse,Seckenheim,0.0,0.27
+Trifelsstraße,Wohnstrasse,Lindenhof,0.0,0.11
+Tristanstraße,Verkehrsberuhigter Bereich,Neckarau,0.0,0.18
+Trollblumenweg,Verkehrsberuhigter Bereich,Wallstadt,0.0,0.23
+Trommstraße,Wohnstrasse,Neckarau,0.0,0.1
+Trompetergasse,Wohnstrasse,Wallstadt,0.0,0.12
+Troßweg,Wohnstrasse,Neuostheim/Neuhermsheim,0.0,0.14
+Trübnerstraße,Wohnstrasse,Neuostheim/Neuhermsheim,0.0,0.22
+Trützschlerstraße,Wohnstrasse,Neckarau,0.0,0.19
+Tullastraße,Wohnstrasse,"Innenstadt/Jungbusch, Schwetzingerstadt/Oststadt",0.0,0.38
+Tulpenstraße,Wohnstrasse,Käfertal,0.0,0.39
+Turbinenstraße,Wohnstrasse,Käfertal,0.0,0.57
+Turley-Straße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.31
+Turleyplatz,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.49
+Uhlandstraße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.58
+Uhldinger Straße,Wohnstrasse,Seckenheim,0.0,0.06
+Ulanenweg,Verkehrsberuhigter Bereich,Neuostheim/Neuhermsheim,0.0,0.25
+Ulmenweg,Sammelstrasse,Neckarstadt-Ost/Wohlgelegen,1.0,0.82
+Ungsteiner Straße,Wohnstrasse,Käfertal,0.0,0.12
+Unionstraße,Verkehrsberuhigter Bereich,Käfertal,0.0,0.14
+Unter den Birken,Wohnstrasse,Waldhof,0.0,0.41
+Unter den Weiden,Verkehrsberuhigter Bereich,Neckarau,0.0,0.17
+Untere Clignetstraße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.15
+Unteres Kirchfeld,Wohnstrasse,Feudenheim,0.0,0.23
+Unteres Ringgässchen,Wohnstrasse,Feudenheim,0.0,0.05
+Untergasse,Wohnstrasse,Sandhofen,0.0,0.63
+Untermühlaustraße,Hauptverkehrsstrasse (B-Strasse),"Neckarstadt-Ost/Wohlgelegen, Neckarstadt-West",1.0,1.0
+Unterneugasse,Wohnstrasse,Sandhofen,0.0,0.12
+Valentin-Streuber-Straße,Wohnstrasse,Neckarau,0.0,0.34
+Van-den-Branden-Weg,Verkehrsberuhigter Bereich,Neuostheim/Neuhermsheim,0.0,0.3
+Veilchenstraße,Wohnstrasse,Käfertal,0.0,0.38
+Verlängerte Jungbuschstraße,Wohnstrasse,Innenstadt/Jungbusch,0.0,0.26
+Verschaffeltstraße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.31
+Viehhofstraße,Hauptverkehrsstrasse (B-Strasse),Schwetzingerstadt/Oststadt,1.0,0.32
+Viernheimer Weg,Sammelstrasse,"Sandhofen, Schönau",0.9567458218823125,4.16
+Viktoriastraße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.48
+Villinger Straße,Verkehrsberuhigter Bereich,Seckenheim,0.0,0.2
+Vogesenstraße,Sammelstrasse,Friedrichsfeld,0.895713574561486,1.14
+Voltastraße,Hauptverkehrsstrasse,Neckarau,0.6692906023971256,0.57
+Vor dem Teich,Wohnstrasse,Rheinau,0.0,0.23
+Vorderer Sporwörth,Wohnstrasse,Rheinau,0.0,0.51
+Völklinger Straße,Verkehrsberuhigter Bereich,Käfertal,0.0,0.08
+Wachenburgstraße,Hauptverkehrsstrasse,Rheinau,0.737640569013179,1.95
+Wachenheimer Straße,Wohnstrasse,Käfertal,0.0,0.82
+Wacholderstraße,Wohnstrasse,Neckarau,0.0,0.27
+Wachtelgasse,Wohnstrasse,Sandhofen,0.0,0.11
+Wachtstraße,Wohnstrasse,Waldhof,0.0,0.25
+Waghäuseler Weg,Wohnstrasse,Rheinau,0.0,0.13
+Waghäusler Weg,Wohnstrasse,Rheinau,0.0,0.03
+Walchenseeweg,Verkehrsberuhigter Bereich,Rheinau,0.0,0.1
+Waldblick,Wohnstrasse,Rheinau,0.0,0.32
+Waldeckweg,Wohnstrasse,Käfertal,0.0,0.22
+Waldfrieden,Wohnstrasse,Waldhof,0.0,0.49
+Waldgartenweg,Wohnstrasse,Rheinau,0.0,0.11
+Waldgrubenweg,Wohnstrasse,Käfertal,0.0,0.21
+Waldhofstraße,Sammelstrasse,"Neckarstadt-Ost/Wohlgelegen, Neckarstadt-West",0.9951168729637562,1.74
+Waldhornstraße,Wohnstrasse,Neckarau,0.0,0.66
+Waldkircher Straße,Wohnstrasse,Seckenheim,0.0,0.2
+Waldlichtung,Wohnstrasse,Rheinau,0.0,0.11
+Waldmeisterring,Verkehrsberuhigter Bereich,Waldhof,0.0,0.42
+Waldparkdamm,Wohnstrasse,Lindenhof,0.0,0.24
+Waldparkstraße,Wohnstrasse,Lindenhof,0.0,0.38
+Waldpforte,Sammelstrasse,Waldhof,0.7249838799438663,0.8
+Waldseestraße,Wohnstrasse,Rheinau,0.0,0.58
+Waldshuter Straße,Wohnstrasse,Seckenheim,0.0,0.21
+Waldspitze,Wohnstrasse,Seckenheim,0.0,0.43
+Waldstraße,Hauptverkehrsstrasse,"Käfertal, Schönau, Vogelstang, Waldhof",0.8248614902164174,5.15
+Waldwinkel,Wohnstrasse,Rheinau,0.0,0.18
+Walkürenstraße,Wohnstrasse,Waldhof,0.0,0.51
+Walldorfer Straße,Wohnstrasse,Rheinau,0.0,0.33
+Walldürner Straße,Wohnstrasse,Wallstadt,0.0,0.11
+Wallonenstraße,Wohnstrasse,Friedrichsfeld,0.0,0.38
+Wallstadter Straße,Sammelstrasse,"Feudenheim, Wallstadt",0.5285171750469366,1.27
+Walter-Flex-Straße,Wohnstrasse,Feudenheim,0.0,0.18
+Walter-Pahl-Brücke,Hauptverkehrsstrasse,"Schönau, Waldhof",1.0,0.09
+Warnemünder Weg,Wohnstrasse,Vogelstang,0.0,0.14
+Wartburgstraße,Wohnstrasse,Feudenheim,0.0,0.29
+Wasengrund,Wohnstrasse,Seckenheim,0.0,0.19
+Wasserbett,Wohnstrasse,Feudenheim,0.0,0.13
+Wasserfederweg,Verkehrsberuhigter Bereich,Wallstadt,0.0,0.35
+Wasserwerkstraße,Sammelstrasse,Käfertal,0.71963995627685,1.46
+Wattstraße,Sammelstrasse,Neckarau,0.5594357143167101,0.42
+Webereistraße,Wohnstrasse,Sandhofen,0.0,0.3
+Weberstraße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.14
+Weidenstraße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.1
+Weiherstraße,Wohnstrasse,Feudenheim,0.0,0.28
+Weikersheimer Ring,Wohnstrasse,Wallstadt,0.0,0.26
+Weimarer Straße,Wohnstrasse,Vogelstang,0.0,0.47
+Weinbergstraße,Wohnstrasse,Feudenheim,0.0,0.3
+Weinbietstraße,Wohnstrasse,Lindenhof,0.0,0.32
+Weinheimer Straße,Sammelstrasse,"Käfertal, Vogelstang",1.0,1.2
+Weizenstraße,Verkehrsberuhigter Bereich,Waldhof,0.0,0.08
+Weißbuchenweg,Verkehrsberuhigter Bereich,Neckarstadt-Ost/Wohlgelegen,0.0,0.19
+Weißenburgstraße,Wohnstrasse,Neckarau,0.0,0.22
+Weißenfelser Weg,Wohnstrasse,Vogelstang,0.0,0.13
+Weißenseeweg,Verkehrsberuhigter Bereich,Rheinau,0.0,0.14
+Weißtannenweg,Wohnstrasse,Waldhof,0.0,0.18
+Welfenweg,Wohnstrasse,Sandhofen,0.0,0.08
+Werderplatz,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.29
+Werderstraße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.71
+Werftstraße,Wohnstrasse,Innenstadt/Jungbusch,0.0,0.23
+Werner-Nagel-Ring,Wohnstrasse,Sandhofen,0.0,0.36
+Wernerstraße,Wohnstrasse,Wallstadt,0.0,0.14
+Wernigeroder Weg,Wohnstrasse,Sandhofen,0.0,0.31
+Wertheimer Straße,Wohnstrasse,Wallstadt,0.0,0.37
+Werthmannweg,Wohnstrasse,Waldhof,0.0,0.21
+Wespinstraße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.31
+Westring,Wohnstrasse,Waldhof,0.0,0.41
+Wetzlarer Winkel,Wohnstrasse,Waldhof,0.0,0.29
+Weylstraße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.43
+Wichernweg,Wohnstrasse,Waldhof,0.0,0.17
+Wieblinger Straße,Wohnstrasse,Rheinau,0.0,0.23
+Wiesbadener Straße,Wohnstrasse,Waldhof,0.0,0.29
+Wiesenstraße,Verkehrsberuhigter Bereich,Neckarstadt-West,0.0,0.1
+Wikingerstraße,Wohnstrasse,Wallstadt,0.0,0.31
+Wildbader Straße,Wohnstrasse,Seckenheim,0.0,0.23
+Wilhelm-Blos-Straße,Wohnstrasse,Neckarau,0.0,0.14
+Wilhelm-Busch-Straße,Wohnstrasse,Feudenheim,0.0,0.29
+Wilhelm-Filchner-Straße,Wohnstrasse,Rheinau,0.0,0.18
+Wilhelm-Furtwängler-Straße,Wohnstrasse,Feudenheim,0.0,0.39
+Wilhelm-Lehmbruck-Weg,Verkehrsberuhigter Bereich,Neuostheim/Neuhermsheim,0.0,0.21
+Wilhelm-Leuschner-Straße,Wohnstrasse,Neckarau,0.0,0.41
+Wilhelm-Liebknecht-Straße,Wohnstrasse,Neckarau,0.0,0.29
+Wilhelm-Neumann-Straße,Verkehrsberuhigter Bereich,Neckarstadt-Ost/Wohlgelegen,0.0,0.06
+Wilhelm-Peters-Straße,Wohnstrasse,Rheinau,0.0,0.92
+Wilhelm-Schaaff-Weg,Verkehrsberuhigter Bereich,Feudenheim,0.0,0.13
+Wilhelm-Varnholt-Allee,Hauptverkehrsstrasse (B-Strasse),"Neuostheim/Neuhermsheim, Schwetzingerstadt/Oststadt",1.0,1.44
+Wilhelm-Wundt-Platz,Verkehrsberuhigter Bereich,Neckarau,0.0,0.06
+Wilhelm-Wundt-Straße,Wohnstrasse,Neckarau,0.0,0.58
+Wilhelmstraße,Wohnstrasse,Feudenheim,0.0,0.66
+Wilhelmswörthstraße,Wohnstrasse,Sandhofen,0.0,0.25
+Will-Sohl-Straße,Hauptverkehrsstrasse,Neuostheim/Neuhermsheim,1.0,0.28
+Wimpfener Straße,Wohnstrasse,Feudenheim,0.0,0.26
+Windeckstraße,Wohnstrasse,Lindenhof,0.0,0.63
+Windmühlstraße,Wohnstrasse,Schwetzingerstadt/Oststadt,0.0,0.22
+Wingertsau,Wohnstrasse,Feudenheim,0.0,0.53
+Wingertsbuckel,Sammelstrasse,"Feudenheim, Wallstadt",1.0,1.37
+Wingertstraße,Wohnstrasse,Neckarau,0.0,0.71
+Winkelweg,Wohnstrasse,Käfertal,0.0,0.53
+Winterstraße,Wohnstrasse,Rheinau,0.0,0.28
+Wismarer Weg,Wohnstrasse,Vogelstang,0.0,0.06
+Wittenberger Weg,Wohnstrasse,Vogelstang,0.0,0.1
+Wittener Straße,Wohnstrasse,Rheinau,0.0,0.2
+Wolfacher Straße,Wohnstrasse,Seckenheim,0.0,0.23
+Wolframstraße,Verkehrsberuhigter Bereich,Neckarau,0.0,0.46
+Wormser Straße,Sammelstrasse,Käfertal,1.0,0.78
+Wotanstraße,Wohnstrasse,Waldhof,0.0,0.82
+Wupperstraße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.22
+Wörthfelder Weg,Verkehrsberuhigter Bereich,Seckenheim,0.0,0.19
+Wörthstraße,Wohnstrasse,Neckarau,0.0,0.48
+Xaver-Fuhr-Straße,Wohnstrasse,"Neuostheim/Neuhermsheim, Seckenheim",0.0,1.73
+Yorckstraße,Wohnstrasse,Feudenheim,0.0,0.1
+Zaberner Straße,Wohnstrasse,Friedrichsfeld,0.0,0.23
+Zaubernußweg,Verkehrsberuhigter Bereich,Neckarstadt-Ost/Wohlgelegen,0.0,0.21
+Zechenstraße,Wohnstrasse,Rheinau,0.0,0.18
+Zehntstraße,Wohnstrasse,Neckarstadt-West,0.0,0.41
+Zeisiggasse,Wohnstrasse,Sandhofen,0.0,0.11
+Zeitzer Weg,Wohnstrasse,Vogelstang,0.0,0.15
+Zellerfelder Weg,Wohnstrasse,Sandhofen,0.0,0.12
+Zellerstraße,Wohnstrasse,Neckarstadt-Ost/Wohlgelegen,0.0,0.6
+Zellstoffstraße,Wohnstrasse,"Sandhofen, Waldhof",0.0,0.76
+Zeppelinstraße,Wohnstrasse,Neckarstadt-West,0.0,0.57
+Zeughausplanken,Sammelstrasse,Innenstadt/Jungbusch,1.0,0.06
+Ziegelgasse,Wohnstrasse,Sandhofen,0.0,0.71
+Ziegelhüttenweg,Wohnstrasse,Neckarau,0.0,0.32
+Zielstraße,Sammelstrasse,Neckarstadt-Ost/Wohlgelegen,1.0,0.83
+Ziethenstraße,Wohnstrasse,Feudenheim,0.0,0.94
+Zuflucht,Wohnstrasse,Käfertal,0.0,0.21
+Zum Dornbusch,Wohnstrasse,Rheinau,0.0,0.21
+Zum Herrenried,Wohnstrasse,"Neckarstadt-Ost/Wohlgelegen, Waldhof",0.0,0.3
+Zur Waldau,Wohnstrasse,Seckenheim,0.0,0.31
+Zwerchgasse,Wohnstrasse,Sandhofen,0.0,0.82
+Zwickauer Weg,Wohnstrasse,Vogelstang,0.0,0.13
+Zwischenstraße,Wohnstrasse,Rheinau,0.0,0.14
+Zypressenstraße,Wohnstrasse,Neckarau,0.0,0.15
+Zäher Wille,Wohnstrasse,Waldhof,0.0,0.52
+Zähringer Straße,Wohnstrasse,Seckenheim,0.0,1.57
+Äußere Bogenstraße,Wohnstrasse,Käfertal,0.0,0.08
+Äußere Querstraße,Wohnstrasse,Käfertal,0.0,0.13
+Äußere Wingertstraße,Wohnstrasse,Käfertal,0.0,0.32
+Öhmdstraße,Wohnstrasse,Neckarstadt-West,0.0,0.11
+Überlinger Straße,Hauptverkehrsstrasse,Seckenheim,1.0,0.07

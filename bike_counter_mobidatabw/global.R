@@ -293,44 +293,105 @@ run_sql <- function(sql, deadline_s = POLL_DEADLINE_S) {
   result   # return full result for chunk extraction
 }
 
-fetch_last_job_run_log <- function() {
+# Databricks liefert ISO-8601 mit T-Trenner, Millisekunden und Offset
+# ("2026-08-25T23:19:42.000+00:00"). as.POSIXct() matcht davon nur
+# "%Y-%m-%d" und schluckt den Rest stillschweigend -> Mitternacht.
+parse_iso <- function(x) {
+  if (is.null(x) || is.na(x) || x == "") return(as.POSIXct(NA))
+  s <- trimws(x)
+  s <- sub("([+-])(\\d{2}):(\\d{2})$", "\\1\\2\\3", s)   # +00:00 -> +0000 (fuer %z)
+  s <- sub("\\.\\d+", "", s)                             # Millisekunden weg
+  out <- as.POSIXct(strptime(s, "%Y-%m-%dT%H:%M:%S%z", tz = "UTC"))
+  if (is.na(out)) {                                      # ohne Offset
+    out <- as.POSIXct(strptime(s, "%Y-%m-%dT%H:%M:%S", tz = "UTC"))
+  }
+  out
+}
+
+FRESH_WRITE_H <- as.numeric(Sys.getenv("FRESH_WRITE_H", "36"))  # Std. seit letztem Schreibvorgang
+FRESH_DATA_D  <- as.numeric(Sys.getenv("FRESH_DATA_D",  "3"))   # Tage Datenstand-Rückstand
+ 
+fetch_pipeline_status <- function() {
   tryCatch({
     res <- run_sql("
       SELECT
-        run_id, job_id, job_name, life_state, result_state,
-        start_time, end_time, duration_s, max_data_ts,
-        rows_added, rows_total, error_message, written_at
-      FROM counter.monitoring.job_run_log
-      ORDER BY written_at DESC
-      LIMIT 1
+        h.version,
+        h.timestamp                          AS last_write,
+        h.operation,
+        h.job.jobName                        AS job_name,
+        h.operationMetrics['numOutputRows']  AS out_rows,
+        d.max_date,
+        d.counters
+      FROM (
+        SELECT * FROM (
+          DESCRIBE HISTORY bike_counter_mobidatabw.eco_counter.eco_counter_mannheim
+        ) ORDER BY version DESC LIMIT 1
+      ) h
+      CROSS JOIN (
+        SELECT MAX(date) AS max_date,
+               COUNT(DISTINCT counter_id) AS counters
+        FROM bike_counter_mobidatabw.eco_counter.eco_counter_mannheim
+      ) d
     ")
-
+ 
     cols <- sapply(res$manifest$schema$columns, `[[`, "name")
     row  <- res$result$data_array[[1]]
-    if (is.null(row)) return(list(error = "job_run_log: keine Zeilen gefunden."))
-
+    if (is.null(row)) return(list(error = "Delta-History: keine Zeilen gefunden."))
     names(row) <- cols
-
-    fmt_berlin <- function(ts) {
-      if (is.null(ts) || is.na(ts) || ts == "" || ts == "NA") return("—")
-      format(as.POSIXct(ts, tz = "UTC"), tz = "Europe/Berlin", "%d.%m.%Y %H:%M:%S")
+ 
+    get <- function(k) {
+      v <- row[[k]]
+      if (is.null(v) || is.na(v) || v == "" || v == "NA") NA_character_ else as.character(v)
     }
-
+ 
+    last_write_utc <- parse_iso(get("last_write"))
+    max_date       <- as.Date(get("max_date"))
+ 
+    write_age_h <- as.numeric(difftime(Sys.time(), last_write_utc, units = "hours"))
+    data_age_d  <- as.numeric(Sys.Date() - max_date)
+ 
+    # Zwei unabhängige Bedingungen: die Pipeline muss gelaufen sein UND
+    # frische Daten geliefert haben. Genau die zweite Prüfung hat im
+    # Juli 2026 gefehlt — der Altjob meldete wochenlang SUCCESS bei
+    # rows_added = 0.
+    ok <- !is.na(write_age_h) && !is.na(data_age_d) &&
+          write_age_h <= FRESH_WRITE_H && data_age_d <= FRESH_DATA_D
+ 
+    status <- if (is.na(write_age_h) || is.na(data_age_d)) {
+      "UNBEKANNT"
+    } else if (write_age_h > FRESH_WRITE_H) {
+      "KEIN LAUF"
+    } else if (data_age_d > FRESH_DATA_D) {
+      "DATEN VERALTET"
+    } else {
+      "AKTUELL"
+    }
+ 
+    fmt_berlin <- function(ts) {
+      if (is.null(ts) || is.na(ts)) return("\u2014")
+      format(ts, tz = "Europe/Berlin", "%d.%m.%Y %H:%M:%S")
+    }
+    fmt_num <- function(x) {
+      if (is.na(x)) return("\u2014")
+      format(as.numeric(x), big.mark = ".", decimal.mark = ",", scientific = FALSE)
+    }
+ 
     list(
-      error        = NULL,
-      run_id       = row[["run_id"]],
-      job_id       = row[["job_id"]],
-      job_name     = row[["job_name"]],
-      life_state   = row[["life_state"]],
-      result_state = row[["result_state"]],
-      start_time   = fmt_berlin(row[["start_time"]]),
-      end_time     = fmt_berlin(row[["end_time"]]),
-      duration_s   = row[["duration_s"]],
-      max_data_ts  = fmt_berlin(row[["max_data_ts"]]),
-      rows_added   = row[["rows_added"]],
-      rows_total   = row[["rows_total"]],
-      error_msg    = row[["error_message"]],
-      written_at   = fmt_berlin(row[["written_at"]])
+      error       = NULL,
+      ok          = ok,
+      status      = status,
+      job_name    = if (is.na(get("job_name"))) "unbekannt (manueller Schreibvorgang)"
+                    else get("job_name"),
+      version     = get("version"),
+      operation   = get("operation"),
+      last_write  = fmt_berlin(last_write_utc),
+      write_age   = if (is.na(write_age_h)) "\u2014"
+                    else sprintf("vor %.1f Std.", write_age_h),
+      max_date    = if (is.na(max_date)) "\u2014" else format(max_date, "%d.%m.%Y"),
+      data_age    = if (is.na(data_age_d)) "\u2014"
+                    else sprintf("%d Tage", as.integer(data_age_d)),
+      rows_total  = fmt_num(get("out_rows")),
+      counters    = get("counters")
     )
   }, error = function(e) {
     list(error = paste("Exception:", conditionMessage(e)))

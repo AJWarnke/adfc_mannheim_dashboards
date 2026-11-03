@@ -32,7 +32,7 @@ ui <- dashboardPage(
       menuItem("Monats\u00fcbersicht", tabName = "monthly_table", icon = icon("table")),
       menuItem("Stationsvergleich", tabName = "station_compare", icon = icon("chart-bar")),
       menuItem("\u00dcbersicht", tabName = "overview", icon = icon("info-circle")),
-      menuItem("Job Status", tabName = "job_status", icon = icon("server"))
+      menuItem("Datenstatus", tabName = "job_status", icon = icon("database"))
     )
   ),
   dashboardBody(
@@ -371,7 +371,7 @@ ui <- dashboardPage(
         tabName = "job_status",
         fluidRow(
           box(
-            title = "Databricks Job \u2013 letzter Lauf",
+            title = "Datenpipeline \u2013 Status",
             width = 6,
             solidHeader = TRUE,
             status = "primary",

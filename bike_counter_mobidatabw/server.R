@@ -483,38 +483,49 @@ server <- function(input, output, session) {
            title = "Jahr", bg = "white")
   })
 
-  # ---- Databricks Job Status ----
+# ---- Pipeline-Status (Delta-History + Datenstand) ----
   job_status_data <- reactive({
-    fetch_last_job_run_log()
+    fetch_pipeline_status()
   }) |> bindCache(as.integer(Sys.time()) %/% 300L)
-
+ 
   output$job_status_table <- renderUI({
     job <- job_status_data()
     if (is.null(job) || (!is.null(job$error) && nchar(job$error) > 0)) {
       return(tags$div(
-        tags$p("Kein Job-Status verfügbar (Fehler):"),
+        tags$p("Kein Pipeline-Status verf\u00fcgbar (Fehler):"),
         tags$pre(if (is.null(job)) "job == NULL" else job$error)
       ))
     }
-    status_val  <- paste(job$life_state, job$result_state)
-    ok          <- isTRUE(job$result_state == "SUCCESS")
-    status_col  <- if (ok) "#2e7d32" else "#c62828"
-    status_icon <- if (ok) icon("check-circle") else icon("times-circle")
-    safe_val <- function(x) if (is.null(x) || x == "") "—" else x
-
-    rows <- list(
-      list("Job", safe_val(job$job_name)),
-      list("Status", tags$span(style = paste0("color:", status_col, "; font-weight:bold;"),
-                               status_icon, " ", status_val)),
-      list("Start", job$start_time),
-      list("Ende", job$end_time),
-      list("Dauer (s)", safe_val(job$duration_s)),
-      list("Max Data TS", job$max_data_ts),
-      list("Rows added (last run)", safe_val(job$rows_added)),
-      list("Rows total", safe_val(job$rows_total)),
-      list("Written at", job$written_at),
-      list("Error", if (!is.null(job$error_msg) && nchar(job$error_msg) > 0) job$error_msg else "—")
+ 
+    ok         <- isTRUE(job$ok)
+    status_col <- if (ok) "#2e7d32" else "#c62828"
+    status_ico <- if (ok) icon("check-circle") else icon("times-circle")
+    safe_val   <- function(x) if (is.null(x) || is.na(x) || x == "") "\u2014" else x
+ 
+    # Klartext statt Statuscode: was bedeutet rot konkret?
+    hint <- switch(job$status,
+      "AKTUELL"        = "Pipeline l\u00e4uft, Daten sind frisch.",
+      "KEIN LAUF"      = paste0("Seit ", job$write_age, " kein Schreibvorgang. ",
+                                "Job eco_counter_mobidatabw_daily_load pr\u00fcfen."),
+      "DATEN VERALTET" = paste0("Pipeline l\u00e4uft, liefert aber keine neuen Daten ",
+                                "(Datenstand ", job$data_age, " alt). Quelle MobiData BW pr\u00fcfen."),
+      "UNBEKANNT"      = "Status nicht ermittelbar \u2014 Delta-History unvollst\u00e4ndig.",
+      ""
     )
+ 
+    rows <- list(
+      list("Pipeline",              safe_val(job$job_name)),
+      list("Status",                tags$span(
+                                      style = paste0("color:", status_col, "; font-weight:bold;"),
+                                      status_ico, " ", job$status)),
+      list("Letzter Schreibvorgang", paste0(safe_val(job$last_write), " (", job$write_age, ")")),
+      list("Datenstand",            paste0(safe_val(job$max_date), " (", job$data_age, " alt)")),
+      list("Zeilen in Tabelle",     safe_val(job$rows_total)),
+      list("Z\u00e4hlstellen",      safe_val(job$counters)),
+      list("Delta-Version",         paste0(safe_val(job$version), " (", safe_val(job$operation), ")")),
+      list("Hinweis",               hint)
+    )
+ 
     tbl_rows <- lapply(rows, function(r) {
       tags$tr(
         tags$td(style = "font-weight:bold; padding: 6px 16px 6px 8px; white-space:nowrap;", r[[1]]),
